@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sportinate</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_groups">My Groups</string>
+    <string name="title_profile">My Profile</string>
 </resources>
