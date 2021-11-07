@@ -1,31 +1,27 @@
 package com.example.sportinate;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.sportinate.databinding.ActivityBrowseBinding;
+import com.example.sportinate.group_search_and_select.BrowseActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private ActivityBrowseBinding binding;
-
-
+    private Button b1;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button = (Button) findViewById(R.id.skip_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        b1 = findViewById(R.id.skip_button);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_browse);
+                Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
+                startActivity(intent);
             }
         });
-    }
-}
+    } }

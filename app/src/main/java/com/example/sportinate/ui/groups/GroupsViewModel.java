@@ -1,16 +1,16 @@
-package com.example.sportinate.group_search_and_select.ui.profile;
+package com.example.sportinate.ui.groups;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ProfileViewModel extends ViewModel {
+public class GroupsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ProfileViewModel() {
+    public GroupsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is profile fragment");
+        mText.setValue("This is groups fragment");
     }
 
     public LiveData<String> getText() {

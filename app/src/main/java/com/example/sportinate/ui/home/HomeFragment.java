@@ -1,4 +1,4 @@
-package com.example.sportinate.group_search_and_select.ui.home;
+package com.example.sportinate.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
