@@ -1,4 +1,4 @@
-package com.example.sportinate.ui.groups;
+package com.example.sportinate.bottom_nav_ui.groups;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

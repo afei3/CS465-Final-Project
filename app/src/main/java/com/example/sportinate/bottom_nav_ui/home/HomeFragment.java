@@ -1,4 +1,4 @@
-package com.example.sportinate.ui.home;
+package com.example.sportinate.bottom_nav_ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

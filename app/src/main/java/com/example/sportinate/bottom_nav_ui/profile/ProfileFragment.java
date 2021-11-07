@@ -1,4 +1,4 @@
-package com.example.sportinate.ui.groups;
+package com.example.sportinate.bottom_nav_ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.sportinate.databinding.FragmentGroupsBinding;
+import com.example.sportinate.databinding.FragmentProfileBinding;
 
-public class GroupsFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    private GroupsViewModel groupsViewModel;
-    private FragmentGroupsBinding binding;
+    private ProfileViewModel profileViewModel;
+    private FragmentProfileBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        groupsViewModel =
-                new ViewModelProvider(this).get(GroupsViewModel.class);
+        profileViewModel =
+                new ViewModelProvider(this).get(ProfileViewModel.class);
 
-        binding = FragmentGroupsBinding.inflate(inflater, container, false);
+        binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGroups;
-        groupsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textProfile;
+        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
