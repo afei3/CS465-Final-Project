@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentGroupsBinding;
 
 public class GroupsFragment extends Fragment {
@@ -28,7 +27,7 @@ public class GroupsFragment extends Fragment {
         binding = FragmentGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
+        final TextView textView = binding.textGroups;
         groupsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

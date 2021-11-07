@@ -4,4 +4,8 @@
     <string name="title_home">Home</string>
     <string name="title_groups">My Groups</string>
     <string name="title_profile">My Profile</string>
+    <string name="make_profile">Make Profile</string>
+    <string name="skip">Skip</string>
+    <string name="landing_question">Would you like to make a profile?</string>
+    <string name="landing_description">Profiles help us find groups that match your preferences better.</string>
 </resources>

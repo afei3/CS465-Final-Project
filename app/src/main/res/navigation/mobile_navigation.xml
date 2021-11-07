@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_groups"
         android:name="com.example.sportinate.group_search_and_select.ui.groups.GroupsFragment"
         android:label="@string/title_groups"
         tools:layout="@layout/fragment_groups" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_profile"
         android:name="com.example.sportinate.group_search_and_select.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
