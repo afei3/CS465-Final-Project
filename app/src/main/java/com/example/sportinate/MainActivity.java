@@ -9,18 +9,27 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.sportinate.group_search_and_select.BrowseActivity;
+import com.example.sportinate.profile.ProfileActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button b1;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b1 = findViewById(R.id.skip_button);
-        b1.setOnClickListener(new View.OnClickListener() {
+        Button skip_button = findViewById(R.id.skip_button);
+        skip_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button make_profile_button = findViewById(R.id.make_profile_button);
+        make_profile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
