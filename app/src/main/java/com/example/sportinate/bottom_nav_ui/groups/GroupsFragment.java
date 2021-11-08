@@ -28,24 +28,9 @@ public class GroupsFragment extends Fragment {
 
         binding = FragmentGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
         return root;
     }
-
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//
-//        Bundle bundle = getActivity().getIntent().getExtras();
-//        LinearLayout group1 = (LinearLayout) getView().findViewById(R.id.basketball_group1_groups);
-//        System.out.println("SETSETSET");
-//        if(bundle != null && bundle.getBoolean("Group1")) {
-////            System.out.println("this is" + bundle.getBoolean("EXTRA"));
-//            group1.setVisibility(View.VISIBLE);
-//            System.out.println("SETSETSET");
-////            getSupportFragmentManager().beginTransaction().replace(R.id.container, new GroupsFragment()).commit();
-//        }
-//
-//    }
 
     @Override
     public void onDestroyView() {

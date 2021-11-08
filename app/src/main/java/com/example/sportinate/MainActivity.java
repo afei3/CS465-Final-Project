@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         make_profile_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProfileFragment.class);
+                //Todo -> FIGURE OUT HOW TO GO TO PROFILE FRAGMENT
+                Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber",1); //for example
                 startActivity(intent);
             }
         });
