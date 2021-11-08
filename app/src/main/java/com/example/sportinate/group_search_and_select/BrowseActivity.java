@@ -1,12 +1,17 @@
 package com.example.sportinate.group_search_and_select;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
+
+import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import com.example.sportinate.group_search_and_select.GroupInfoActivity;
 
 import com.example.sportinate.R;
 
@@ -28,5 +33,4 @@ public class BrowseActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
-
 }

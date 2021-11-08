@@ -21,7 +21,6 @@ import com.example.sportinate.R;
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 import com.example.sportinate.databinding.FragmentHomeBinding;
 import com.example.sportinate.group_search_and_select.GroupInfoActivity;
-import com.example.sportinate.profile.ProfileActivity;
 
 public class HomeFragment extends Fragment {
 

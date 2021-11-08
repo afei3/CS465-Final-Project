@@ -1,5 +1,6 @@
 package com.example.sportinate.bottom_nav_ui.profile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,6 @@ public class ProfileFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         profileViewModel =
                 new ViewModelProvider(this).get(ProfileViewModel.class);
-
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -36,6 +36,7 @@ public class ProfileFragment extends Fragment {
         });
         return root;
     }
+
 
     @Override
     public void onDestroyView() {

@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sportinate">
         <activity
-            android:name=".group_search_and_select.GroupInfoActivity"
+            android:name=".profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".profile.ProfileActivity"
+            android:name=".group_search_and_select.GroupInfoActivity"
             android:exported="false" />
         <activity
             android:name=".group_search_and_select.BrowseActivity"
