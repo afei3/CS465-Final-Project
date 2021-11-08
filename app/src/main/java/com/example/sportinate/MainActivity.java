@@ -17,22 +17,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button skip_button = findViewById(R.id.skip_button);
-        skip_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
-                startActivity(intent);
-            }
-        });
 
         Button make_profile_button = findViewById(R.id.make_profile_button);
         make_profile_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Todo -> FIGURE OUT HOW TO GO TO PROFILE FRAGMENT
                 Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
                 intent.putExtra("fragmentNumber",1); //for example
+                startActivity(intent);
+            }
+        });
+
+        Button skip_button = findViewById(R.id.skip_button);
+        skip_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber",2); //for example
                 startActivity(intent);
             }
         });

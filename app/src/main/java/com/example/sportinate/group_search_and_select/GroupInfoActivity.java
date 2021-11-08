@@ -22,14 +22,15 @@ public class GroupInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_info);
 
-//        Button join_button = findViewById(R.id.join_button);
-//        join_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent1 = new Intent (GroupInfoActivity.this, GroupsFragment.class);
-//                intent1.putExtra("Group1", true);
-////                startActivity(intent1);
-//            }
-//        });
+        Button join_button = findViewById(R.id.join_button);
+        join_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //To-do change to go to feedback screen (Sruthi)
+                Intent intent = new Intent (GroupInfoActivity.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber", true);
+                startActivity(intent);
+            }
+        });
     }
 }
