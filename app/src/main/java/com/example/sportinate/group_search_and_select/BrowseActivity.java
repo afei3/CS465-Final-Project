@@ -46,6 +46,10 @@ public class BrowseActivity extends AppCompatActivity {
             navView.setSelectedItemId(R.id.navigation_home);
         } else {
             navView.setSelectedItemId(R.id.navigation_groups);
+            Bundle bundle2 = new Bundle();
+            bundle2.putInt("fragmentNumber", 1);
+            GroupsFragment group = new GroupsFragment();
+            group.setArguments(bundle2);
         }
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);

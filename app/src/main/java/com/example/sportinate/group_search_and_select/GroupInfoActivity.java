@@ -26,9 +26,9 @@ public class GroupInfoActivity extends AppCompatActivity {
         join_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //To-do change to go to feedback screen (Sruthi)
+                //TODO change to go to feedback screen and then change MyGroups visibility (Sruthi)
                 Intent intent = new Intent (GroupInfoActivity.this, BrowseActivity.class);
-                intent.putExtra("fragmentNumber", true);
+                intent.putExtra("fragmentNumber", 3);
                 startActivity(intent);
             }
         });

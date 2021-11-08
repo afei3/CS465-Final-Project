@@ -33,6 +33,21 @@ public class GroupsFragment extends Fragment {
     }
 
     @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+
+        View group1 = getView().findViewById(R.id.basketball_group1_groups);
+        //TODO Fix visibility (Sruthi)
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            int num = bundle.getInt("fragmentNumber");
+            if (num == 1) {
+                group1.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
