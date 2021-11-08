@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.profile.ProfileActivity;

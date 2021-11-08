@@ -8,4 +8,6 @@
     <string name="skip">Skip</string>
     <string name="landing_question">Would you like to make a profile?</string>
     <string name="landing_description">Profiles help us find groups that match your preferences better.</string>
+    <string name="create_new_group">Create New Group</string>
+
 </resources>
