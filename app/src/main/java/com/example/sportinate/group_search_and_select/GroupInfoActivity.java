@@ -15,8 +15,6 @@ import android.widget.Button;
 
 public class GroupInfoActivity extends AppCompatActivity {
 
-    public Boolean showGroup1 = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +24,8 @@ public class GroupInfoActivity extends AppCompatActivity {
         join_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO change to go to feedback screen and then change MyGroups visibility (Sruthi)
+                //TODO change to go to feedback screen and then change groups info for user MyGroups visibility (Sruthi)
+                //TODO If no profile, takes to sign-in page (Sruthi)
                 Intent intent = new Intent (GroupInfoActivity.this, BrowseActivity.class);
                 intent.putExtra("fragmentNumber", 3);
                 startActivity(intent);
