@@ -2,9 +2,7 @@ package com.example.sportinate.group_search_and_select;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.sportinate.MainActivity;
 import com.example.sportinate.R;
-import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +11,7 @@ import android.widget.Button;
 
 
 
-public class GroupInfoActivity extends AppCompatActivity {
+public class Group1InfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +24,7 @@ public class GroupInfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //TODO change to go to feedback screen and then change groups info for user MyGroups visibility (Sruthi)
                 //TODO If no profile, takes to sign-in page (Sruthi)
-                Intent intent = new Intent (GroupInfoActivity.this, BrowseActivity.class);
+                Intent intent = new Intent (Group1InfoActivity.this, BrowseActivity.class);
                 intent.putExtra("fragmentNumber", 3);
                 startActivity(intent);
             }

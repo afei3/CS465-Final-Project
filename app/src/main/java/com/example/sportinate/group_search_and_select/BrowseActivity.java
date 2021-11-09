@@ -1,22 +1,14 @@
 package com.example.sportinate.group_search_and_select;
 
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
-import com.example.sportinate.bottom_nav_ui.home.HomeFragment;
-import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
-import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.example.sportinate.group_search_and_select.GroupInfoActivity;
 
 import com.example.sportinate.R;
 
@@ -45,11 +37,11 @@ public class BrowseActivity extends AppCompatActivity {
         } else if (bundle != null && bundle.getInt("fragmentNumber") == 2) {
             navView.setSelectedItemId(R.id.navigation_home);
         } else {
-            navView.setSelectedItemId(R.id.navigation_groups);
             Bundle bundle2 = new Bundle();
             bundle2.putInt("fragmentNumber", 1);
             GroupsFragment group = new GroupsFragment();
             group.setArguments(bundle2);
+            navView.setSelectedItemId(R.id.navigation_groups);
         }
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);

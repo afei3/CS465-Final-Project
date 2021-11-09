@@ -26,16 +26,33 @@ public class GroupsFragment extends Fragment {
         binding = FragmentGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+//        View group1 = root.findViewById(R.id.group1_groups);
+//        group1.setVisibility(View.VISIBLE);
+
+//        Bundle bundle = getArguments();
+//        if (bundle == null) {
+//            System.out.println("bundle is null");
+//        }
+//        if (bundle != null) {
+//            int num = bundle.getInt("fragmentNumber");
+//            if (num == 1) {
+//                group1.setVisibility(View.VISIBLE);
+//            }
+//        }
         return root;
     }
 
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
-
-        View group1 = getView().findViewById(R.id.group1_groups);
+        View root = binding.getRoot();
+        View group1 = root.findViewById(R.id.group1_groups);
         //TODO Fix visibility (Sruthi)
-        Bundle bundle = this.getArguments();
+        Bundle bundle = getArguments();
+        if (bundle == null) {
+            System.out.println("bundle is null");
+        }
+
         if (bundle != null) {
             int num = bundle.getInt("fragmentNumber");
             if (num == 1) {
