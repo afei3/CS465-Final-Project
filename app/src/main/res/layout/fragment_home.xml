@@ -28,7 +28,7 @@
             />
 
         <LinearLayout
-            android:id="@+id/basketball_group1"
+            android:id="@+id/group1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -109,7 +109,7 @@
 
 
         <LinearLayout
-            android:id="@+id/basketball_group2"
+            android:id="@+id/group2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -183,7 +183,7 @@
         </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/tennis_group1"
+        android:id="@+id/group3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -259,7 +259,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/tennis_group2"
+        android:id="@+id/group4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -333,7 +333,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/soccer_group1"
+        android:id="@+id/group5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
