@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        LinearLayout grp1_layout = (LinearLayout) root.findViewById(R.id.basketball_group1);
+        LinearLayout grp1_layout = (LinearLayout) root.findViewById(R.id.group1);
 
         grp1_layout.setOnClickListener(new View.OnClickListener() {
             @Override
