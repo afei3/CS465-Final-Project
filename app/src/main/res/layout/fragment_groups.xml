@@ -14,7 +14,7 @@
         tools:context=".bottom_nav_ui.groups.GroupsFragment">
 
         <LinearLayout
-            android:id="@+id/basketball_group1_groups"
+            android:id="@+id/group1_groups"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
 
 
         <LinearLayout
-            android:id="@+id/basketball_group2_groups"
+            android:id="@+id/group2_groups"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tennis_group1_groups"
+            android:id="@+id/group3_groups"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -248,7 +248,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tennis_group2_groups"
+            android:id="@+id/group4_groups"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -323,7 +323,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/soccer_group1_groups"
+            android:id="@+id/group5_groups"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

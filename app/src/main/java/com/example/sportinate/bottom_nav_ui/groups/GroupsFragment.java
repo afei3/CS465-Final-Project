@@ -33,7 +33,7 @@ public class GroupsFragment extends Fragment {
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
 
-        View group1 = getView().findViewById(R.id.basketball_group1_groups);
+        View group1 = getView().findViewById(R.id.group1_groups);
         //TODO Fix visibility (Sruthi)
         Bundle bundle = this.getArguments();
         if (bundle != null) {
