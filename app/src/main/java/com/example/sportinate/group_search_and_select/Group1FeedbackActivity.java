@@ -27,12 +27,12 @@ public class Group1FeedbackActivity extends AppCompatActivity {
         });
 
         Button browse_groups_button = findViewById(R.id.browse_groups);
-        view_groups_button.setOnClickListener(new View.OnClickListener() {
+        browse_groups_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //TODO change groups info for user MyGroups visibility
                 Intent intent = new Intent (Group1FeedbackActivity.this, BrowseActivity.class);
-                intent.putExtra("fragmentNumber", 3);
+                intent.putExtra("fragmentNumber", 2);
                 startActivity(intent);
             }
         });

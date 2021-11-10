@@ -14,7 +14,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentGroupsBinding;
-import com.example.sportinate.group_search_and_select.Group1InfoActivity;
 import com.example.sportinate.group_search_and_select.Group1LeaveActivity;
 
 public class GroupsFragment extends Fragment {
