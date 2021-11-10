@@ -4,13 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.sportinate.R;
@@ -28,17 +25,17 @@ public class GroupsFragment extends Fragment {
 
         binding = FragmentGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         return root;
     }
 
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
-
-        View group1 = getView().findViewById(R.id.group1_groups);
+        View root = binding.getRoot();
+        View group1 = root.findViewById(R.id.group1_groups);
         //TODO Fix visibility (Sruthi)
-        Bundle bundle = this.getArguments();
+        Bundle bundle = getArguments();
+
         if (bundle != null) {
             int num = bundle.getInt("fragmentNumber");
             if (num == 1) {

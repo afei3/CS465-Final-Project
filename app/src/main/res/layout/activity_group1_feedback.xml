@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".group_search_and_select.Group1FeedbackActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="50sp"
+        android:text="Success!"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have now joined this group."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="200dp" />
+
+    <Button
+        android:id="@+id/view_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View My Groups"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="@color/sportinate_gold"
+        />
+
+    <Button
+        android:id="@+id/browse_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse Groups"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="@color/sportinate_gold"
+        />
+
+</LinearLayout>
