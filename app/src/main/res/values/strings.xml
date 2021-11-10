@@ -10,7 +10,7 @@
     <string name="landing_description">Profiles help us find groups that match your preferences better.</string>
     <string name="create_new_group">Create New Group</string>
     <string-array name="sports_array">
-        <item>BasketBall</item>
+        <item>Basketball</item>
         <item>Soccer</item>
         <item>Tennis</item>
         <item>Ping Pong</item>
