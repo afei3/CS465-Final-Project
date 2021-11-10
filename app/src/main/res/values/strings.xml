@@ -9,5 +9,28 @@
     <string name="landing_question">Would you like to make a profile?</string>
     <string name="landing_description">Profiles help us find groups that match your preferences better.</string>
     <string name="create_new_group">Create New Group</string>
+    <string-array name="sports_array">
+        <item>BasketBall</item>
+        <item>Soccer</item>
+        <item>Tennis</item>
+        <item>Ping Pong</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
 
 </resources>

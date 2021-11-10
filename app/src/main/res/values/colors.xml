@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="sportinate_gold">#FFA500</color>
+    <color name="sportinate_gold">#FFFFA500</color>
+    <color name="blue_button">#FF0040ff</color>
 
 </resources>

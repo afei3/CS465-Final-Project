@@ -20,7 +20,9 @@ import com.example.sportinate.MainActivity;
 import com.example.sportinate.R;
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 import com.example.sportinate.databinding.FragmentHomeBinding;
+import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.group_search_and_select.GroupInfoActivity;
+import com.example.sportinate.group_creation.GroupCreationActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -34,6 +36,15 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        Button createGroupButton= (Button) root.findViewById(R.id.create_new_group_btn);
+        createGroupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), GroupCreationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         LinearLayout grp1_layout = (LinearLayout) root.findViewById(R.id.group1);
 
