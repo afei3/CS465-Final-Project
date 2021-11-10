@@ -100,19 +100,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-<!--                -->
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_info_black_24dp">-->
-<!--                </ImageView>-->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="80dp"
+                    android:src="@drawable/bball">
+                </ImageView>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="bottom"
-                    android:layout_marginTop="80dp"
-                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="110dp"
                     android:src="@drawable/ic_info_black_24dp">
 
                 </ImageView>
@@ -183,10 +185,18 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="150dp"
+                    android:src="@drawable/bball">
+                </ImageView>
+
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="30dp"
                     android:gravity="bottom"
                     android:src="@drawable/ic_info_black_24dp">
 
@@ -258,10 +268,18 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/tennis">
+            </ImageView>
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:gravity="bottom"
                 android:src="@drawable/ic_info_black_24dp">
 
@@ -335,10 +353,18 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/tennis">
+            </ImageView>
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:gravity="bottom"
                 android:src="@drawable/ic_info_black_24dp">
 
@@ -409,10 +435,18 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="70dp"
+                android:src="@drawable/soccer">
+            </ImageView>
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
                 android:gravity="bottom"
                 android:src="@drawable/ic_info_black_24dp">
 

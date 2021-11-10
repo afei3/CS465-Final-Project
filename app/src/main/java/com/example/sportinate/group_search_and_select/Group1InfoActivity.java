@@ -23,6 +23,7 @@ public class Group1InfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //TODO If no profile, takes to sign-in page (Sruthi)
+                //TODO make group show up in My Groups page
                 Intent intent = new Intent (Group1InfoActivity.this, Group1FeedbackActivity.class);
                 startActivity(intent);
             }

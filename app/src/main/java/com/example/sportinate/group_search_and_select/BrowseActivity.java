@@ -1,16 +1,11 @@
 package com.example.sportinate.group_search_and_select;
 
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
-import com.example.sportinate.bottom_nav_ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
