@@ -26,7 +26,7 @@
 
         <LinearLayout
             android:id="@+id/group3_groups"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -113,7 +113,7 @@
 
         <LinearLayout
             android:id="@+id/group1_groups"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

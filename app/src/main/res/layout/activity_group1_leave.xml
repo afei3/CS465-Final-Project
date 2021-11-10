@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingBottom="70dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context=".group_search_and_select.Group1InfoActivity">
+    tools:context=".group_search_and_select.Group1LeaveActivity">
 
-        <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".group_search_and_select.Group1InfoActivity">
+        tools:context=".group_search_and_select.Group1LeaveActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,26 +19,26 @@
             android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:textSize="22sp"
-            android:text="Basketball"
-            android:textStyle="bold"
-            android:layout_weight="0.5"
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="22sp"
+                android:text="Basketball"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:layout_gravity="left" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textSize="22sp"
-            android:text="Players: 9/10"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textSize="22sp"
+                android:text="Players: 9/10"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
 
@@ -432,7 +432,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/join_button"
+            android:id="@+id/leave_button"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
@@ -440,18 +440,18 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:textSize="16sp"
-            android:text="Join Group"
+            android:text="Leave Group"
             android:backgroundTint="@color/sportinate_gold"
             android:textColor="@color/black"
             android:layout_gravity="right"
             />
 
-<!--    <Button-->
-<!--        android:id="@+id/join_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Join"-->
-<!--        android:layout_gravity="center"-->
-<!--        />-->
+        <!--    <Button-->
+        <!--        android:id="@+id/join_button"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Join"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        />-->
     </LinearLayout>
 </ScrollView>

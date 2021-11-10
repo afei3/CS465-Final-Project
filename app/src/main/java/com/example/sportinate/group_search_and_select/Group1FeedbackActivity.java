@@ -2,7 +2,6 @@ package com.example.sportinate.group_search_and_select;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.sportinate.R;
-import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
