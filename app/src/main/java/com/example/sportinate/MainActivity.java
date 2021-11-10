@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button make_profile_button = findViewById(R.id.make_profile_button);
         make_profile_button.setOnClickListener(new View.OnClickListener() {
+            //TODO change to go to profile activity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
