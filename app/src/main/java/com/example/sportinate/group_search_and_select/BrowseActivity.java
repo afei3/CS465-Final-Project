@@ -1,10 +1,16 @@
 package com.example.sportinate.group_search_and_select;
 
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
+import com.example.sportinate.bottom_nav_ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -36,18 +42,16 @@ public class BrowseActivity extends AppCompatActivity {
             navView.setSelectedItemId(R.id.navigation_profile);
         } else if (bundle != null && bundle.getInt("fragmentNumber") == 2) {
             navView.setSelectedItemId(R.id.navigation_home);
-        } else {
+        }
+        else if (bundle != null && bundle.getInt("fragmentNumber") == 3) {
+
             Bundle bundle2 = new Bundle();
             bundle2.putInt("fragmentNumber", 1);
             GroupsFragment group = new GroupsFragment();
             group.setArguments(bundle2);
-            navView.setSelectedItemId(R.id.navigation_groups);
+
+            //TODO figure out how to display new instance of fragment every time bottom nav "My Groups" is clicked
+            navController.navigate(R.id.navigation_groups);
         }
-
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
-
     }
-
-
 }
