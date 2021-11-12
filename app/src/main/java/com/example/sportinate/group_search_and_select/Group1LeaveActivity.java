@@ -2,6 +2,8 @@ package com.example.sportinate.group_search_and_select;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 
 import android.content.DialogInterface;
@@ -26,6 +28,7 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         //TODO pulls up alert
         //TODO group disappears from My Groups page
+        GroupInfo.test_bool = false;
         switch (v.getId()){
             case R.id.leave_button:
                 alertDialog();

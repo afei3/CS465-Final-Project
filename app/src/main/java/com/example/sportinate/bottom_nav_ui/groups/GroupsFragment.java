@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentGroupsBinding;
 import com.example.sportinate.group_search_and_select.Group1LeaveActivity;
@@ -49,7 +50,11 @@ public class GroupsFragment extends Fragment {
         View group1 = root.findViewById(R.id.group1_groups);
         //TODO Fix visibility (Sruthi)
         Bundle bundle = getArguments();
-
+        if (GroupInfo.test_bool) {
+            group1.setVisibility(View.VISIBLE);
+        } else {
+            group1.setVisibility(View.INVISIBLE);
+        }
         if (bundle != null) {
             int num = bundle.getInt("fragmentNumber");
             if (num == 1) {

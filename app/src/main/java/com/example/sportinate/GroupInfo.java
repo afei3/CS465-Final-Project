@@ -1,6 +1,7 @@
 package com.example.sportinate;
 
 public class GroupInfo {
+    public static boolean test_bool = false;
     public  String sportName;
     public  String skillLevel;
     public String date;
@@ -8,6 +9,8 @@ public class GroupInfo {
     public String endTime;
     public String commitment;
     public String message;
+
+    public int groupId;
 
     public GroupInfo(){
     }
