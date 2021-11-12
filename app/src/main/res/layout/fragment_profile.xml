@@ -10,25 +10,18 @@
         android:orientation="vertical"
         android:gravity="top">
 
-        <LinearLayout
-            android:id="@+id/user_avatar"
-            android:layout_width="match_parent"
+
+        <ImageView
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/box"
-            android:clickable="true"
-            android:focusable="true">
-            <ImageView
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:src="@drawable/user" />
+            android:src="@drawable/user" />
 
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/user_description"
@@ -115,7 +108,7 @@
                     android:layout_marginBottom="5dp"
                     />
                 <LinearLayout
-                    android:id="@+id/user_sport"
+                    android:id="@+id/sport_list"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:orientation="vertical"
