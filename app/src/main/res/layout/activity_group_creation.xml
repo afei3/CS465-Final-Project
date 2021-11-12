@@ -194,7 +194,20 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Location"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Arc"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

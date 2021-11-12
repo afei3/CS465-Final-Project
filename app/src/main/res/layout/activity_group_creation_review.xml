@@ -52,12 +52,18 @@
             android:text="Time: "
             android:textSize="18sp"
             />
-
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:text="Location: "
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Commitment Level: "
             android:textSize="18sp"
         />
@@ -99,6 +105,15 @@
 
         <TextView
             android:id="@+id/review_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/review_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

@@ -26,14 +26,14 @@ public class ProfileFragment extends Fragment {
                 new ViewModelProvider(this).get(ProfileViewModel.class);
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
+        /*
         final TextView textView = binding.textProfile;
         profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 

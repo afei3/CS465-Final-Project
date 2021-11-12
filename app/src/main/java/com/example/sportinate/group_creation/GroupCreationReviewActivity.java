@@ -37,6 +37,10 @@ public class GroupCreationReviewActivity extends AppCompatActivity {
         TextView timeText = findViewById(R.id.review_time);
         timeText.setText(time);
 
+
+        TextView location = findViewById(R.id.review_location);
+        location.setText(group.location);
+
         TextView commitment = findViewById(R.id.review_commitment);
         commitment.setText(group.commitment);
 
