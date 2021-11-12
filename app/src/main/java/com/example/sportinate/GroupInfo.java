@@ -1,11 +1,20 @@
 package com.example.sportinate;
 
-public class GroupInfo {
+import java.io.Serializable;
+
+public class GroupInfo implements Serializable {
     public  String sportName;
     public  String skillLevel;
     public String date;
-    public String startTime;
-    public String endTime;
+    public String startHour;
+    public String startMinute;
+    public String startAmpm;
+
+    public String endHour;
+    public String endMinute;
+    public String endAmpm;
+
+
     public String commitment;
     public String message;
 
@@ -36,21 +45,55 @@ public class GroupInfo {
         this.date = date;
     }
 
-    public String getStartTime() {
-        return this.startTime;
+    public String getStartHour() {
+        return this.startHour;
     }
 
-    public void setStartTime(String startTime) {
-        this.startTime = startTime;
+    public void setStartHour(String startHour) {
+        this.startHour = startHour;
     }
 
-    public String getEndTime() {
-        return this.endTime;
+    public String getStartMinute() {
+        return this.startMinute;
     }
 
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
+    public void setStartMinute(String startMinute) {
+        this.startMinute = startMinute;
     }
+
+
+    public String getStartAmpm() {
+        return this.startAmpm;
+    }
+
+    public void setStartAmpm(String startAmpm) {
+        this.startAmpm = startAmpm;
+    }
+
+    public String getEndHour() {
+        return this.endHour;
+    }
+
+    public void setEndHour(String endHour) {
+        this.endHour = endHour;
+    }
+
+    public String getEndMinute() {
+        return this.endMinute;
+    }
+
+    public void setEndMinute(String endMinute) {
+        this.endMinute = endMinute;
+    }
+
+    public String getEndAmpm() {
+        return this.endAmpm;
+    }
+
+    public void setEndAmpm(String endAmpm) {
+        this.endAmpm = endAmpm;
+    }
+
 
     public String getCommitment() {
         return this.commitment;
