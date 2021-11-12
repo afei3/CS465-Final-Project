@@ -84,11 +84,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
-       <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="70dp"
-            xmlns:android="http://schemas.android.com/apk/res/android">
+
             <LinearLayout
                 android:id="@+id/user_sport"
                 android:layout_width="match_parent"
@@ -118,18 +114,34 @@
                     android:backgroundTint='@color/black'
                     android:layout_marginBottom="5dp"
                     />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:textSize="22sp"
-                    android:text="Soccer: Beginner
-                    \nBasketball: Beginner
-                    \nTennis: Competitive\n"
-                    android:layout_weight="0.5"
-                    android:textColor="@color/black"
-                    android:layout_gravity="left" />
+                <LinearLayout
+                    android:id="@+id/user_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="20dp"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:textSize="22sp"
+                            android:text="Soccer: Beginner
+                            \nBasketball: Beginner
+                            \nTennis: Competitive\n\n\n"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left" />
+                    </ScrollView>
+                </LinearLayout>
                 <Button
                     android:id="@+id/sprot_edit"
                     android:layout_width="70dp"
@@ -146,7 +158,7 @@
                     android:textSize="16sp" />
 
             </LinearLayout>
-        </ScrollView>
+
 
 
     </LinearLayout>

@@ -39,54 +39,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Select skill level for your group"
+            android:text="Select skill level of yourself"
             android:textSize="12sp" />
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            >
-
-            <Button
-                android:id="@+id/new_button"
-                android:layout_width="145dp"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_new"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/sportinate_gold"
-                android:text="New" />
-
-            <Button
-                android:id="@+id/advanced_button"
-                android:layout_width="145dp"
+                android:text="New"
+                android:onClick="onSkillRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_intermediate"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:backgroundTint="@color/sportinate_gold"
-                android:text="Advanced" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            >
-
-            <Button
-                android:id="@+id/intermediate_button"
-                android:layout_width="145dp"
+                android:text="Intermediate"
+                android:onClick="onSkillRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_advanced"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/sportinate_gold"
-                android:text="Intermediate" />
-
-            <Button
-                android:id="@+id/expert_button"
-                android:layout_width="145dp"
+                android:text="Advanced"
+                android:onClick="onSkillRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_expert"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/sportinate_gold"
-                android:layout_marginLeft="10dp"
-                android:text="Expert" />
-        </LinearLayout>
+                android:text="Expert"
+                android:onClick="onSkillRadioButtonClicked"/>
+
+        </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
@@ -140,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:ems="2"
-                android:hint="12"
+                android:text="12"
                 android:inputType="number|time" />
             <TextView
                 android:layout_width="wrap_content"
@@ -155,7 +136,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:ems="2"
-                android:hint="00"
+                android:text="00"
                 android:inputType="number|time" />
 
             <Spinner
@@ -187,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:ems="2"
-                android:hint="01"
+                android:text="01"
                 android:inputType="number|time" />
             <TextView
                 android:layout_width="wrap_content"
@@ -202,7 +183,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:ems="2"
-                android:hint="00"
+                android:text="00"
                 android:inputType="number|time" />
 
             <Spinner
@@ -214,6 +195,45 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Commitment Level"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="What type of experience are you looking for?"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_competitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Competitive"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_either"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Either"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -222,15 +242,15 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/back_button2"
+                android:id="@+id/back_button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/blue_button"
 
-                android:text="Back" />
+                android:text="Cancel" />
 
             <Button
-                android:id="@+id/next_button2"
+                android:id="@+id/next_button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
