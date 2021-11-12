@@ -11,9 +11,11 @@
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group1_leave_feedback.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_creation.xml" value="0.33" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_creation2.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_creation_confirmation.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_creation_review.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_info1.xml" value="0.18342391304347827" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_main.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_profile_feedback.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_profile_feedback.xml" value="0.25" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/fragment_groups.xml" value="0.18342391304347827" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/fragment_home.xml" value="0.18342391304347827" />
@@ -29,9 +31,6 @@
         <entry key="app/src/main/res/layout/activity_group1_leave_feedback.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/activity_group_creation.xml" value="0.22282608695652173" />
         <entry key="app/src/main/res/layout/activity_group_creation2.xml" value="0.5123062829938791" />
-        <entry key="app/src/main/res/layout/activity_group_creation_comfirmation.xml" value="0.10233029381965553" />
-        <entry key="app/src/main/res/layout/activity_group_creation_confirmation.xml" value="0.10233029381965553" />
-        <entry key="app/src/main/res/layout/activity_group_creation_review.xml" value="0.10916919959473151" />
         <entry key="app/src/main/res/layout/activity_group_info.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_group_info1.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_group_joined.xml" value="0.10416666666666667" />
@@ -47,11 +46,7 @@
       </map>
     </option>
   </component>
-<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
-=======
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
->>>>>>> 81154aca78d178c15bf77154c676fcad0553625a
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
