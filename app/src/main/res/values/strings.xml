@@ -9,7 +9,15 @@
     <string name="landing_question">Would you like to make a profile?</string>
     <string name="landing_description">Profiles help us find groups that match your preferences better.</string>
     <string name="create_new_group">Create New Group</string>
-    <string name="success_text">You have successfully created a "SPORT" group!</string>
+    <string name="success_text">You have successfully created a \"SPORT\" group!</string>
+    <string name="new_tooltip">Little to no experience playing. This may be your first time playing or you have played very infrequently.</string>
+    <string name= "intermediate_tooltip">Some amount of experience playing. You aren\'t exactly new to the game, but you wouldn\'t consider yourself a \'good player\' either. </string>
+    <string name ="advanced_tooltip">Good amount of experience playing. You have played the sport for a decent amount of time, and may have a working knowledge of the fundamentals required for the sport.</string>
+    <string name ="expert_tooltip">High level of experience playing. You have been playing the sport for a long time and are probably extremely knowledgeable about the game.</string>
+    <string name ="casual_tooltip">Your goals are to have fun, meet new people, or try out a new activity.</string>
+    <string name ="competitive_tooltip">Your goals are primarily to improve your skills or find others to compete with.</string>
+    <string name ="either_tooltip">Your goals include a mix between casual and competitive.</string>
+
     <string-array name="sports_array">
         <item>Basketball</item>
         <item>Soccer</item>
