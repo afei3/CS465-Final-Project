@@ -384,7 +384,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Group Message(Optional)"
+        android:text="Group Description(Optional)"
         android:textSize="34sp"
         android:textStyle="bold" />
 
@@ -393,7 +393,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:ems="10"
-        android:hint="Write something for your group....."
+        android:hint="Include any additional info you want your group to know."
         android:inputType="textMultiLine"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
