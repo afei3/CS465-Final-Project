@@ -10,12 +10,15 @@ import android.widget.Button;
 
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 
+import java.security.acl.Group;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         for (int i = 0; i < 5; i++) {
             GroupInfo.groups_create.add(new GroupInfo());
+            GroupInfo.joined_groups.add(new GroupInfo());
         }
         setContentView(R.layout.activity_main);
 
