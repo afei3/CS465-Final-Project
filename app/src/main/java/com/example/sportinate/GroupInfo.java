@@ -1,6 +1,12 @@
 package com.example.sportinate;
 
+
+import java.security.acl.Group;
+import java.util.ArrayList;
+
 public class GroupInfo {
+    public static ArrayList<GroupInfo> joined_groups = new ArrayList<>();
+    public static ArrayList<GroupInfo> groups_create = new ArrayList<>();
     public static boolean test_bool = false;
     public  String sportName;
     public  String skillLevel;

@@ -28,7 +28,6 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         //TODO pulls up alert
         //TODO group disappears from My Groups page
-        GroupInfo.test_bool = false;
         switch (v.getId()){
             case R.id.leave_button:
                 alertDialog();
@@ -44,6 +43,7 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
                     public void onClick(DialogInterface dialog,
                                         int which) {
                         //TODO new activity comes up saying you have left the group
+                        GroupInfo.test_bool = false;
                         Intent intent = new Intent (Group1LeaveActivity.this, Group1LeaveFeedbackActivity.class);
                         startActivity(intent);
                     }

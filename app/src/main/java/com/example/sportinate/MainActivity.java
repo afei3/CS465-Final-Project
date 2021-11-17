@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        for (int i = 0; i < 5; i++) {
+            GroupInfo.groups_create.add(new GroupInfo());
+        }
         setContentView(R.layout.activity_main);
 
         Button make_profile_button = findViewById(R.id.make_profile_button);
