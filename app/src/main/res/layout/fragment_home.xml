@@ -220,6 +220,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:orientation="vertical">
 
             <TextView
@@ -298,6 +299,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/box"
+        android:visibility="gone"
         android:clickable="true"
         android:focusable="true"
         android:orientation="horizontal">
@@ -333,7 +335,7 @@
                 android:layout_gravity="left"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="Day/Time: Mon and Thurs 1-3pm"
+                android:text="Day/Time: Mon 1-3pm"
                 android:textSize="16sp" />
 
             <TextView

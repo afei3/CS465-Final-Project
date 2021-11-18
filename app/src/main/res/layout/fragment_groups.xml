@@ -67,7 +67,7 @@
                     android:layout_gravity="left"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Day/Time: Wed and Thurs 2-4pm"
+                    android:text="Day/Time: Mon 1-3pm"
                     android:textSize="16sp" />
 
                 <TextView

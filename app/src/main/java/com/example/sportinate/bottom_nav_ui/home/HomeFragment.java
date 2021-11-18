@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentHomeBinding;
 
@@ -31,6 +32,13 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        View group1 = root.findViewById(R.id.group4);
+
+        if (GroupInfo.group_test_bool) {
+            group1.setVisibility(View.VISIBLE);
+        } else {
+            group1.setVisibility(View.GONE);
+        }
 
 
         Button createGroupButton= (Button) root.findViewById(R.id.create_new_group_btn);
