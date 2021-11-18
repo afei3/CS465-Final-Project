@@ -92,10 +92,21 @@ public class EditSportActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(com.example.sportinate.profile_creation.EditSportActivity.this, profile_creation.class);
                 intent.putExtra("fragmentNumber", 2);
-                GroupInfo.group_test_bool = true;
                 startActivity(intent);
             }
         });
+
+        Button edit_sport_button1 = findViewById(R.id.Edit1);
+        edit_sport_button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(com.example.sportinate.profile_creation.EditSportActivity.this, profile_creation.class);
+                intent.putExtra("fragmentNumber", 2);
+
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
