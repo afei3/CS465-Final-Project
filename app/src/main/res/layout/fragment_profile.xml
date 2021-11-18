@@ -35,7 +35,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/user_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -46,15 +45,32 @@
                 android:clickable="true"
                 android:focusable="true">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:textSize="22sp"
-                    android:text="Name: "
-                    android:layout_weight="0.5"
-                    android:textColor="@color/black"
-                    android:layout_gravity="left" />
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:textSize="22sp"
+                        android:text="Name: "
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+
+                        android:gravity="center" />
+                </LinearLayout>
 
                 <View
                     android:layout_marginTop="5dp"
@@ -63,16 +79,33 @@
                     android:backgroundTint='@color/black'
                     android:layout_marginBottom="5dp"
                     />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/user_description"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:textSize="22sp"
-                    android:text="Description: \n\n"
-                    android:layout_weight="0.5"
-                    android:textColor="@color/black"
-                    android:layout_gravity="left" />
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textSize="22sp"
+                        android:text="Description: "
+                        android:textColor="@color/black"
+                        android:layout_gravity="left" />
+                    <TextView
+                        android:id="@+id/description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ems="10"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="top|left"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false" />
+                </LinearLayout>
                 <Button
                     android:id="@+id/user_edit"
                     android:layout_width="70dp"
@@ -87,6 +120,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
                 <LinearLayout

@@ -1,10 +1,13 @@
 package com.example.sportinate.group_search_and_select;
 
 import android.os.Bundle;
-
+import android.widget.TextView;
+import com.example.sportinate.profile_creation.UserInfo;
 import com.example.sportinate.bottom_nav_ui.groups.GroupsFragment;
+import com.example.sportinate.profile_creation.UserDescriptionActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import com.example.sportinate.profile_creation.UserInfo;
+import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,6 +15,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.sportinate.R;
+
+import java.io.Serializable;
 
 public class BrowseActivity extends AppCompatActivity {
 
@@ -32,8 +37,22 @@ public class BrowseActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
         Bundle bundle = getIntent().getExtras();
+        //Bundle bundle = getIntent().getBundleExtra("fragmentNumber");
+
 
         if (bundle != null && bundle.getInt("fragmentNumber") == 1) {
+            ProfileFragment myFragment = new ProfileFragment();
+            Bundle bundle3= new Bundle();
+            Serializable se = getIntent().getSerializableExtra("key");
+            if(se instanceof UserInfo){
+                UserInfo db = (UserInfo) se;
+                String name_user = db.getName();
+                String descrip_user = db.getDescrip();
+                bundle3.putString("name",name_user);
+                bundle3.putString("descrip",descrip_user);
+                myFragment.setArguments(bundle3);
+            }
+
             navView.setSelectedItemId(R.id.navigation_profile);
         } else if (bundle != null && bundle.getInt("fragmentNumber") == 2) {
             navView.setSelectedItemId(R.id.navigation_home);
@@ -48,5 +67,8 @@ public class BrowseActivity extends AppCompatActivity {
             //TODO figure out how to display new instance of fragment every time bottom nav "My Groups" is clicked
             navController.navigate(R.id.navigation_groups);
         }
+    }
+    public String getTitles(){
+        return "hello";
     }
 }
