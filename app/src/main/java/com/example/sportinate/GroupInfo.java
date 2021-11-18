@@ -8,6 +8,7 @@ public class GroupInfo implements Serializable {
     public static ArrayList<GroupInfo> joined_groups = new ArrayList<>();
     public static ArrayList<GroupInfo> groups_create = new ArrayList<>();
     public static boolean test_bool = false;
+    public static boolean group_test_bool = false;
     public  String sportName;
     public  String skillLevel;
     public String date;

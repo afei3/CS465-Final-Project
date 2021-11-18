@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_groups.xml" value="0.17831813576494426" />
         <entry key="app/src/main/res/drawable/box.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.2635416666666667" />
@@ -12,7 +13,7 @@
         <entry key="app/src/main/res/layout/activity_group1_feedback.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_group1_leave.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/activity_group1_leave_feedback.xml" value="0.159375" />
-        <entry key="app/src/main/res/layout/activity_group_creation.xml" value="0.1254812107862805" />
+        <entry key="app/src/main/res/layout/activity_group_creation.xml" value="0.16458333333333333" />
         <entry key="app/src/main/res/layout/activity_group_info.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_group_info1.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_group_joined.xml" value="0.10416666666666667" />

@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //TODO: Create dummy groups
         for (int i = 0; i < 5; i++) {
             GroupInfo.groups_create.add(new GroupInfo());
             GroupInfo.joined_groups.add(new GroupInfo());

@@ -26,6 +26,7 @@ public class GroupsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        //TODO: Dynamically create group cards
         //root_layout = (LinearLayout)  inflater.inflate(R.layout.fragment_groups, container, false);
 
 
@@ -61,8 +62,14 @@ public class GroupsFragment extends Fragment {
         super.onViewStateRestored(savedInstanceState);
         View root = binding.getRoot();
         View group1 = root.findViewById(R.id.group1_groups);
+        View group2 = root.findViewById(R.id.group3_groups);
         //TODO Fix visibility (Sruthi)
         Bundle bundle = getArguments();
+        if (GroupInfo.group_test_bool) {
+            group2.setVisibility(View.VISIBLE);
+        } else {
+            group2.setVisibility(View.GONE);
+        }
         if (GroupInfo.test_bool) {
             group1.setVisibility(View.VISIBLE);
         } else {
