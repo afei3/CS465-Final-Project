@@ -19,6 +19,8 @@ import com.example.sportinate.R;
 import java.io.Serializable;
 
 public class BrowseActivity extends AppCompatActivity {
+    public static String user_name;
+    public static String user_descrip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +45,21 @@ public class BrowseActivity extends AppCompatActivity {
         if (bundle != null && bundle.getInt("fragmentNumber") == 1) {
             ProfileFragment myFragment = new ProfileFragment();
             Bundle bundle3= new Bundle();
-            Serializable se = getIntent().getSerializableExtra("key");
-            if(se instanceof UserInfo){
-                UserInfo db = (UserInfo) se;
-                String name_user = db.getName();
-                String descrip_user = db.getDescrip();
-                bundle3.putString("name",name_user);
-                bundle3.putString("descrip",descrip_user);
-                myFragment.setArguments(bundle3);
-            }
+//            Serializable se = getIntent().getSerializableExtra("key");
+//            if(se instanceof UserInfo){
+//                UserInfo db = (UserInfo) se;
+//                String name_user = db.getName();
+//                String descrip_user = db.getDescrip();
+//                bundle3.putString("name",name_user);
+//                bundle3.putString("descrip",descrip_user);
+//                myFragment.setArguments(bundle3);
+//            }
+            bundle3.putString("name",user_name);
+            bundle3.putString("descrip",user_descrip);
+            myFragment.setArguments(bundle3);
+
+            ProfileFragment.user_name1 = user_name;
+            ProfileFragment.user_descrip1 = user_descrip;
 
             navView.setSelectedItemId(R.id.navigation_profile);
         } else if (bundle != null && bundle.getInt("fragmentNumber") == 2) {

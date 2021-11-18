@@ -239,6 +239,34 @@ public class profile_creation extends AppCompatActivity{
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+//                String name=nameET.getText().toString();
+//                String id=idET.getText().toString();
+//                String floor=floorET.getText().toString();
+//                String text1=text1ET.getText().toString();
+//                String text2=text2ET.getText().toString();
+//                String text3=text3ET.getText().toString();
+//                String text4=text4ET.getText().toString();
+//                FileOutputStream fos=null;
+//                //抛出异常
+//                try {
+//                    fos=openFileOutput("login",MODE_APPEND);
+//
+//                    fos.write((name+" "+id+" "+floor+" "+text1+" "+text2+" "+text3+" "+text4).getBytes());
+//                    fos.flush();
+//                }catch (FileNotFoundException e){
+//                    e.printStackTrace();
+//                }catch (IOException e){
+//                    e.printStackTrace();
+//                }finally {
+//                    if(fos!=null){
+//                        try {
+//                            fos.close();
+//                        }catch (IOException e){
+//                            e.printStackTrace();
+//                        }
+//                    }
+
                 Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
                 intent.putExtra("group", group);
                 startActivity(intent);

@@ -118,11 +118,4 @@ public class ProfileInfo implements Serializable {
         this.location = location;
     }
 
-    public String getMessage() {
-        return this.message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 }

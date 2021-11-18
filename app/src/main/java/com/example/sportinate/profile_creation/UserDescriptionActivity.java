@@ -12,7 +12,6 @@ import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.profile_creation.UserInfo;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -48,7 +47,8 @@ public class UserDescriptionActivity extends AppCompatActivity {
 
                 intent.putExtra("key", user);
 
-
+                BrowseActivity.user_name = message1;
+                BrowseActivity.user_descrip = message2;
 
 
                 intent.putExtra("fragmentNumber", 1);

@@ -38,7 +38,8 @@ public class ProfileFragment extends Fragment {
     private ProfileViewModel profileViewModel;
     private FragmentProfileBinding binding;
 
-
+    public static String user_name1;
+    public static String user_descrip1;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -49,6 +50,22 @@ public class ProfileFragment extends Fragment {
         View root = binding.getRoot();
 
 
+
+        Bundle bundle = getArguments();
+        if (bundle != null ) {
+            TextView user_name = root.findViewById(R.id.name_text);
+            String str = bundle.getString("name");
+            user_name.setText(str);
+
+            TextView descrip_name = root.findViewById(R.id.description_text);
+            String str2 = bundle.getString("descrip");
+            descrip_name.setText(str2);
+        }
+
+        TextView user_name = root.findViewById(R.id.name_text);
+        user_name.setText(user_name1);
+        TextView descrip_name = root.findViewById(R.id.description_text);
+        descrip_name.setText(user_descrip1);
 //        final TextView textView = binding.textProfile;
 //        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override
@@ -120,16 +137,7 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), com.example.sportinate.profile_creation.UserDescriptionActivity.class);
             startActivity(intent);
         });
-        Bundle bundle = getArguments();
-        if (bundle != null ) {
-            TextView user_name = root.findViewById(R.id.name_text);
-            String str = bundle.getString("name");
-            user_name.setText(str);
 
-            TextView descrip_name = root.findViewById(R.id.description_text);
-            String str2 = bundle.getString("descrip");
-            descrip_name.setText(str2);
-        }
         return root;
     }
 
