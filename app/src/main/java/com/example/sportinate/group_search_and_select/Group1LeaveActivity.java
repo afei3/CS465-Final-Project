@@ -2,6 +2,8 @@ package com.example.sportinate.group_search_and_select;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 
 import android.content.DialogInterface;
@@ -41,6 +43,7 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
                     public void onClick(DialogInterface dialog,
                                         int which) {
                         //TODO new activity comes up saying you have left the group
+                        GroupInfo.test_bool = false;
                         Intent intent = new Intent (Group1LeaveActivity.this, Group1LeaveFeedbackActivity.class);
                         startActivity(intent);
                     }
