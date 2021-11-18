@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Select skill level for your group"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 android:layout_marginLeft="20dp"
                 android:clickable="true"
                 android:tooltipText="@string/new_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -110,10 +110,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/white"
                 android:clickable="true"
                 android:tooltipText="@string/intermediate_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -122,10 +121,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/white"
                 android:clickable="true"
                 android:tooltipText="@string/advanced_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -136,7 +134,7 @@
                 android:layout_marginLeft="20dp"
                 android:clickable="true"
                 android:tooltipText="@string/expert_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -157,7 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Choose a day"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Spinner
@@ -173,7 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Time slot"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -187,7 +185,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="From"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
@@ -197,12 +195,13 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="12"
+            android:textSize="16sp"
             android:inputType="number|time" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=":"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
@@ -212,6 +211,7 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="00"
+            android:textSize="16sp"
             android:inputType="number|time" />
 
         <Spinner
@@ -234,7 +234,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="To    "
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
@@ -244,12 +244,13 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="01"
+            android:textSize="16sp"
             android:inputType="number|time" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=":"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
@@ -259,6 +260,7 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="00"
+            android:textSize="16sp"
             android:inputType="number|time" />
 
         <Spinner
@@ -281,6 +283,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textSize="16sp"
         android:hint="ARC"
         />
     <TextView
@@ -296,7 +299,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="What type of experience are you looking for?"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -347,7 +350,7 @@
                 android:layout_marginLeft="20dp"
                 android:clickable="true"
                 android:tooltipText="@string/casual_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -356,10 +359,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/white"
                 android:clickable="true"
                 android:tooltipText="@string/competitive_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
@@ -368,10 +370,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/white"
                 android:clickable="true"
                 android:tooltipText="@string/either_tooltip"
-                app:backgroundTint="@color/white"
+                app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
 
