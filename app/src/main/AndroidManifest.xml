@@ -35,6 +35,15 @@
             android:exported="false"
             android:label="@string/title_activity_browse" />
         <activity
+            android:name=".profile_creation.profile_creation_comfirm"
+            android:exported="false" />
+        <activity
+            android:name=".profile_creation.profile_creation"
+            android:exported="false" />
+        <activity
+            android:name=".profile_creation.EditSportActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

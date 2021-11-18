@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             //TODO change to go to profile activity
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
-                intent.putExtra("fragmentNumber",1); //for example
+                Intent intent = new Intent(MainActivity.this, com.example.sportinate.profile_creation.profile_creation.class);
+                intent.putExtra("fragmentNumber",2); //for example
                 startActivity(intent);
             }
         });
