@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import com.example.sportinate.ProfileInfo;
-
+import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.GroupInfo;
@@ -251,9 +251,12 @@ public class profile_creation extends AppCompatActivity{
                 String text6=commitment;
                 String text7=location;
                 FileOutputStream fos=null;
+
+                ProfileFragment.sport_name1 = sport_name;
+                ProfileFragment.sport_level1 = skill_level;
                 //抛出异常
                 try {
-                    fos=openFileOutput("login",MODE_APPEND);
+                    fos=openFileOutput("user_sport",MODE_PRIVATE);
 
                     fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
                     fos.flush();

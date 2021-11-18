@@ -42,6 +42,10 @@ public class ProfileFragment extends Fragment {
     public static String user_descrip1;
 
 
+    public static String sport_name1;
+    public static String sport_level1;
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         profileViewModel =
@@ -66,6 +70,14 @@ public class ProfileFragment extends Fragment {
         user_name.setText(user_name1);
         TextView descrip_name = root.findViewById(R.id.description_text);
         descrip_name.setText(user_descrip1);
+
+        TextView sport_1 = root.findViewById(R.id.sport_list);
+        if(sport_name1 != null) {
+            String input = sport_name1 + ": " + sport_level1;
+            sport_1.setText(input);
+            sport_1.setVisibility(View.VISIBLE);
+        }
+        //sport_1.setText("input");
 //        final TextView textView = binding.textProfile;
 //        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override

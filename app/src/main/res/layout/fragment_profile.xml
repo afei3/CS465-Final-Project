@@ -140,7 +140,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:textSize="22sp"
-                        android:text="Sport"
+                        android:text="Sport:"
                         android:layout_weight="0.5"
                         android:textColor="@color/black"
                         android:layout_gravity="left" />
@@ -153,7 +153,6 @@
                         android:layout_marginBottom="5dp"
                         />
                     <LinearLayout
-                        android:id="@+id/sport_list"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:orientation="vertical"
@@ -161,24 +160,19 @@
                         android:layout_marginBottom="5dp"
                         android:clickable="true"
                         android:focusable="true">
-                        <ScrollView
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="20dp"
-                            xmlns:android="http://schemas.android.com/apk/res/android">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:textSize="22sp"
-                                android:text="Soccer: Beginner
-                                \nBasketball: Beginner
-                                \nTennis: Competitive\n\n\n"
-                                android:layout_weight="0.5"
-                                android:textColor="@color/black"
-                                android:layout_gravity="left" />
-                        </ScrollView>
+
+                        <TextView
+                            android:id="@+id/sport_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:visibility="gone"
+                            android:textSize="22sp"
+
+                            android:layout_weight="0.5"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left" />
+
                     </LinearLayout>
                     <Button
                         android:id="@+id/sprot_edit"

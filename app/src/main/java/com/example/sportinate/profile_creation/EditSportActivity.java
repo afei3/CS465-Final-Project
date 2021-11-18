@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,9 @@ import java.io.IOException;
 public class EditSportActivity extends AppCompatActivity {
     public GroupInfo group;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +35,7 @@ public class EditSportActivity extends AppCompatActivity {
         FileInputStream fis=null;
         byte[] buffer=null;
         try {
-            fis=openFileInput("login");
+            fis=openFileInput("user_sport");
             buffer=new  byte[fis.available()];
             fis.read(buffer);
         }catch (FileNotFoundException e){
@@ -55,7 +59,7 @@ public class EditSportActivity extends AppCompatActivity {
             //TextView text5TV=(TextView)findViewById(R.id.text2);
             TextView text6TV = (TextView) findViewById(R.id.sport_commitment1);
             TextView text7TV = (TextView) findViewById(R.id.sport_location1);
-
+            ImageView image1TV = (ImageView) findViewById(R.id.sport_image1);
 
             String data = new String(buffer);
             String text1 = data.split(" ")[0];
@@ -74,6 +78,7 @@ public class EditSportActivity extends AppCompatActivity {
             //text5TV.setText("Ymin："+text5);
             text6TV.setText("Commitment: " + text6);
             text7TV.setText("Location: " + text7);
+
 
             View sport1 = findViewById(R.id.sport1);
             sport1.setVisibility(View.VISIBLE);
