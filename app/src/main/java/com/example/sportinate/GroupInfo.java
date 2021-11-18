@@ -18,7 +18,7 @@ public class GroupInfo {
     public String endMinute;
     public String endAmpm;
 
-
+    public String location;
     public String commitment;
     public String message;
 
@@ -107,6 +107,14 @@ public class GroupInfo {
 
     public void setCommitment(String commitment) {
         this.commitment = commitment;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getMessage() {

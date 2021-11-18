@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:paddingBottom="70dp"
@@ -42,32 +42,107 @@
         android:text="Select skill level for your group"
         android:textSize="12sp" />
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_new"
+        android:orientation="horizontal"
+        >
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New"
-            android:onClick="onSkillRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_intermediate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Intermediate"
-            android:onClick="onSkillRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_advanced"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Advanced"
-            android:onClick="onSkillRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_expert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Expert"
-            android:onClick="onSkillRadioButtonClicked"/>
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkillRadioButtonClicked"
+                android:shadowColor="#6E4848"
+                android:text="New"
+                android:textSize="18sp" />
+
+
+            <RadioButton
+                android:id="@+id/radio_intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkillRadioButtonClicked"
+                android:text="Intermediate"
+                android:textSize="18sp" />
+
+
+            <RadioButton
+                android:id="@+id/radio_advanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkillRadioButtonClicked"
+                android:text="Advanced"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkillRadioButtonClicked"
+                android:text="Expert"
+                android:textSize="18sp" />
 
     </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/new_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:tooltipText="@string/new_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/intermediate_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:tooltipText="@string/intermediate_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/advanced_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:tooltipText="@string/advanced_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/expert_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:tooltipText="@string/expert_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -109,7 +184,7 @@
         >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="From"
             android:textSize="12sp"
@@ -156,9 +231,9 @@
         >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="To  "
+            android:text="To    "
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -194,7 +269,20 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Location"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="ARC"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -211,33 +299,92 @@
         android:textSize="12sp"
         android:textStyle="bold" />
 
-
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_casual"
+
+        <RadioButton
+            android:id="@+id/radio_casual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="Casual"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_competitive"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_competitive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="Competitive"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_either"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_either"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
             android:text="Either"
-            android:onClick="onRadioButtonClicked"/>
+            android:textSize="18sp" />
 
     </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/casual_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:tooltipText="@string/casual_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/competitive_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:tooltipText="@string/competitive_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/either_tooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:tooltipText="@string/either_tooltip"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_info_black_24dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Group Message(Optional)"
+        android:text="Group Description(Optional)"
         android:textSize="34sp"
         android:textStyle="bold" />
 
@@ -246,7 +393,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:ems="10"
-        android:hint="Write something for your group....."
+        android:hint="Include any additional info you want your group to know."
         android:inputType="textMultiLine"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
