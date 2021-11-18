@@ -2,6 +2,7 @@ package com.example.sportinate.group_search_and_select;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 
 import android.content.Intent;
@@ -24,6 +25,7 @@ public class Group1InfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //TODO If no profile, takes to sign-in page (Sruthi)
                 //TODO make group show up in My Groups page
+                GroupInfo.test_bool = true;
                 Intent intent = new Intent (Group1InfoActivity.this, Group1FeedbackActivity.class);
                 startActivity(intent);
             }
