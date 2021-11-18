@@ -4,12 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class EditSportActivity extends AppCompatActivity {
     public GroupInfo group;
@@ -19,7 +24,62 @@ public class EditSportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_sports);
         group = (GroupInfo) getIntent().getSerializableExtra("group");
+
+
+
         //TODO: send group information to group list
+        FileInputStream fis=null;
+        byte[] buffer=null;
+        try {
+            fis=openFileInput("login");
+            buffer=new  byte[fis.available()];
+            fis.read(buffer);
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            if(fis!=null){
+                try {
+                    fis.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+        if (buffer != null) {
+            TextView text1TV = (TextView) findViewById(R.id.sport_name1);
+            //TextView text2TV=(TextView)findViewById(R.id.date);
+            TextView text3TV = (TextView) findViewById(R.id.sport_level1);
+            //TextView text4TV=(TextView)findViewById(R.id.text1);
+            //TextView text5TV=(TextView)findViewById(R.id.text2);
+            TextView text6TV = (TextView) findViewById(R.id.sport_commitment1);
+            TextView text7TV = (TextView) findViewById(R.id.sport_location1);
+
+
+            String data = new String(buffer);
+            String text1 = data.split(" ")[0];
+            //String text2=data.split(" ")[1];
+            String text3 = data.split(" ")[2];
+            //String text4=data.split(" ")[3];
+            //String text5=data.split(" ")[4];
+            String text6 = data.split(" ")[5];
+            String text7 = data.split(" ")[6];
+
+
+            text1TV.setText(text1 + ":");
+            //text2TV.setText("房间号："+text2);
+            text3TV.setText("Level: " + text3);
+            //text4TV.setText("Xmin："+text4);
+            //text5TV.setText("Ymin："+text5);
+            text6TV.setText("Commitment: " + text6);
+            text7TV.setText("Location: " + text7);
+
+            View sport1 = findViewById(R.id.sport1);
+            sport1.setVisibility(View.VISIBLE);
+        }
+
+
 
         Button add_sport_button = findViewById(R.id.add_new_sport);
         add_sport_button.setOnClickListener(new View.OnClickListener() {

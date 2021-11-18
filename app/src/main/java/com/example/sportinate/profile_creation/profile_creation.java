@@ -12,12 +12,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import com.example.sportinate.ProfileInfo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.group_creation.GroupCreationReviewActivity;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class profile_creation extends AppCompatActivity{
     String sport_name ="";
@@ -26,8 +31,8 @@ public class profile_creation extends AppCompatActivity{
     String start_ampm="";
     String end_ampm="";
     String commitment="";
-    String message="";
-    GroupInfo group = new GroupInfo();
+    String location="";
+    ProfileInfo profile = new ProfileInfo();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +56,7 @@ public class profile_creation extends AppCompatActivity{
                                        int position, long id) {
                 Log.v("item", (String) parent.getItemAtPosition(position));
                 sport_name = (String) parent.getItemAtPosition(position);
-                group.sportName = (String) parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -77,7 +82,7 @@ public class profile_creation extends AppCompatActivity{
                                        int position, long id) {
                 Log.v("item", (String) parent.getItemAtPosition(position));
                 date = (String) parent.getItemAtPosition(position);
-                group.date = (String) parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -89,8 +94,7 @@ public class profile_creation extends AppCompatActivity{
 
         //****** start hour, start minute, start am/pm *****
         EditText startHour = (EditText) findViewById(R.id.start_hour);
-        group.startHour = "12";
-        startHour.setText(group.startHour);
+        startHour.setText("12");
 
         startHour.addTextChangedListener(new TextWatcher() {
 
@@ -103,14 +107,14 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.startHour = s.toString();
+
 
             }
         });
 
         EditText startMinute = (EditText) findViewById(R.id.start_minute);
-        group.startMinute ="00";
-        startMinute.setText(group.startMinute);
+
+        startMinute.setText("00");
         startMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -123,7 +127,7 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.startMinute = s.toString();
+
 
             }
         });
@@ -143,7 +147,7 @@ public class profile_creation extends AppCompatActivity{
                                        int position, long id) {
 
                 start_ampm = (String) parent.getItemAtPosition(position);
-                group.startAmpm = (String) parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -155,8 +159,8 @@ public class profile_creation extends AppCompatActivity{
 
 
         EditText endHour = (EditText) findViewById(R.id.end_hour);
-        group.endHour = "01";
-        endHour.setText(group.endHour);
+
+        endHour.setText("01");
 
         endHour.addTextChangedListener(new TextWatcher() {
 
@@ -169,14 +173,14 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.endHour = s.toString();
+
 
             }
         });
 
         EditText endMinute = (EditText) findViewById(R.id.end_minute);
-        group.endMinute ="00";
-        endMinute.setText(group.endMinute);
+
+        endMinute.setText("00");
         endMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -188,7 +192,7 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.endMinute = s.toString();
+
 
             }
         });
@@ -208,7 +212,7 @@ public class profile_creation extends AppCompatActivity{
                                        int position, long id) {
 
                 end_ampm = (String) parent.getItemAtPosition(position);
-                group.endAmpm = (String) parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -228,7 +232,7 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.location = s.toString();
+                location = s.toString();
 
             }
         });
@@ -239,36 +243,35 @@ public class profile_creation extends AppCompatActivity{
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String text1=sport_name;
+                String text2=date;
+                String text3=skill_level;
+                String text4=start_ampm;
+                String text5=end_ampm;
+                String text6=commitment;
+                String text7=location;
+                FileOutputStream fos=null;
+                //抛出异常
+                try {
+                    fos=openFileOutput("login",MODE_APPEND);
 
-//                String name=nameET.getText().toString();
-//                String id=idET.getText().toString();
-//                String floor=floorET.getText().toString();
-//                String text1=text1ET.getText().toString();
-//                String text2=text2ET.getText().toString();
-//                String text3=text3ET.getText().toString();
-//                String text4=text4ET.getText().toString();
-//                FileOutputStream fos=null;
-//                //抛出异常
-//                try {
-//                    fos=openFileOutput("login",MODE_APPEND);
-//
-//                    fos.write((name+" "+id+" "+floor+" "+text1+" "+text2+" "+text3+" "+text4).getBytes());
-//                    fos.flush();
-//                }catch (FileNotFoundException e){
-//                    e.printStackTrace();
-//                }catch (IOException e){
-//                    e.printStackTrace();
-//                }finally {
-//                    if(fos!=null){
-//                        try {
-//                            fos.close();
-//                        }catch (IOException e){
-//                            e.printStackTrace();
-//                        }
-//                    }
-
+                    fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
+                    fos.flush();
+                }catch (FileNotFoundException e){
+                    e.printStackTrace();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }finally {
+                    if (fos != null) {
+                        try {
+                            fos.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
                 Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
-                intent.putExtra("group", group);
+
                 startActivity(intent);
             }
         });
@@ -287,19 +290,19 @@ public class profile_creation extends AppCompatActivity{
         switch(view.getId()) {
             case R.id.radio_new:
                 if (checked)
-                    group.skillLevel = "New";
+                    skill_level = "New";
                 break;
             case R.id.radio_intermediate:
                 if (checked)
-                    group.skillLevel = "Intermediate";
+                    skill_level = "Intermediate";
                 break;
             case R.id.radio_advanced:
                 if (checked)
-                    group.skillLevel = "Advanced";
+                    skill_level = "Advanced";
                 break;
             case R.id.radio_expert:
                 if (checked)
-                    group.skillLevel = "Expert";
+                    skill_level = "Expert";
                 break;
         }
     }
@@ -313,15 +316,15 @@ public class profile_creation extends AppCompatActivity{
         switch(view.getId()) {
             case R.id.radio_casual:
                 if (checked)
-                    group.commitment = "Casual";
+                    commitment = "Casual";
                 break;
             case R.id.radio_competitive:
                 if (checked)
-                    group.commitment = "Competitive";
+                    commitment = "Competitive";
                 break;
             case R.id.radio_either:
                 if (checked)
-                    group.commitment = "Either";
+                    commitment = "Either";
                 break;
         }
     }
