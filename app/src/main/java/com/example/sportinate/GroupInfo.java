@@ -2,8 +2,9 @@ package com.example.sportinate;
 
 import java.security.acl.Group;
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class GroupInfo {
+public class GroupInfo implements Serializable {
     public static ArrayList<GroupInfo> joined_groups = new ArrayList<>();
     public static ArrayList<GroupInfo> groups_create = new ArrayList<>();
     public static boolean test_bool = false;

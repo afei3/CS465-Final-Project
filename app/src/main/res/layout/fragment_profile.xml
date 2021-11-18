@@ -115,7 +115,7 @@
                     android:layout_marginBottom="5dp"
                     />
                 <LinearLayout
-                    android:id="@+id/user_sport"
+                    android:id="@+id/sport_list"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:orientation="vertical"
