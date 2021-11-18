@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="70dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -37,6 +42,65 @@
         android:text="Select skill level for your group"
         android:textSize="12sp" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:onClick="onSkillRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_intermediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermediate"
+            android:onClick="onSkillRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_advanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:onClick="onSkillRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expert"
+            android:onClick="onSkillRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Availability"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Choose a day"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/date_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Time slot"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,20 +108,44 @@
         android:layout_marginTop="10dp"
         >
 
-        <Button
-            android:id="@+id/new_button"
-            android:layout_width="145dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/sportinate_gold"
-            android:text="New" />
+            android:text="From"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/advanced_button"
-            android:layout_width="145dp"
+        <EditText
+            android:id="@+id/start_hour"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@color/sportinate_gold"
-            android:text="Advanced" />
+            android:gravity="center_horizontal"
+            android:ems="2"
+            android:text="12"
+            android:inputType="number|time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/start_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:ems="2"
+            android:text="00"
+            android:inputType="number|time" />
+
+        <Spinner
+            android:id="@+id/start_time_spinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -67,21 +155,102 @@
         android:layout_marginTop="10dp"
         >
 
-        <Button
-            android:id="@+id/intermediate_button"
-            android:layout_width="145dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/sportinate_gold"
-            android:text="Intermediate" />
+            android:text="To  "
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/expert_button"
-            android:layout_width="145dp"
+        <EditText
+            android:id="@+id/end_hour"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/sportinate_gold"
-            android:layout_marginLeft="10dp"
-            android:text="Expert" />
+            android:gravity="center_horizontal"
+            android:ems="2"
+            android:text="01"
+            android:inputType="number|time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/end_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:ems="2"
+            android:text="00"
+            android:inputType="number|time" />
+
+        <Spinner
+            android:id="@+id/end_time_spinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Commitment Level"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="What type of experience are you looking for?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casual"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_competitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Competitive"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_either"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Either"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Group Message(Optional)"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:hint="Write something for your group....."
+        android:inputType="textMultiLine"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,17 +264,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue_button"
-            android:layout_marginBottom="20dp"
-            android:text="Back" />
+
+            android:text="Cancel" />
 
         <Button
             android:id="@+id/next_button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginBottom="20dp"
             android:backgroundTint="@color/blue_button"
             android:text="Next" />
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

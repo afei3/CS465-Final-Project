@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sportinate">
         <activity
+            android:name=".group_creation.GroupCreationConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".group_creation.GroupCreationReviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".group_search_and_select.Group1LeaveFeedbackActivity"
             android:exported="false" />
         <activity
@@ -17,9 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".group_search_and_select.Group1FeedbackActivity"
-            android:exported="false" />
-        <activity
-            android:name=".group_creation.GroupCreation2Activity"
             android:exported="false" />
         <activity
             android:name=".group_creation.GroupCreationActivity"
