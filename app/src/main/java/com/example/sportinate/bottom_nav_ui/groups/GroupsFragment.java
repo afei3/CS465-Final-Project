@@ -22,20 +22,20 @@ public class GroupsFragment extends Fragment {
 
     private GroupsViewModel groupsViewModel;
     private FragmentGroupsBinding binding;
-    private LinearLayout root_layout;
+    //private LinearLayout root_layout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        root_layout = (LinearLayout)  inflater.inflate(R.layout.fragment_groups, container, false);
+        //root_layout = (LinearLayout)  inflater.inflate(R.layout.fragment_groups, container, false);
 
 
-        for (int i = 0; i < GroupInfo.joined_groups.size(); i++) {
+        /*for (int i = 0; i < GroupInfo.joined_groups.size(); i++) {
             LinearLayout imageView = (LinearLayout) getView().findViewById(R.id.group1_groups);
             LinearLayout a = new LinearLayout(root_layout.getContext());
             imageView.addView(a);
             System.out.println(i);
 
-        }
+        }*/
         groupsViewModel =
                 new ViewModelProvider(this).get(GroupsViewModel.class);
 
@@ -66,7 +66,7 @@ public class GroupsFragment extends Fragment {
         if (GroupInfo.test_bool) {
             group1.setVisibility(View.VISIBLE);
         } else {
-            group1.setVisibility(View.INVISIBLE);
+            group1.setVisibility(View.GONE);
         }
 
     }

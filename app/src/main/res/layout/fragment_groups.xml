@@ -226,7 +226,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:textSize="20sp"
-                    android:text="Basketball"
+                    android:text="Soccer"
                     android:textColor="@color/black"
                     android:layout_gravity="left" />
 
@@ -236,7 +236,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:textSize="16sp"
-                    android:text="Level: Casual"
+                    android:text="Level: Competitive"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -245,7 +245,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:textSize="16sp"
-                    android:text="Day/Time: Tues and Fri 5-7pm"
+                    android:text="Day/Time: Mon and Sat 3-4pm"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -255,7 +255,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="15dp"
                     android:textSize="16sp"
-                    android:text="Location: ARC"
+                    android:text="Location: Morrow Plots"
                     android:layout_gravity="left" />
             </LinearLayout>
 
@@ -269,7 +269,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="80dp"
-                    android:src="@drawable/bball">
+                    android:src="@drawable/soccer">
                 </ImageView>
 
                 <ImageView
