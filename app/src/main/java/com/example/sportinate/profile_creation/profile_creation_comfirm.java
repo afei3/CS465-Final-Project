@@ -41,7 +41,7 @@ public class profile_creation_comfirm extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation_comfirm.this, BrowseActivity.class);
                 intent.putExtra("fragmentNumber", 2);
-                GroupInfo.group_test_bool = true;
+                //GroupInfo.group_test_bool = true;
                 startActivity(intent);
             }
         });
