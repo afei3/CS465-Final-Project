@@ -166,6 +166,6 @@ android:orientation="horizontal">
     android:layout_height="wrap_content"
     android:layout_marginLeft="30dp"
     android:backgroundTint="@color/sportinate_gold"
-    android:text="Sumbit" />
+    android:text="Submit" />
 </LinearLayout>
 </LinearLayout>
