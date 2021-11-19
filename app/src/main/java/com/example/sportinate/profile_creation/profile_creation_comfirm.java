@@ -39,7 +39,13 @@ public class profile_creation_comfirm extends AppCompatActivity {
         browse_groups_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation_comfirm.this, EditSportActivity.class);
+
+                //Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation_comfirm.this, EditSportActivity.class);
+
+                Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation_comfirm.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber", 2);
+                //GroupInfo.group_test_bool = true;
+
                 startActivity(intent);
             }
         });
