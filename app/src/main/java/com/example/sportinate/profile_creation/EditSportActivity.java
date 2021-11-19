@@ -35,7 +35,7 @@ public class EditSportActivity extends AppCompatActivity {
         FileInputStream fis=null;
         byte[] buffer=null;
         try {
-            fis=openFileInput("user_sport");
+            fis=openFileInput("user_3");
             buffer=new  byte[fis.available()];
             fis.read(buffer);
         }catch (FileNotFoundException e){
@@ -72,10 +72,9 @@ public class EditSportActivity extends AppCompatActivity {
 
 
             text1TV.setText(text1 + ":");
-            //text2TV.setText("房间号："+text2);
+
             text3TV.setText("Level: " + text3);
-            //text4TV.setText("Xmin："+text4);
-            //text5TV.setText("Ymin："+text5);
+
             text6TV.setText("Commitment: " + text6);
             text7TV.setText("Location: " + text7);
 

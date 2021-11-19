@@ -249,14 +249,19 @@ public class profile_creation extends AppCompatActivity{
                 String text4=start_ampm;
                 String text5=end_ampm;
                 String text6=commitment;
+                if (text3 == "")
+                    text3 = "Unknown";
+                if (text6 == "")
+                    text6 = "Either";
                 String text7=location;
+                if (text7 == "")
+                    text7 = "Arc";
                 FileOutputStream fos=null;
 
                 ProfileFragment.sport_name1 = sport_name;
                 ProfileFragment.sport_level1 = skill_level;
-                //抛出异常
                 try {
-                    fos=openFileOutput("user_sport",MODE_PRIVATE);
+                    fos=openFileOutput("user_3",MODE_PRIVATE);
 
                     fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
                     fos.flush();
