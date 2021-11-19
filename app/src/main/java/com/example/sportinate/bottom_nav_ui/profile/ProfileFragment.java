@@ -27,7 +27,7 @@ import com.example.sportinate.group_search_and_select.Group1LeaveActivity;
 import com.example.sportinate.profile_creation.UserDescriptionActivity;
 import com.example.sportinate.profile_creation.UserInfo;
 import com.example.sportinate.profile_creation.profile_creation;
-
+import com.example.sportinate.profile_creation.EditSportActivity;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,6 +44,13 @@ public class ProfileFragment extends Fragment {
 
     public static String sport_name1;
     public static String sport_level1;
+
+    public static String sport_name2;
+    public static String sport_level2;
+
+    public static String sport_name3;
+    public static String sport_level3;
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -72,8 +79,18 @@ public class ProfileFragment extends Fragment {
         descrip_name.setText(user_descrip1);
 
         TextView sport_1 = root.findViewById(R.id.sport_list);
-        if(sport_name1 != null) {
+        if(EditSportActivity.sportId ==2) {
             String input = sport_name1 + ": " + sport_level1;
+            sport_1.setText(input);
+            sport_1.setVisibility(View.VISIBLE);
+        }
+        if(EditSportActivity.sportId ==3) {
+            String input = sport_name1 + ": " + sport_level1+ "\n" +sport_name2 + ": " + sport_level2;
+            sport_1.setText(input);
+            sport_1.setVisibility(View.VISIBLE);
+        }
+        if(EditSportActivity.sportId ==4) {
+            String input = sport_name1 + ": " + sport_level1+ "\n" +sport_name2 + ": " + sport_level2+ "\n" +sport_name3 + ": " + sport_level3;
             sport_1.setText(input);
             sport_1.setVisibility(View.VISIBLE);
         }

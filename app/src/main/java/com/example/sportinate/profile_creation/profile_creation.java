@@ -15,7 +15,7 @@ import android.widget.Spinner;
 import com.example.sportinate.ProfileInfo;
 import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.sportinate.profile_creation.EditSportActivity;
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.group_creation.GroupCreationReviewActivity;
@@ -33,7 +33,18 @@ public class profile_creation extends AppCompatActivity{
     String commitment="";
     String location="";
     ProfileInfo profile = new ProfileInfo();
-
+    public static String sport1;
+    public static String sport2;
+    public static String sport3;
+    public static String level1;
+    public static String level2;
+    public static String level3;
+    public static String commitment1;
+    public static String commitment2;
+    public static String commitment3;
+    public static String location1;
+    public static String location2;
+    public static String location3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -238,7 +249,6 @@ public class profile_creation extends AppCompatActivity{
         });
 
 
-
         Button next_button = findViewById(R.id.next_button1);
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -255,29 +265,58 @@ public class profile_creation extends AppCompatActivity{
                     text6 = "Either";
                 String text7=location;
                 if (text7 == "")
-                    text7 = "Arc";
-                FileOutputStream fos=null;
+                    text7 = "ARC";
+                //FileOutputStream fos=null;
 
-                ProfileFragment.sport_name1 = sport_name;
-                ProfileFragment.sport_level1 = skill_level;
-                try {
-                    fos=openFileOutput("user_3",MODE_PRIVATE);
-
-                    fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
-                    fos.flush();
-                }catch (FileNotFoundException e){
-                    e.printStackTrace();
-                }catch (IOException e){
-                    e.printStackTrace();
-                }finally {
-                    if (fos != null) {
-                        try {
-                            fos.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
+                if(EditSportActivity.sportId==1) {
+                    ProfileFragment.sport_name1 = sport_name;
+                    ProfileFragment.sport_level1 = skill_level;
+                    sport1 = text1;
+                    level1 = text3;
+                    commitment1 = text6;
+                    location1 = text7;
                 }
+                else if(EditSportActivity.sportId==2) {
+                    ProfileFragment.sport_name2 = sport_name;
+                    ProfileFragment.sport_level2 = skill_level;
+                    sport2 = text1;
+                    level2 = text3;
+                    commitment2 = text6;
+                    location2 = text7;
+                }
+                else if(EditSportActivity.sportId==3) {
+                    ProfileFragment.sport_name3 = sport_name;
+                    ProfileFragment.sport_level3 = skill_level;
+                    sport3 = text1;
+                    level3 = text3;
+                    commitment3 = text6;
+                    location3 = text7;
+                }
+
+//                try {
+//                    if(EditSportActivity.sportId==1)
+//                        fos=openFileOutput("t1",MODE_PRIVATE);
+//                    if(EditSportActivity.sportId==2)
+//                        fos=openFileOutput("t2",MODE_PRIVATE);
+//                    if(EditSportActivity.sportId==3)
+//                        fos=openFileOutput("t3",MODE_PRIVATE);
+//                    fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
+//                    fos.flush();
+//                }catch (FileNotFoundException e){
+//                    e.printStackTrace();
+//                }catch (IOException e){
+//                    e.printStackTrace();
+//                }finally {
+//                    if (fos != null) {
+//                        try {
+//                            fos.close();
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }
+                EditSportActivity.sportId +=1;
+
                 Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
 
                 startActivity(intent);
