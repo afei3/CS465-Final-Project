@@ -15,8 +15,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:text="Sport"
+        android:layout_marginTop="20dp"
         android:textSize="34sp"
         android:textStyle="bold" />
     <Spinner
@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Skill Level"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -145,7 +145,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Availability"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -274,7 +274,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Location"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -289,7 +289,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Commitment Level"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -384,7 +384,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Group Description(Optional)"
         android:textSize="34sp"
         android:textStyle="bold" />
