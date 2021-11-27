@@ -411,6 +411,7 @@
             android:id="@+id/back_button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:backgroundTint="@color/blue_button"
 
             android:text="Cancel" />
@@ -421,6 +422,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:backgroundTint="@color/blue_button"
+            android:textAllCaps="false"
             android:text="Next" />
     </LinearLayout>
 

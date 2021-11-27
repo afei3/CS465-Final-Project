@@ -13,6 +13,7 @@
         android:layout_marginBottom="50dp"
         android:textSize="50sp"
         android:text="Action Complete"
+        android:fontFamily="@font/opensans_1"
         android:textColor="@color/black"
         android:layout_gravity="center" />
 
@@ -20,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You have now left this group."
+        android:fontFamily="@font/opensans_1"
         android:textSize="18sp"
         android:textColor="@color/black"
         android:gravity="center"

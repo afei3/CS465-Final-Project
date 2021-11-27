@@ -27,6 +27,7 @@
                 android:layout_marginStart="8dp"
                 android:textSize="22sp"
                 android:text="Name: "
+                android:fontFamily="@font/opensans_1"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
@@ -61,6 +62,7 @@
                 android:layout_marginStart="8dp"
                 android:textSize="22sp"
                 android:text="Description: "
+                android:fontFamily="@font/opensans_1"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
             <EditText
@@ -85,7 +87,8 @@
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue_button"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/sportinate_gold"
             android:text="Next" />
     </LinearLayout>
 

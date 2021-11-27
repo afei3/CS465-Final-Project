@@ -22,12 +22,12 @@ public class GroupCreationConfirmationActivity extends AppCompatActivity {
         group = (GroupInfo) getIntent().getSerializableExtra("group");
         //TODO: send group information to group list
 
-
-        TextView text = findViewById(R.id.success_message);
-        String message = getResources().getString(R.string.success_text);
-        message = message.replace("SPORT", group.sportName);
-
-        text.setText(message);
+//
+//        TextView text = findViewById(R.id.success_message);
+//        String message = getResources().getString(R.string.success_text);
+//        message = message.replace("SPORT", group.sportName);
+//
+//        text.setText(message);
 
 
         Button create_another_group_button = findViewById(R.id.create_another_group);

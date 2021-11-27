@@ -44,7 +44,7 @@ public class GroupsFragment extends Fragment {
         View root = binding.getRoot();
 
 
-        LinearLayout grp1_layout = (LinearLayout) root.findViewById(R.id.group1_groups);
+        LinearLayout grp1_layout = (LinearLayout) root.findViewById(R.id.group1);
 
         grp1_layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,21 +61,26 @@ public class GroupsFragment extends Fragment {
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
         View root = binding.getRoot();
-        View group1 = root.findViewById(R.id.group1_groups);
-        View group2 = root.findViewById(R.id.group3_groups);
-        //TODO Fix visibility (Sruthi)
-        Bundle bundle = getArguments();
+        View group1 = root.findViewById(R.id.group1);
+        View group2 = root.findViewById(R.id.group4);
+
+        View none_coord = root.findViewById(R.id.none_coordinating);
+        View none_join = root.findViewById(R.id.none_joined);
+
         if (GroupInfo.group_test_bool) {
             group2.setVisibility(View.VISIBLE);
+            none_coord.setVisibility(View.GONE);
         } else {
             group2.setVisibility(View.GONE);
+            none_coord.setVisibility(View.VISIBLE);
         }
         if (GroupInfo.test_bool) {
             group1.setVisibility(View.VISIBLE);
+            none_join.setVisibility(View.GONE);
         } else {
             group1.setVisibility(View.GONE);
+            none_join.setVisibility(View.VISIBLE);
         }
-
     }
 
     @Override

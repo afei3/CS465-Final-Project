@@ -13,7 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Review group information "
+        android:gravity="center"
+        android:fontFamily="@font/opensans_1"
+        android:text="Review Group Information "
+        android:textColor="@color/black"
         android:textSize="34sp"
         />
 <LinearLayout
@@ -34,6 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sport: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
              />
 
@@ -42,6 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Skill level: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
             />
 
@@ -49,7 +56,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Time: "
+            android:text="Day/Time: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
             />
         <TextView
@@ -57,6 +66,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Location: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
             />
 
@@ -65,6 +76,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Commitment Level: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
         />
 
@@ -73,12 +86,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Group Description: "
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
             android:textSize="18sp" />
 
 
-    </LinearLayout>>
-
-
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -156,8 +169,10 @@ android:orientation="horizontal">
     android:id="@+id/back_button2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:backgroundTint="@color/blue_button"
-
+    android:backgroundTint="@color/sportinate_gold"
+    android:textColor="@color/black"
+    android:layout_marginBottom="20dp"
+    android:textAllCaps="false"
     android:text="Back" />
 
 <Button
@@ -165,7 +180,10 @@ android:orientation="horizontal">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="30dp"
+    android:layout_marginBottom="20dp"
+    android:textColor="@color/black"
     android:backgroundTint="@color/sportinate_gold"
+    android:textAllCaps="false"
     android:text="Submit" />
 </LinearLayout>
 </LinearLayout>
