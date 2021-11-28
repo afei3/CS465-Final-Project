@@ -40,6 +40,25 @@ public class GroupCreationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_creation);
 
+        //*********group name********
+        EditText groupNameText = (EditText) findViewById(R.id.group_name);
+        groupNameText.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {
+            }
+
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+                group.groupName = s.toString();
+
+            }
+        });
+
+
         //******Sport spinner ********
         Spinner sports_spinner = (Spinner) findViewById(R.id.sports_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout

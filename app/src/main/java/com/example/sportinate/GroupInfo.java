@@ -10,6 +10,7 @@ public class GroupInfo implements Serializable {
     public static boolean test_bool = false;
     public static boolean group_test_bool = false;
     public  String sportName;
+    public String groupName;
     public  String skillLevel;
     public String date;
     public String startHour;
@@ -35,6 +36,14 @@ public class GroupInfo implements Serializable {
 
     public void setSportName(String sportName) {
         this.sportName = sportName;
+    }
+
+    public String getGroupName() {
+        return this.groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 
     public String getSkillLevel() {

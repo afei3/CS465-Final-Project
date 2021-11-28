@@ -22,6 +22,9 @@ public class GroupCreationReviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_group_creation_review);
 
         group = (GroupInfo) getIntent().getSerializableExtra("group");
+        TextView groupName = findViewById(R.id.review_group_name);
+        groupName.setText(group.groupName);
+
 
         TextView sportName = findViewById(R.id.review_sport_name);
         sportName.setText(group.sportName);

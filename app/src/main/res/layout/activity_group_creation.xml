@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:paddingBottom="70dp"
-
     xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,6 +13,46 @@
     android:layout_marginRight="20dp"
 >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
+            <EditText
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,7 +70,7 @@
             android:paddingRight="20dp"
             android:paddingBottom="5dp"
             android:text="Sport"
-            android:textSize="40sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <Spinner
@@ -44,6 +84,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
