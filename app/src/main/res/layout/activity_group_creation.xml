@@ -3,49 +3,88 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:paddingBottom="70dp"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="40dp"
-    android:layout_marginRight="40dp">
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+>
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sport"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
         android:layout_marginTop="20dp"
-        android:textSize="34sp"
-        android:textStyle="bold" />
-    <Spinner
-        android:id="@+id/sports_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+     >
 
-    <TextView
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="Sport"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sports_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
         android:layout_marginTop="40dp"
-        android:text="Skill Level"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Select skill level for your group"
-        android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skill Level"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select skill level for your group"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:background="@color/white"
         >
         <RadioGroup
             android:layout_width="wrap_content"
@@ -93,6 +132,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/new_tooltip"
@@ -104,6 +147,14 @@
                 app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="* Hold to view level description"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/intermediate_tooltip"
@@ -140,16 +191,41 @@
 
         </LinearLayout>
     </LinearLayout>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
 
-    <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Availability"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Availability"
-        android:textSize="34sp"
-        android:textStyle="bold" />
-
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -165,6 +241,16 @@
         android:layout_marginTop="10dp"
         android:textSize="34sp"
         android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        >
 
     <TextView
         android:layout_width="match_parent"
@@ -271,25 +357,69 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:hint="ARC"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Location"
-        android:textSize="34sp"
-        android:textStyle="bold" />
-    <EditText
-        android:id="@+id/location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="16sp"
-        android:hint="ARC"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="Commitment Level"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -302,11 +432,17 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_margin="5dp"
+    android:padding="15dp"
+    android:background="@color/white"
+    >
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -342,8 +478,12 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+           <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/casual_tooltip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -353,6 +493,15 @@
                 app:backgroundTint="@android:color/transparent"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/ic_info_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="* Hold to view level description"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/competitive_tooltip"
@@ -378,17 +527,41 @@
 
 
         </LinearLayout>
-
-
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Group Description(Optional)"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group Description(Optional)"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
     <EditText
         android:id="@+id/message"
         android:layout_width="match_parent"
@@ -399,11 +572,14 @@
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_marginTop="40dp"
         android:gravity="bottom|center"
         android:orientation="horizontal">
 

@@ -5,20 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="40dp"
-    android:layout_marginRight="40dp">
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="80dp"
+        android:padding="10dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:gravity="center"
         android:fontFamily="@font/opensans_1"
         android:text="Review Group Information "
         android:textColor="@color/black"
         android:textSize="34sp"
         />
+
 <LinearLayout
 
     android:layout_width="match_parent"
@@ -154,9 +161,10 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
 
 
-</LinearLayout>
 
 <LinearLayout
 android:layout_width="match_parent"
@@ -169,7 +177,7 @@ android:orientation="horizontal">
     android:id="@+id/back_button2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:backgroundTint="@color/sportinate_gold"
+    android:backgroundTint="@color/blue_button"
     android:textColor="@color/black"
     android:layout_marginBottom="20dp"
     android:textAllCaps="false"
