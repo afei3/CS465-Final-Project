@@ -19,6 +19,11 @@
     <string name ="competitive_tooltip">Your goals are primarily to improve your skills or find others to compete with.</string>
     <string name ="either_tooltip">Your goals include a mix between casual and competitive.</string>
 
+
+    <string name ="loc1">ARC</string>
+    <string name ="loc2">Stadium</string>
+    <string name ="loc3">CRCE</string>
+
     <string-array name="sports_array">
         <item>Basketball</item>
         <item>Soccer</item>
@@ -38,8 +43,8 @@
     </string-array>
 
     <string-array name="time_array">
-        <item>AM</item>
         <item>PM</item>
+        <item>AM</item>
     </string-array>
 
 

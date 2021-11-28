@@ -318,6 +318,24 @@ public class GroupCreationActivity extends AppCompatActivity {
         }
     }
 
+    public void onLoc1Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc1);
+
+
+    }
+
+    public void onLoc2Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc2);
+
+
+    }
+    public void onLoc3Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc3);
+
+    }
     //****** commitment level radio button
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?

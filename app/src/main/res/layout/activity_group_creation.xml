@@ -422,6 +422,15 @@
             android:text="Location"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enter the sport location or select from the common locations"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -440,6 +449,54 @@
                 android:textSize="16sp"
                 android:hint="ARC"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text =""
+                    ></TextView>
+
+                <Button
+                    android:id="@+id/common_loc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_blue"
+                    android:shadowColor="#887878"
+                    android:text="@string/loc1"
+                    android:textColor="@color/black"
+                    android:onClick="onLoc1Clicked"
+                ></Button>
+
+                <Button
+                    android:id="@+id/common_loc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:shadowColor="#887878"
+                    android:backgroundTint="@color/light_blue"
+                    android:textColor="@color/black"
+                    android:text="@string/loc2"
+                    android:onClick="onLoc2Clicked"></Button>
+                <Button
+                    android:id="@+id/common_loc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#887878"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/light_blue"
+                    android:textColor="@color/black"
+                    android:text="@string/loc3"
+                    android:onClick="onLoc3Clicked"
+                    ></Button>
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
     </LinearLayout>
