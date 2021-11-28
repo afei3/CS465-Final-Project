@@ -12,7 +12,7 @@
     <color name="blue_button1">#FF0040ff</color>
     <color name ="blue_button">#0083ce</color>
     <color name="light_blue">#B3CEFA</color>
-    <color name="blue_grey1">#cad3e3</color>
-    <color name="blue_grey">#B3CEFA</color>
+    <color name="blue_grey">#cad3e3</color>
+    <color name="blue_grey1">#B3CEFA</color>
 
 </resources>

@@ -231,7 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Choose a day"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <Spinner
@@ -257,7 +257,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Time slot"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <LinearLayout
