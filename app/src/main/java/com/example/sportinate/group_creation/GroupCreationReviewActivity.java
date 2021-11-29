@@ -57,9 +57,9 @@ public class GroupCreationReviewActivity extends AppCompatActivity {
 
         }
         TextView timeTitle = findViewById(R.id.time_title);
-        LinearLayout.LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-        params.setMargins(0,10,0,margin);
-        timeTitle.setLayoutParams(params);
+//        LinearLayout.LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+//        params.setMargins(0,10,0,margin);
+//        timeTitle.setLayoutParams(params);
 
         TextView timeText = findViewById(R.id.review_time);
         timeText.setText(time);

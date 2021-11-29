@@ -22,11 +22,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:fontFamily="@font/opensans_1"
         android:text="Review Group Information "
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="24sp"
         />
 
 <LinearLayout
@@ -34,6 +34,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:background="@color/white"
     android:layout_marginTop="20dp"
     >
 
@@ -47,10 +48,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Group Name: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
-            android:textSize="20sp"
+            android:textSize="18sp"
             />
 
 
@@ -58,7 +62,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sport: "
-            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
@@ -67,8 +73,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="Skill level: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
@@ -78,8 +86,10 @@
             android:id="@+id/time_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="Day/Time: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
@@ -88,8 +98,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="Location: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
@@ -98,8 +110,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="Commitment Level: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp"
@@ -108,8 +122,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="Group Description: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="18sp" />
@@ -121,17 +138,17 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/review_group_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text=""
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black" />
 
 
         <TextView
@@ -139,56 +156,63 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/review_skill"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text=""
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black"
+            />
 
         <TextView
             android:id="@+id/review_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text=""
             android:singleLine="false"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/review_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text=""
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black" />
 
 
         <TextView
             android:id="@+id/review_commitment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/opensans_1"
             android:text=""
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/review_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/opensans_1"
             android:text=""
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </LinearLayout>
     </LinearLayout>
@@ -200,7 +224,7 @@
 android:layout_width="match_parent"
 android:layout_height="0dp"
 android:layout_weight="1"
-android:layout_marginTop="40dp"
+android:layout_marginTop="50dp"
 android:gravity="bottom|center"
 android:orientation="horizontal">
 
