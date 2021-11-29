@@ -139,18 +139,6 @@
             android:layout_gravity="left" />
 
 
-<!--            <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginEnd="8dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:textSize="20sp"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:text="Sport: Basketball"-->
-<!--            android:fontFamily="@font/opensans_1"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:layout_gravity="left" />-->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -187,21 +175,6 @@ Contact Mark for additional questions."
             android:layout_marginBottom="20dp"
             android:background="@android:color/darker_gray"/>
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginEnd="8dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:textSize="18sp"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:fontFamily="@font/opensans_1"-->
-<!--            android:text="Group Info"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:background="@drawable/box"-->
-<!--            android:layout_gravity="left" />-->
-
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,37 +189,7 @@ Contact Mark for additional questions."
             android:layout_gravity="left" />
 
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal">-->
 
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:textSize="18sp"-->
-<!--                android:text="Name"-->
-<!--                android:fontFamily="@font/opensans_1"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_weight="0.5"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:layout_gravity="left" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginEnd="8dp"-->
-<!--                android:textSize="18sp"-->
-<!--                android:text="Contact"-->
-<!--                android:fontFamily="@font/opensans_1"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_weight="0.5"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:layout_gravity="center_horizontal" />-->
-
-<!--        </LinearLayout>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -533,12 +476,5 @@ Contact Mark for additional questions."
             android:layout_gravity="right"
             />
 
-<!--    <Button-->
-<!--        android:id="@+id/join_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Join"-->
-<!--        android:layout_gravity="center"-->
-<!--        />-->
     </LinearLayout>
 </ScrollView>

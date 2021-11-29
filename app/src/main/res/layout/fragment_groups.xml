@@ -20,7 +20,7 @@
             android:textColor="@color/black"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="15dp"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:fontFamily="@font/opensans_1"
             android:text="Groups You're Coordinating">
         </TextView>
@@ -136,7 +136,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="20dp"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:fontFamily="@font/opensans_1"
             android:text="Groups You're In">
         </TextView>
