@@ -36,6 +36,7 @@ public class GroupCreationActivity extends AppCompatActivity {
     String date="";
     String start_ampm="";
 
+
     TimeSlot ts = new TimeSlot();
     GroupInfo group = new GroupInfo();
 
@@ -43,6 +44,7 @@ public class GroupCreationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_creation);
+        getSupportActionBar().setTitle("Create Group");
 
         //*********group name********
         EditText groupNameText = (EditText) findViewById(R.id.group_name);

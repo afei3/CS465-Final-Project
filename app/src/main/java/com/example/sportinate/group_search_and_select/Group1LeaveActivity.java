@@ -18,6 +18,7 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group1_leave);
+        getSupportActionBar().setTitle("Group Information");
 
         Button leave_button = findViewById(R.id.leave_button);
         leave_button.setOnClickListener(this);

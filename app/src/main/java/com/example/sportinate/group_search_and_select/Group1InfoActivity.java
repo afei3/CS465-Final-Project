@@ -18,7 +18,7 @@ public class Group1InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_info1);
-
+        getSupportActionBar().setTitle("Group Information");
         Button join_button = findViewById(R.id.join_button);
         join_button.setOnClickListener(new View.OnClickListener() {
             @Override

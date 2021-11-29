@@ -26,6 +26,7 @@ public class GroupCreationReviewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_creation_review);
+        getSupportActionBar().setTitle("Review Group");
 
         group = (GroupInfo) getIntent().getSerializableExtra("group");
         TextView groupName = findViewById(R.id.review_group_name);

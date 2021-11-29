@@ -49,7 +49,7 @@ public class profile_creation extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitvity_profile_creation);
-
+        getSupportActionBar().setTitle("Make Profile");
 
         //******Sport spinner ********
         Spinner sports_spinner = (Spinner) findViewById(R.id.sports_spinner);
