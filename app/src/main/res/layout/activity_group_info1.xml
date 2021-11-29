@@ -24,8 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textSize="22sp"
-            android:text="Basketball"
+            android:text="ChambanaBallers"
             android:textStyle="bold"
+            android:fontFamily="@font/opensans_1"
             android:layout_weight="0.5"
             android:textColor="@color/black"
             android:layout_gravity="left" />
@@ -36,6 +37,7 @@
             android:layout_marginEnd="8dp"
             android:textSize="22sp"
             android:text="Players: 9/10"
+            android:fontFamily="@font/opensans_1"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_gravity="center_horizontal" />
@@ -51,6 +53,7 @@
             android:textSize="18sp"
             android:layout_marginStart="8dp"
             android:text="Coordinator: Mark Wu"
+            android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
             android:background="@drawable/box"
             android:layout_gravity="left" />
@@ -62,6 +65,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Contact Mark Wu at markwu@illinois.edu or (123)456-7890."
             android:textColor="@color/black"
             android:layout_gravity="left" />
@@ -75,6 +79,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Group Info"
             android:textColor="@color/black"
             android:background="@drawable/box"
@@ -86,6 +91,7 @@
             android:layout_marginEnd="8dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Timing: Tues &amp; Fri 5-7pm"
             android:textColor="@color/black"
             android:layout_gravity="left" />
@@ -96,6 +102,7 @@
             android:layout_marginEnd="8dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Location: ARC Basketball Courts"
             android:textColor="@color/black"
             android:layout_gravity="left" />
@@ -107,6 +114,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Level: Casual"
             android:textColor="@color/black"
             android:layout_gravity="left" />
@@ -119,6 +127,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_1"
             android:text="Description"
             android:textColor="@color/black"
             android:background="@drawable/box"

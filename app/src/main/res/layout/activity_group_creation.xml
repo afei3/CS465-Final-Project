@@ -15,7 +15,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/blue_grey"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
@@ -30,9 +30,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Group Name"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+                android:text="@string/group_name"
+                android:fontFamily="@font/opensans_1"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:hint="FightingIllini"
                 android:textSize="16sp"
                 />
         </LinearLayout>
@@ -57,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/blue_grey"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
      >
 
@@ -69,9 +71,10 @@
             android:paddingTop="5dp"
             android:paddingRight="20dp"
             android:paddingBottom="5dp"
-            android:text="Sport"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="@string/sport"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
+            android:textSize="24sp" />
 
         <Spinner
             android:id="@+id/sports_spinner"
@@ -81,8 +84,7 @@
             android:layout_margin="5dp"
             android:background="@color/white"
             android:padding="15dp"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
     </LinearLayout>
 
 
@@ -105,16 +107,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Skill Level"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="@string/skill_level"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:textColor="@color/black"
             android:text="Select skill level for your group"
-            android:textStyle="bold"
             android:textSize="16sp" />
 
         </LinearLayout>
@@ -140,6 +143,7 @@
                 android:onClick="onSkillRadioButtonClicked"
                 android:shadowColor="#6E4848"
                 android:text="New"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
 
@@ -149,6 +153,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onSkillRadioButtonClicked"
                 android:text="Intermediate"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
 
@@ -158,6 +163,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onSkillRadioButtonClicked"
                 android:text="Advanced"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <RadioButton
@@ -166,6 +172,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onSkillRadioButtonClicked"
                 android:text="Expert"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
     </RadioGroup>
@@ -194,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="* Hold to view level description"
+                    android:text="*Hold to view level description"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -254,9 +261,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Availability"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+                android:text="@string/availability"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_1"
+                android:textSize="24sp" />
 
 
 
@@ -280,8 +288,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Click ADD to add a time slot. You may add multiple!"
-                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Add meeting time(s) for your group using the ADD button"
                 android:textSize="16sp" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -295,8 +303,8 @@
                 android:layout_marginTop="10dp"
                 android:gravity="left"
                 android:text="Time slots:"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <ImageButton
                 android:id="@+id/clear_time"
@@ -334,16 +342,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Choose a day"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
     <Spinner
         android:id="@+id/date_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:textSize="24sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -360,8 +367,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Time slot"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -374,8 +381,8 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="From"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/start_hour"
@@ -384,14 +391,15 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="12"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:inputType="number|time" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=":"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/start_minute"
@@ -400,6 +408,7 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="00"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:inputType="number|time" />
 
@@ -407,8 +416,7 @@
             android:id="@+id/start_time_spinner"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 
@@ -423,8 +431,8 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="To    "
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/end_hour"
@@ -433,14 +441,15 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="01"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:inputType="number|time" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=":"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/end_minute"
@@ -449,6 +458,7 @@
             android:gravity="center_horizontal"
             android:ems="2"
             android:text="00"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:inputType="number|time" />
 
@@ -456,8 +466,7 @@
             android:id="@+id/end_time_spinner"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
 
     </LinearLayout>
     </LinearLayout>
@@ -491,17 +500,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Location"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:textColor="@color/black"
             android:text="Enter the sport location or select from the common locations"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
         </LinearLayout>
         <LinearLayout
@@ -595,17 +605,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Commitment Level"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:text="@string/commitment_level"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans_1"
+        android:textSize="24sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:text="What type of experience are you looking for?"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -673,7 +684,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="* Hold to view level description"
+                    android:text="*Hold to view level description"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -724,9 +735,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Group Description(Optional)"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="@string/group_desc"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_1"
+            android:textSize="24sp" />
     </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -742,9 +754,10 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:ems="10"
-        android:hint="Include any additional info you want your group to know."
+        android:hint="Include any additional info you want your group to know"
         android:inputType="textMultiLine"
         android:scrollbarStyle="insideInset"
+        android:fontFamily="@font/opensans_1"
         android:scrollbars="vertical"
         android:singleLine="false" />
         </LinearLayout>
