@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.sportinate.GroupInfo;
+import com.example.sportinate.TimeSlot;
 import com.example.sportinate.MainActivity;
 import com.example.sportinate.R;
+import com.example.sportinate.TimeSlot;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.group_creation.GroupCreationReviewActivity;
 
@@ -15,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -22,17 +25,16 @@ import android.widget.ArrayAdapter;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.text.TextWatcher;
 import android.text.Editable;
-
+import android.widget.TextView;
+import android.widget.LinearLayout.LayoutParams;
 
 
 public class GroupCreationActivity extends AppCompatActivity {
     String sport_name ="";
     String date="";
-    String skill_level="";
     String start_ampm="";
-    String end_ampm="";
-    String commitment="";
-    String message="";
+
+    TimeSlot ts = new TimeSlot();
     GroupInfo group = new GroupInfo();
 
     @Override
@@ -85,6 +87,7 @@ public class GroupCreationActivity extends AppCompatActivity {
         });
 
 
+        resetTimeSlot();
         //******Date spinner********
         Spinner date_spinner = (Spinner) findViewById(R.id.date_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -101,7 +104,7 @@ public class GroupCreationActivity extends AppCompatActivity {
                                        int position, long id) {
                 Log.v("item", (String) parent.getItemAtPosition(position));
                 date = (String) parent.getItemAtPosition(position);
-                group.date = (String) parent.getItemAtPosition(position);
+                ts.date = (String) parent.getItemAtPosition(position);
             }
 
             @Override
@@ -113,8 +116,7 @@ public class GroupCreationActivity extends AppCompatActivity {
 
         //****** start hour, start minute, start am/pm *****
         EditText startHour = (EditText) findViewById(R.id.start_hour);
-        group.startHour = "12";
-        startHour.setText(group.startHour);
+
 
         startHour.addTextChangedListener(new TextWatcher() {
 
@@ -127,14 +129,14 @@ public class GroupCreationActivity extends AppCompatActivity {
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.startHour = s.toString();
+                ts.startHour = s.toString();
 
             }
         });
 
         EditText startMinute = (EditText) findViewById(R.id.start_minute);
-        group.startMinute ="00";
-        startMinute.setText(group.startMinute);
+
+
         startMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -147,7 +149,7 @@ public class GroupCreationActivity extends AppCompatActivity {
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.startMinute = s.toString();
+                ts.startMinute = s.toString();
 
             }
         });
@@ -167,7 +169,7 @@ public class GroupCreationActivity extends AppCompatActivity {
                                        int position, long id) {
 
                 start_ampm = (String) parent.getItemAtPosition(position);
-                group.startAmpm = (String) parent.getItemAtPosition(position);
+                ts.startAmpm = (String) parent.getItemAtPosition(position);
             }
 
             @Override
@@ -179,8 +181,6 @@ public class GroupCreationActivity extends AppCompatActivity {
 
 
         EditText endHour = (EditText) findViewById(R.id.end_hour);
-        group.endHour = "01";
-        endHour.setText(group.endHour);
 
         endHour.addTextChangedListener(new TextWatcher() {
 
@@ -193,14 +193,13 @@ public class GroupCreationActivity extends AppCompatActivity {
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.endHour = s.toString();
+                ts.endHour = s.toString();
 
             }
         });
 
         EditText endMinute = (EditText) findViewById(R.id.end_minute);
-        group.endMinute ="00";
-        endMinute.setText(group.endMinute);
+
         endMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -212,7 +211,7 @@ public class GroupCreationActivity extends AppCompatActivity {
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-                group.endMinute = s.toString();
+                ts.endMinute = s.toString();
 
             }
         });
@@ -231,14 +230,17 @@ public class GroupCreationActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
 
-                end_ampm = (String) parent.getItemAtPosition(position);
-                group.endAmpm = (String) parent.getItemAtPosition(position);
+
+                ts.endAmpm = (String) parent.getItemAtPosition(position);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
+
+
 
         EditText locationText = (EditText) findViewById(R.id.location);
         locationText.addTextChangedListener(new TextWatcher() {
@@ -275,7 +277,13 @@ public class GroupCreationActivity extends AppCompatActivity {
         });
 
 
-
+        Button back_button = findViewById(R.id.back_button1);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         Button next_button = findViewById(R.id.next_button1);
         next_button.setOnClickListener(new View.OnClickListener() {
@@ -336,6 +344,86 @@ public class GroupCreationActivity extends AppCompatActivity {
         text.setText(R.string.loc3);
 
     }
+
+    public void resetTimeSlot(){
+
+        Spinner date_spinner = (Spinner) findViewById(R.id.date_spinner);
+        ArrayAdapter<CharSequence> date_adapter = ArrayAdapter.createFromResource(this,
+                R.array.dates_array, android.R.layout.simple_spinner_item);
+        date_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        date_spinner.setAdapter(date_adapter);
+
+
+        Spinner start_time_spinner = (Spinner) findViewById(R.id.start_time_spinner);
+        ArrayAdapter<CharSequence> start_adapter = ArrayAdapter.createFromResource(this,
+                R.array.time_array, android.R.layout.simple_spinner_item);
+        start_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        start_time_spinner.setAdapter(start_adapter);
+
+        Spinner end_time_spinner = (Spinner) findViewById(R.id.end_time_spinner);
+        ArrayAdapter<CharSequence> end_adapter = ArrayAdapter.createFromResource(this,
+                R.array.time_array, android.R.layout.simple_spinner_item);
+        end_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        end_time_spinner.setAdapter(end_adapter);
+
+
+
+        EditText startHour = (EditText) findViewById(R.id.start_hour);
+        ts.startHour = "12";
+        startHour.setText(ts.startHour);
+
+        EditText startMinute = (EditText) findViewById(R.id.start_minute);
+        ts.startMinute ="00";
+        startMinute.setText(ts.startMinute);
+
+
+        EditText endHour = (EditText) findViewById(R.id.end_hour);
+        ts.endHour = "01";
+        endHour.setText(ts.endHour);
+
+        EditText endMinute = (EditText) findViewById(R.id.end_minute);
+        ts.endMinute ="00";
+        endMinute.setText(ts.endMinute);
+
+    }
+
+    public void onClearTimeClicked(View view){
+        group.clearTimeSlot();
+        LinearLayout ll = (LinearLayout)  findViewById(R.id.time_slots);
+        ll.removeAllViews();
+
+    }
+
+    public void onAddTimeSlotClicked(View view){
+
+
+        group.addTimeslot(ts);
+
+        //Add ts textview to time slot layout
+
+        View linearLayout =  findViewById(R.id.time_slots);
+
+        TextView timeTextView = new TextView(this);
+        String time="";
+        time += ts.date+" "+ts.startHour+":"+ts.startMinute+ts.startAmpm;
+        time += " - "+ts.endHour+":"+ts.endMinute+ts.endAmpm;
+        timeTextView.setText(time);
+        timeTextView.setTextSize(20);
+        LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT);
+        lp.setMargins(0, 5, 0, 0);
+        timeTextView.setLayoutParams(lp);
+
+        ((LinearLayout) linearLayout).addView(timeTextView);
+
+
+
+        ts = new TimeSlot();
+        resetTimeSlot();
+
+
+    }
+
+
     //****** commitment level radio button
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?

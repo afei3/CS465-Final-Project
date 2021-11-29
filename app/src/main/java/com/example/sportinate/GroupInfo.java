@@ -1,8 +1,10 @@
 package com.example.sportinate;
 
 import java.security.acl.Group;
+import java.sql.Time;
 import java.util.ArrayList;
 import java.io.Serializable;
+import com.example.sportinate.TimeSlot;
 
 public class GroupInfo implements Serializable {
     public static ArrayList<GroupInfo> joined_groups = new ArrayList<>();
@@ -12,14 +14,8 @@ public class GroupInfo implements Serializable {
     public  String sportName;
     public String groupName;
     public  String skillLevel;
-    public String date;
-    public String startHour;
-    public String startMinute;
-    public String startAmpm;
 
-    public String endHour;
-    public String endMinute;
-    public String endAmpm;
+    public ArrayList<TimeSlot> timeSlots = new ArrayList<>();
 
     public String location;
     public String commitment;
@@ -54,62 +50,14 @@ public class GroupInfo implements Serializable {
         this.skillLevel = skillLevel;
     }
 
-    public String getDate() {
-        return this.date;
+    public ArrayList<TimeSlot> getTimeSlots() {
+        return this.timeSlots;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void addTimeslot(TimeSlot ts) {
+        this.timeSlots.add(ts);
     }
-
-    public String getStartHour() {
-        return this.startHour;
-    }
-
-    public void setStartHour(String startHour) {
-        this.startHour = startHour;
-    }
-
-    public String getStartMinute() {
-        return this.startMinute;
-    }
-
-    public void setStartMinute(String startMinute) {
-        this.startMinute = startMinute;
-    }
-
-
-    public String getStartAmpm() {
-        return this.startAmpm;
-    }
-
-    public void setStartAmpm(String startAmpm) {
-        this.startAmpm = startAmpm;
-    }
-
-    public String getEndHour() {
-        return this.endHour;
-    }
-
-    public void setEndHour(String endHour) {
-        this.endHour = endHour;
-    }
-
-    public String getEndMinute() {
-        return this.endMinute;
-    }
-
-    public void setEndMinute(String endMinute) {
-        this.endMinute = endMinute;
-    }
-
-    public String getEndAmpm() {
-        return this.endAmpm;
-    }
-
-    public void setEndAmpm(String endAmpm) {
-        this.endAmpm = endAmpm;
-    }
+    public void clearTimeSlot(){this.timeSlots.clear();}
 
 
     public String getCommitment() {
