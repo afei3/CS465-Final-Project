@@ -28,6 +28,8 @@ import android.text.Editable;
 import android.widget.TextView;
 import android.widget.LinearLayout.LayoutParams;
 
+import java.util.Arrays;
+
 
 public class GroupCreationActivity extends AppCompatActivity {
     String sport_name ="";
@@ -88,6 +90,8 @@ public class GroupCreationActivity extends AppCompatActivity {
 
 
         resetTimeSlot();
+
+
         //******Date spinner********
         Spinner date_spinner = (Spinner) findViewById(R.id.date_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -102,9 +106,9 @@ public class GroupCreationActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
-                Log.v("item", (String) parent.getItemAtPosition(position));
-                date = (String) parent.getItemAtPosition(position);
-                ts.date = (String) parent.getItemAtPosition(position);
+
+                //ts.date = (String) parent.getItemAtPosition(position);
+                ts.date = Arrays.asList((getResources().getStringArray(R.array.dates_short_array))).get(position);
             }
 
             @Override

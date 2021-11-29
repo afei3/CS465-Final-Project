@@ -42,6 +42,16 @@
         <item>Sunday</item>
     </string-array>
 
+    <string-array name="dates_short_array">
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thurs</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
     <string-array name="time_array">
         <item>PM</item>
         <item>AM</item>

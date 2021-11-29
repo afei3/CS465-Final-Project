@@ -468,6 +468,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
+            android:backgroundTint="@color/blue_button"
             android:onClick="onAddTimeSlotClicked"
             android:text="Add" />
 
@@ -524,6 +525,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+
                 android:layout_marginTop="5dp"
                 >
                 <TextView
@@ -538,6 +540,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/light_blue"
                     android:shadowColor="#887878"
+
                     android:text="@string/loc1"
                     android:textColor="@color/black"
                     android:onClick="onLoc1Clicked"
@@ -549,6 +552,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:shadowColor="#887878"
+
                     android:backgroundTint="@color/light_blue"
                     android:textColor="@color/black"
                     android:text="@string/loc2"
@@ -559,6 +563,7 @@
                     android:layout_height="wrap_content"
                     android:shadowColor="#887878"
                     android:layout_marginLeft="5dp"
+
                     android:backgroundTint="@color/light_blue"
                     android:textColor="@color/black"
                     android:text="@string/loc3"
