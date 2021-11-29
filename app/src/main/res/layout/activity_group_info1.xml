@@ -22,8 +22,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
             android:text="ChambanaBallers"
             android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
@@ -31,133 +31,223 @@
             android:textColor="@color/black"
             android:layout_gravity="left" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="Tues and Fri 5-7pm"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="ARC Basketball Courts"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="Level: Casual"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18sp"
+                    android:text="Players: 9/10"
+                    android:fontFamily="@font/opensans_1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="130dp"
+                    android:src="@drawable/bball">
+                </ImageView>
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="Players: 9/10"
+            android:layout_marginStart="10dp"
+            android:text="Group Coordinator: Mark Wu"
+            android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
+            android:textColor="@color/black"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/opensans_1"
+            android:text="markwu@illinois.edu"
+            android:textColor="@color/black"
+            android:layout_gravity="left" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/opensans_1"
+            android:text="123-465-7890"
+            android:textColor="@color/black"
+            android:layout_gravity="left" />
+
+
+<!--            <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:text="Sport: Basketball"-->
+<!--            android:fontFamily="@font/opensans_1"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="left" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/opensans_1"
+            android:text="What To Expect"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_gravity="center_horizontal" />
-
-        </LinearLayout>
+            android:layout_gravity="left" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:text="Coordinator: Mark Wu"
             android:fontFamily="@font/opensans_1"
+            android:text="Let's play some basketball. No equipment necessary - just come ready to have some fun. Beginners welcome!
+Contact Mark for additional questions."
             android:textColor="@color/black"
-            android:background="@drawable/box"
             android:layout_gravity="left" />
 
-        <TextView
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:layout_marginBottom="20dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Contact Mark Wu at markwu@illinois.edu or (123)456-7890."
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
+            android:background="@android:color/darker_gray"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:fontFamily="@font/opensans_1"-->
+<!--            android:text="Group Info"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:background="@drawable/box"-->
+<!--            android:layout_gravity="left" />-->
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Group Info"
-            android:textColor="@color/black"
-            android:background="@drawable/box"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Timing: Tues &amp; Fri 5-7pm"
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Location: ARC Basketball Courts"
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Level: Casual"
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/opensans_1"
-            android:text="Description"
-            android:textColor="@color/black"
-            android:background="@drawable/box"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="20dp"
-            android:text="Let's play some basketball. No equipment necessary - just come ready to have some fun. Beginners welcome!"
-            android:textColor="@color/black"
-            android:layout_gravity="left" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
             android:layout_marginStart="8dp"
             android:text="Team Members"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
-            android:background="@drawable/box"
             android:layout_gravity="left" />
 
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:text="Name"-->
+<!--                android:fontFamily="@font/opensans_1"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_gravity="left" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:text="Contact"-->
+<!--                android:fontFamily="@font/opensans_1"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_gravity="center_horizontal" />-->
+
+<!--        </LinearLayout>-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -167,39 +257,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="18sp"
-                android:text="Name"
-                android:textStyle="bold"
-                android:layout_weight="0.5"
-                android:textColor="@color/black"
-                android:layout_gravity="left" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:textSize="18sp"
-                android:text="Contact"
-                android:textStyle="bold"
-                android:layout_weight="0.5"
-                android:textColor="@color/black"
-                android:layout_gravity="center_horizontal" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Mark Wu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -207,9 +268,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="markwu@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -225,9 +287,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Mary Lamb"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -235,9 +298,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="marylamb@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -253,9 +317,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Hansel Gretel"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -263,9 +328,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="hanselgretel@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -281,9 +347,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Jack Stalk"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -291,8 +358,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
+                android:fontFamily="@font/opensans_1"
                 android:text="jackstalk@illinois.edu"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
@@ -309,9 +377,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Ella Cinder"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -319,9 +388,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="ellacinder@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -337,9 +407,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Aurora Beaut"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -347,9 +418,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="aurorabeaut@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -365,9 +437,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Char Ming"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -375,9 +448,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="charming@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -393,9 +467,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="James Peach"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -403,9 +478,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="jamespeach@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
@@ -421,9 +497,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:textSize="18sp"
-                android:text="Hansel Gretel"
+                android:text="Red Hood"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
@@ -431,9 +508,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:textSize="18sp"
-                android:text="hanselgretel@illinois.edu"
+                android:text="redhood@illinois.edu"
+                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
