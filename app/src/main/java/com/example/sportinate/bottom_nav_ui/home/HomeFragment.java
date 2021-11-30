@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,7 @@ import com.example.sportinate.group_creation.GroupCreationActivity;
 import com.example.sportinate.group_search_and_select.Group2InfoActivity;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class HomeFragment extends Fragment {
 
@@ -70,6 +72,48 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Group2InfoActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        SearchView searchView = root.findViewById(R.id.simple_search);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            View group1_search = root.findViewById(R.id.group1);
+            View group2_search = root.findViewById(R.id.group2);
+            View group3_search = root.findViewById(R.id.group3);
+            View group4_search = root.findViewById(R.id.group4);
+            View group5_search = root.findViewById(R.id.group5);
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                query.toLowerCase(Locale.ROOT);
+                if (query.equals("basketball")) {
+                    group1_search.setVisibility(View.VISIBLE);
+                    group2_search.setVisibility(View.VISIBLE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.GONE);
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // Do whatever you need when text changes.
+                // This will be fired every time you input any character.
+                if (!newText.toLowerCase(Locale.ROOT).equals("basketball")) {
+                    group1_search.setVisibility(View.VISIBLE);
+                    group2_search.setVisibility(View.VISIBLE);
+                    group3_search.setVisibility(View.VISIBLE);
+                    group5_search.setVisibility(View.VISIBLE);
+
+                    if (GroupInfo.group_1_create) {
+                        group4_search.setVisibility(View.VISIBLE);
+                    }
+                    else {
+                        group4_search.setVisibility(View.GONE);
+                    }
+                }
+                return false;
             }
         });
 

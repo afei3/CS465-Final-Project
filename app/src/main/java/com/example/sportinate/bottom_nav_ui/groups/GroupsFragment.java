@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -87,16 +86,15 @@ public class GroupsFragment extends Fragment {
         }
         if (GroupInfo.group_1_join) {
             group1.setVisibility(View.VISIBLE);
-            none_join.setVisibility(View.GONE);
-        } else {
-            group1.setVisibility(View.GONE);
-            none_join.setVisibility(View.VISIBLE);
         }
-
         if (GroupInfo.group_2_join) {
             group2.setVisibility(View.VISIBLE);
+        }
+        if (GroupInfo.group_2_join || GroupInfo.group_1_join) {
             none_join.setVisibility(View.GONE);
-        } else {
+        }
+        else {
+            group1.setVisibility(View.GONE);
             group2.setVisibility(View.GONE);
             none_join.setVisibility(View.VISIBLE);
         }
