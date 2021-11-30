@@ -9,22 +9,8 @@
 
     <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:orientation="vertical"
+    android:layout_height="wrap_content" android:orientation="vertical"
     tools:context=".bottom_nav_ui.home.HomeFragment">
-
-<!--        <TextView-->
-<!--            android:layout_marginEnd="20dp"-->
-<!--            android:layout_marginStart="15dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textSize="25sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:text="All Groups"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:layout_gravity="left"-->
-<!--            />-->
 
         <SearchView
             android:id="@+id/searchview"
@@ -36,8 +22,8 @@
         <Button
             android:id="@+id/create_new_group_btn"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
@@ -56,9 +42,9 @@
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_edge"
-            android:backgroundTint="@color/light_blue"
+            android:backgroundTint="@color/light_grey"
             android:clickable="true"
             android:focusable="true">
 
@@ -76,6 +62,7 @@
                     android:text="ChambanaBallers"
                     android:fontFamily="@font/opensans_1"
                     android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -85,7 +72,6 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="16sp"
                     android:text="Level: Casual"
-                    android:fontFamily="@font/opensans_1"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -94,7 +80,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:textSize="16sp"
-                    android:fontFamily="@font/opensans_1"
                     android:text="Day/Time: Tues and Fri 5-7pm"
                     android:layout_gravity="left" />
 
@@ -105,7 +90,6 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="15dp"
                     android:textSize="16sp"
-                    android:fontFamily="@font/opensans_1"
                     android:text="Location: ARC"
                     android:layout_gravity="left" />
             </LinearLayout>
@@ -144,7 +128,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/rounded_edge"
-            android:backgroundTint="@color/light_blue"
+            android:backgroundTint="@color/light_grey"
             android:clickable="true"
             android:focusable="true"
             android:orientation="horizontal">
@@ -162,8 +146,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="8dp"
                     android:text="GotHoops"
-                    android:fontFamily="@font/opensans_1"
                     android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/opensans_1"
                     android:textSize="20sp" />
 
                 <TextView
@@ -173,7 +158,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="Level: Competitive"
-                    android:fontFamily="@font/opensans_1"
                     android:textSize="16sp" />
 
                 <TextView
@@ -183,8 +167,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="Day/Time: Fri 7-9pm"
-                    android:fontFamily="@font/opensans_1"
-
                     android:textSize="16sp" />
 
                 <TextView
@@ -195,7 +177,6 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="15dp"
                     android:text="Location: ARC"
-                    android:fontFamily="@font/opensans_1"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -231,9 +212,9 @@
         android:visibility="visible"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_edge"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/light_grey"
         android:clickable="true"
         android:focusable="true"
         android:orientation="horizontal">
@@ -250,8 +231,9 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="8dp"
-                android:textColor="@color/black"
                 android:text="RaquetRockers"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:fontFamily="@font/opensans_1"
                 android:textSize="20sp" />
 
@@ -262,7 +244,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Level: Competitive"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -272,7 +253,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Day/Time: Wed and Thurs 2-4pm"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -283,7 +263,6 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="15dp"
                 android:text="Location: ARC"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -321,9 +300,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_edge"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/light_grey"
         android:visibility="gone"
         android:clickable="true"
         android:focusable="true"
@@ -342,8 +321,9 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="8dp"
                 android:text="SmashingSlicers"
-                android:fontFamily="@font/opensans_1"
                 android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensans_1"
                 android:textSize="20sp" />
 
             <TextView
@@ -353,7 +333,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Level: Competitive"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -363,7 +342,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Day/Time: Mon 1-3pm"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -374,7 +352,6 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="15dp"
                 android:text="Location: ARC"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -409,9 +386,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_edge"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/light_grey"
         android:clickable="true"
         android:focusable="true"
         android:orientation="horizontal">
@@ -431,6 +408,7 @@
                 android:text="Flingers"
                 android:fontFamily="@font/opensans_1"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="20sp" />
 
             <TextView
@@ -440,7 +418,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Level: Casual"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -450,7 +427,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Day/Time: Wed and Fri 12-2pm"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
 
             <TextView
@@ -461,7 +437,6 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="15dp"
                 android:text="Location: Stadium"
-                android:fontFamily="@font/opensans_1"
                 android:textSize="16sp" />
         </LinearLayout>
 

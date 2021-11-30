@@ -20,7 +20,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/opensans_1"
         android:text="You have now joined this group."
         android:textSize="18sp"
         android:textColor="@color/black"

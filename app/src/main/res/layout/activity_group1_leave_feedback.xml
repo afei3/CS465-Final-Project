@@ -21,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You have now left this group."
-        android:fontFamily="@font/opensans_1"
         android:textSize="18sp"
         android:textColor="@color/black"
         android:gravity="center"

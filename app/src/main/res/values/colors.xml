@@ -8,11 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="sportinate_gold">#FFFFA500</color>
+    <color name="sportinate_gold">#94FFA500</color>
     <color name="blue_button1">#FF0040ff</color>
     <color name ="blue_button">#0083ce</color>
-    <color name="light_blue">#B3CEFA</color>
-    <color name="lighter_blue">#66B3CEFA</color>
+    <color name="light_blue">#B7CEFA</color>
+    <color name="lighter_blue">#804682B4</color>
+    <color name="light_grey">#54E5E4E2</color>
+    <color name="grey">#71797E</color>
+
+
 
     <color name="blue_grey">#cad3e3</color>
     <color name="blue_grey1">#B3CEFA</color>

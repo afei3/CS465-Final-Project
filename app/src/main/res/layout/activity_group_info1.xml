@@ -2,7 +2,6 @@
 <ScrollView android:layout_width="fill_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingBottom="70dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".group_search_and_select.Group1InfoActivity">
 
@@ -10,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+            android:background="@color/light_grey"
         tools:context=".group_search_and_select.Group1InfoActivity">
 
         <LinearLayout
@@ -49,9 +49,9 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/opensans_1"
                     android:text="Tues and Fri 5-7pm"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -60,9 +60,9 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/opensans_1"
                     android:text="ARC Basketball Courts"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -71,9 +71,9 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/opensans_1"
                     android:text="Level: Casual"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
                 <TextView
@@ -84,8 +84,8 @@
                     android:layout_marginBottom="20dp"
                     android:textSize="18sp"
                     android:text="Players: 9/10"
-                    android:fontFamily="@font/opensans_1"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
                     android:layout_gravity="left" />
                 </LinearLayout>
 
@@ -122,9 +122,7 @@
             android:layout_marginEnd="20dp"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/opensans_1"
             android:text="markwu@illinois.edu"
-            android:textColor="@color/black"
             android:layout_gravity="left" />
         <TextView
             android:layout_width="match_parent"
@@ -133,9 +131,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/opensans_1"
             android:text="123-465-7890"
-            android:textColor="@color/black"
             android:layout_gravity="left" />
 
 
@@ -144,7 +140,6 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:textSize="22sp"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/opensans_1"
@@ -160,10 +155,8 @@
             android:textSize="18sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:fontFamily="@font/opensans_1"
             android:text="Let's play some basketball. No equipment necessary - just come ready to have some fun. Beginners welcome!
 Contact Mark for additional questions."
-            android:textColor="@color/black"
             android:layout_gravity="left" />
 
 
@@ -179,7 +172,6 @@ Contact Mark for additional questions."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="10dp"
             android:textSize="22sp"
             android:layout_marginStart="8dp"
             android:text="Team Members"
@@ -203,9 +195,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Mark Wu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -214,9 +204,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="markwu@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -233,9 +221,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Mary Lamb"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -244,9 +230,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="marylamb@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -263,9 +247,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Hansel Gretel"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -274,9 +256,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="hanselgretel@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -293,9 +273,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Jack Stalk"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -303,10 +281,8 @@ Contact Mark for additional questions."
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
-                android:fontFamily="@font/opensans_1"
                 android:text="jackstalk@illinois.edu"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -323,9 +299,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Ella Cinder"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -334,9 +308,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="ellacinder@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -353,9 +325,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Aurora Beaut"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -364,9 +334,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="aurorabeaut@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -383,9 +351,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Char Ming"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -394,9 +360,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="charming@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -413,9 +377,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="James Peach"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -424,9 +386,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="jamespeach@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
@@ -443,9 +403,7 @@ Contact Mark for additional questions."
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
                 android:text="Red Hood"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="left" />
 
             <TextView
@@ -454,9 +412,7 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="redhood@illinois.edu"
-                android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>

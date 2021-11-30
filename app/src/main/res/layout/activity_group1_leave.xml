@@ -2,7 +2,6 @@
 <ScrollView android:layout_width="fill_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingBottom="70dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".group_search_and_select.Group1InfoActivity">
 
