@@ -12,14 +12,14 @@
     <string name="success_text">You have successfully created a \"SPORT\" group!</string>
 
     <string name="new_tooltip">Little to no experience playing. This may be your first time playing.</string>
-    <string name= "intermediate_tooltip">Some amount of experience playing. </string>
-    <string name ="advanced_tooltip">Good amount of experience playing. You\'ve played the sport for a decent amount of time.</string>
-    <string name ="expert_tooltip">High level of experience playing. You have been playing the sport for a long time.</string>
-    <string name ="casual_tooltip">Your goals are to have fun, meet new people, or try out a new activity.</string>
-    <string name ="competitive_tooltip">Your goals are primarily to improve your skills or find others to compete with.</string>
-    <string name ="either_tooltip">Your goals include a mix between casual and competitive.</string>
+    <string name="intermediate_tooltip">Some amount of experience playing. </string>
+    <string name="advanced_tooltip">Good amount of experience playing. You\'ve played the sport for a decent amount of time.</string>
+    <string name="expert_tooltip">High level of experience playing. You have been playing the sport for a long time.</string>
+    <string name="casual_tooltip">Your goals are to have fun, meet new people, or try out a new activity.</string>
+    <string name="competitive_tooltip">Your goals are primarily to improve your skills or find others to compete with.</string>
+    <string name="either_tooltip">Your goals include a mix between casual and competitive.</string>
 
-<!--    Group Creation Fields-->
+    <!--    Group Creation Fields-->
     <string name="group_name">Group Name<font color='#FF0000'>*</font></string>
     <string name="sport">Sport<font color='#FF0000'>*</font></string>
     <string name="skill_level">Skill Level<font color='#FF0000'>*</font></string>
@@ -29,9 +29,9 @@
     <string name="group_desc">Group Description</string>
 
 
-    <string name ="loc1">ARC</string>
-    <string name ="loc2">Stadium</string>
-    <string name ="loc3">CRCE</string>
+    <string name="loc1">ARC</string>
+    <string name="loc2">Stadium</string>
+    <string name="loc3">CRCE</string>
 
     <string-array name="sports_array">
         <item>Basketball</item>

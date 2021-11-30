@@ -15,14 +15,8 @@ import android.widget.Spinner;
 import com.example.sportinate.ProfileInfo;
 import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.sportinate.profile_creation.EditSportActivity;
-import com.example.sportinate.GroupInfo;
-import com.example.sportinate.R;
-import com.example.sportinate.group_creation.GroupCreationReviewActivity;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import com.example.sportinate.R;
 
 public class profile_creation extends AppCompatActivity{
     String sport_name ="";
@@ -48,7 +42,7 @@ public class profile_creation extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acitvity_profile_creation);
+        setContentView(R.layout.activity_profile_creation);
         getSupportActionBar().setTitle("Make Profile");
 
         //******Sport spinner ********

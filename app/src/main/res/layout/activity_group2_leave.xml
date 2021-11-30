@@ -24,13 +24,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="30sp"
-                android:text="ChambanaBallers"
+                android:text="GotHoops"
                 android:textStyle="bold"
                 android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
                 android:layout_gravity="left" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -49,7 +48,7 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Tues and Fri 5-7pm"
+                    android:text="Fri 7-9pm"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -71,7 +70,7 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Level: Casual"
+                    android:text="Level: Competitive"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -83,7 +82,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="18sp"
-                    android:text="Players: 9/10"
+                    android:text="Players: 7/10"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -110,7 +109,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:layout_marginStart="10dp"
-            android:text="Group Coordinator: Mark Wu"
+            android:text="Group Coordinator: Jackie Oh"
             android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
@@ -122,7 +121,7 @@
             android:layout_marginEnd="20dp"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:text="markwu@illinois.edu"
+            android:text="jackieoh@illinois.edu"
             android:layout_gravity="left" />
         <TextView
             android:layout_width="match_parent"
@@ -155,8 +154,7 @@
             android:textSize="18sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:text="Let's play some basketball. No equipment necessary - just come ready to have some fun. Beginners welcome!
-Contact Mark for additional questions."
+            android:text="Looking for intermediate and advanced level players. No equipment necessary."
             android:layout_gravity="left" />
 
 
@@ -180,9 +178,6 @@ Contact Mark for additional questions."
             android:textColor="@color/black"
             android:layout_gravity="left" />
 
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -194,7 +189,7 @@ Contact Mark for additional questions."
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
-                android:text="Mark Wu"
+                android:text="Jackie Oh"
                 android:layout_weight="0.5"
                 android:layout_gravity="left" />
 
@@ -203,33 +198,7 @@ Contact Mark for additional questions."
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
-                android:text="markwu@illinois.edu"
-                android:layout_weight="0.5"
-                android:layout_gravity="center_horizontal" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="18sp"
-                android:text="Mary Lamb"
-                android:layout_weight="0.5"
-                android:layout_gravity="left" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:textSize="18sp"
-                android:text="marylamb@illinois.edu"
+                android:text="jackieoh@illinois.edu"
                 android:layout_weight="0.5"
                 android:layout_gravity="center_horizontal" />
 
@@ -386,32 +355,6 @@ Contact Mark for additional questions."
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
                 android:text="jamespeach@illinois.edu"
-                android:layout_weight="0.5"
-                android:layout_gravity="center_horizontal" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="18sp"
-                android:text="Red Hood"
-                android:layout_weight="0.5"
-                android:layout_gravity="left" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:textSize="18sp"
-                android:text="redhood@illinois.edu"
                 android:layout_weight="0.5"
                 android:layout_gravity="center_horizontal" />
 

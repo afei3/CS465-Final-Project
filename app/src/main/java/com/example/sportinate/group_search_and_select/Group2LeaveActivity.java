@@ -12,12 +12,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Group1LeaveActivity extends AppCompatActivity implements View.OnClickListener {
+public class Group2LeaveActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group1_leave);
+        setContentView(R.layout.activity_group2_leave);
         getSupportActionBar().setTitle("Group Information");
 
         Button leave_button = findViewById(R.id.leave_button);
@@ -41,8 +41,8 @@ public class Group1LeaveActivity extends AppCompatActivity implements View.OnCli
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,
                                         int which) {
-                        GroupInfo.group_1_join = false;
-                        Intent intent = new Intent (Group1LeaveActivity.this, Group1LeaveFeedbackActivity.class);
+                        GroupInfo.group_2_join = false;
+                        Intent intent = new Intent (Group2LeaveActivity.this, Group1LeaveFeedbackActivity.class);
                         startActivity(intent);
                     }
                 });

@@ -46,7 +46,7 @@ public class GroupCreationConfirmationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(GroupCreationConfirmationActivity.this, BrowseActivity.class);
                 intent.putExtra("fragmentNumber", 2);
-                GroupInfo.group_test_bool = true;
+                GroupInfo.group_1_join = true;
                 startActivity(intent);
             }
         });

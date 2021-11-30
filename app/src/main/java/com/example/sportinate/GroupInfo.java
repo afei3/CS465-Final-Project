@@ -9,8 +9,9 @@ import com.example.sportinate.TimeSlot;
 public class GroupInfo implements Serializable {
     public static ArrayList<GroupInfo> joined_groups = new ArrayList<>();
     public static ArrayList<GroupInfo> groups_create = new ArrayList<>();
-    public static boolean test_bool = false;
-    public static boolean group_test_bool = false;
+    public static boolean group_1_join = false;
+    public static boolean group_2_join = false;
+    public static boolean group_1_create = false;
     public  String sportName;
     public String groupName;
     public  String skillLevel;
@@ -24,6 +25,16 @@ public class GroupInfo implements Serializable {
     public int groupId;
 
     public GroupInfo(){
+    }
+
+    public GroupInfo(String groupName, String sportName, String skillLevel, String location, String commitment, String message, ArrayList<TimeSlot> times) {
+        this.sportName = sportName;
+        this.groupName = groupName;
+        this.skillLevel = skillLevel;
+        this.location = location;
+        this.commitment = commitment;
+        this.message = message;
+        this.timeSlots.addAll(times);
     }
 
     public String getSportName() {
@@ -58,7 +69,6 @@ public class GroupInfo implements Serializable {
         this.timeSlots.add(ts);
     }
     public void clearTimeSlot(){this.timeSlots.clear();}
-
 
     public String getCommitment() {
         return this.commitment;

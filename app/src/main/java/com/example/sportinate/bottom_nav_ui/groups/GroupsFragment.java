@@ -17,12 +17,12 @@ import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentGroupsBinding;
 import com.example.sportinate.group_search_and_select.Group1LeaveActivity;
+import com.example.sportinate.group_search_and_select.Group2LeaveActivity;
 
 public class GroupsFragment extends Fragment {
 
     private GroupsViewModel groupsViewModel;
     private FragmentGroupsBinding binding;
-    //private LinearLayout root_layout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +54,16 @@ public class GroupsFragment extends Fragment {
             }
         });
 
+        LinearLayout grp2_layout = (LinearLayout) root.findViewById(R.id.group2);
+
+        grp2_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Group2LeaveActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return root;
     }
 
@@ -62,23 +72,32 @@ public class GroupsFragment extends Fragment {
         super.onViewStateRestored(savedInstanceState);
         View root = binding.getRoot();
         View group1 = root.findViewById(R.id.group1);
-        View group2 = root.findViewById(R.id.group4);
+        View group1_create = root.findViewById(R.id.group4);
+        View group2 = root.findViewById(R.id.group2);
 
         View none_coord = root.findViewById(R.id.none_coordinating);
         View none_join = root.findViewById(R.id.none_joined);
 
-        if (GroupInfo.group_test_bool) {
-            group2.setVisibility(View.VISIBLE);
+        if (GroupInfo.group_1_create) {
+            group1_create.setVisibility(View.VISIBLE);
             none_coord.setVisibility(View.GONE);
         } else {
-            group2.setVisibility(View.GONE);
+            group1_create.setVisibility(View.GONE);
             none_coord.setVisibility(View.VISIBLE);
         }
-        if (GroupInfo.test_bool) {
+        if (GroupInfo.group_1_join) {
             group1.setVisibility(View.VISIBLE);
             none_join.setVisibility(View.GONE);
         } else {
             group1.setVisibility(View.GONE);
+            none_join.setVisibility(View.VISIBLE);
+        }
+
+        if (GroupInfo.group_2_join) {
+            group2.setVisibility(View.VISIBLE);
+            none_join.setVisibility(View.GONE);
+        } else {
+            group2.setVisibility(View.GONE);
             none_join.setVisibility(View.VISIBLE);
         }
     }

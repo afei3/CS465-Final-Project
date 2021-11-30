@@ -10,22 +10,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-
-public class Group1InfoActivity extends AppCompatActivity {
+public class Group2InfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group_info1);
+        setContentView(R.layout.activity_group2_info);
+
         getSupportActionBar().setTitle("Group Information");
         Button join_button = findViewById(R.id.join_button);
         join_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO make group show up in My Groups page
-                GroupInfo.group_1_join = true;
-                Intent intent = new Intent (Group1InfoActivity.this, Group1FeedbackActivity.class);
+                //TODO make group 2 show up in My Groups page
+                GroupInfo.group_2_join = true;
+                Intent intent = new Intent (Group2InfoActivity.this, Group1FeedbackActivity.class);
                 startActivity(intent);
             }
         });

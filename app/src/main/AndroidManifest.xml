@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sportinate">
         <activity
+            android:name=".group_search_and_select.Group2LeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".group_search_and_select.Group2InfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".group_creation.GroupCreationConfirmationActivity"
             android:exported="false" />
         <activity

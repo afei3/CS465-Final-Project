@@ -19,6 +19,9 @@ import com.example.sportinate.databinding.FragmentHomeBinding;
 import com.example.sportinate.group_search_and_select.Group1InfoActivity;
 
 import com.example.sportinate.group_creation.GroupCreationActivity;
+import com.example.sportinate.group_search_and_select.Group2InfoActivity;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
@@ -34,12 +37,11 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
         View group1 = root.findViewById(R.id.group4);
 
-        if (GroupInfo.group_test_bool) {
+        if (GroupInfo.group_1_create) {
             group1.setVisibility(View.VISIBLE);
         } else {
             group1.setVisibility(View.GONE);
         }
-
 
         Button createGroupButton= (Button) root.findViewById(R.id.create_new_group_btn);
         createGroupButton.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +61,18 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        LinearLayout grp2_layout = (LinearLayout) root.findViewById(R.id.group2);
+
+        grp2_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Group2InfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return root;
     }
 
