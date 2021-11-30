@@ -8,8 +8,11 @@ import com.example.sportinate.TimeSlot;
 
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
@@ -51,15 +54,35 @@ public class GroupCreationReviewActivity extends AppCompatActivity {
                 time += " \n ";
 
             }
-            margin+=120;
+            margin+=50;
 
 
 
         }
         TextView timeTitle = findViewById(R.id.time_title);
-//        LinearLayout.LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-//        params.setMargins(0,10,0,margin);
-//        timeTitle.setLayoutParams(params);
+        // this is for displaying multiple time slots
+        Resources r = getResources();
+        int leftPx = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                10,
+                r.getDisplayMetrics()
+        );
+        int upPx = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                30,
+                r.getDisplayMetrics()
+        );
+
+        int bottomPx = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                margin,
+                r.getDisplayMetrics()
+        );
+
+        LinearLayout.LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+        params.setMargins(leftPx,upPx,0,bottomPx);
+        timeTitle.setLayoutParams(params);
+
 
         TextView timeText = findViewById(R.id.review_time);
         timeText.setText(time);
