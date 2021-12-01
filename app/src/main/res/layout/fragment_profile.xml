@@ -49,9 +49,10 @@
 
                 <ImageView
                     android:id="@+id/user_avatar1"
-                    android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_gravity="center"
                     android:src="@drawable/user" />
 
