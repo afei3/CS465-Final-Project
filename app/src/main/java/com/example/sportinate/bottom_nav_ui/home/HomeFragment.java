@@ -94,6 +94,7 @@ public class HomeFragment extends Fragment {
             View group4_search = root.findViewById(R.id.group4);
             View group5_search = root.findViewById(R.id.group5);
             View no_results_text = root.findViewById(R.id.no_results);
+            View create_new_group_btn = root.findViewById(R.id.create_new_group_btn);
 
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -106,6 +107,7 @@ public class HomeFragment extends Fragment {
                     group4_search.setVisibility(View.GONE);
                     group5_search.setVisibility(View.GONE);
                     no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
                 }
                 else if (query.equals("flingers")) {
                     group1_search.setVisibility(View.GONE);
@@ -114,6 +116,7 @@ public class HomeFragment extends Fragment {
                     group4_search.setVisibility(View.GONE);
                     group5_search.setVisibility(View.VISIBLE);
                     no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
                 }
                 else {
                     group1_search.setVisibility(View.GONE);
@@ -122,12 +125,14 @@ public class HomeFragment extends Fragment {
                     group4_search.setVisibility(View.GONE);
                     group5_search.setVisibility(View.GONE);
                     no_results_text.setVisibility(View.VISIBLE);
+                    create_new_group_btn.setVisibility(View.GONE);
                 }
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                create_new_group_btn.setVisibility(View.VISIBLE);
                 if (!newText.toLowerCase(Locale.ROOT).equals("basketball") && !newText.toLowerCase(Locale.ROOT).equals("flingers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
