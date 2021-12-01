@@ -12,6 +12,7 @@ public class GroupInfo implements Serializable {
     public static boolean group_1_join = false;
     public static boolean group_2_join = false;
     public static boolean group_1_create = false;
+    public static boolean deleted_user = false;
     public  String sportName;
     public String groupName;
     public  String skillLevel;
