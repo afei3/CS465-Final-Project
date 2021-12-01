@@ -1,13 +1,19 @@
 package com.example.sportinate.bottom_nav_ui.profile;
 
+import static com.example.sportinate.group_search_and_select.BrowseActivity.user_photo;
+
 import android.content.Intent;
+import android.media.ThumbnailUtils;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -51,6 +57,15 @@ public class ProfileFragment extends Fragment {
     public static String sport_name3;
     public static String sport_level3;
 
+    private Button btnPhone;
+    private ImageView imageView;
+
+
+    private static final String IMAGE_UNSPECIFIED = "image/*";
+    private final int IMAGE_CODE = 0;
+
+    private TextView tv;
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -59,6 +74,11 @@ public class ProfileFragment extends Fragment {
                 new ViewModelProvider(this).get(ProfileViewModel.class);
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+
+        imageView = (ImageView) root.findViewById(R.id.user_avatar1);
+
+        imageView.setImageBitmap(user_photo);
 
 
 
@@ -157,15 +177,22 @@ public class ProfileFragment extends Fragment {
 
         Button sprot_edit = root.findViewById(R.id.sprot_edit);
         sprot_edit.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), com.example.sportinate.profile_creation.EditSportActivity.class);
+            Intent intent = new Intent(getActivity(), EditSportActivity.class);
             startActivity(intent);
         });
 
         Button user_edit = root.findViewById(R.id.user_edit);
         user_edit.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), com.example.sportinate.profile_creation.UserDescriptionActivity.class);
+            Intent intent = new Intent(getActivity(), UserDescriptionActivity.class);
             startActivity(intent);
         });
+
+
+
+        //btnPhone = (Button) root.findViewById(R.id.avatar_edit);
+        imageView = (ImageView) root.findViewById(R.id.user_avatar1);
+
+        //tv = (TextView) root.findViewById(R.id.img_path);
 
         return root;
     }
@@ -194,5 +221,3 @@ public class ProfileFragment extends Fragment {
         binding = null;
     }
 }
-
-

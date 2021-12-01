@@ -10,9 +10,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import com.example.sportinate.GroupInfo;
 import com.example.sportinate.ProfileInfo;
+import com.example.sportinate.TimeSlot;
 import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,6 +44,10 @@ public class profile_creation extends AppCompatActivity{
     public static String location1;
     public static String location2;
     public static String location3;
+
+    TimeSlot ts = new TimeSlot();
+    GroupInfo group = new GroupInfo();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -368,6 +377,103 @@ public class profile_creation extends AppCompatActivity{
                     commitment = "Either";
                 break;
         }
+    }
+
+    public void onLoc1Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc1);
+
+
+    }
+
+    public void onLoc2Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc2);
+
+
+    }
+    public void onLoc3Clicked(View view){
+        EditText text = (EditText) findViewById(R.id.location);
+        text.setText(R.string.loc3);
+
+    }
+
+    public void resetTimeSlot(){
+
+        Spinner date_spinner = (Spinner) findViewById(R.id.date_spinner);
+        ArrayAdapter<CharSequence> date_adapter = ArrayAdapter.createFromResource(this,
+                R.array.dates_array, android.R.layout.simple_spinner_item);
+        date_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        date_spinner.setAdapter(date_adapter);
+
+
+        Spinner start_time_spinner = (Spinner) findViewById(R.id.start_time_spinner);
+        ArrayAdapter<CharSequence> start_adapter = ArrayAdapter.createFromResource(this,
+                R.array.time_array, android.R.layout.simple_spinner_item);
+        start_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        start_time_spinner.setAdapter(start_adapter);
+
+        Spinner end_time_spinner = (Spinner) findViewById(R.id.end_time_spinner);
+        ArrayAdapter<CharSequence> end_adapter = ArrayAdapter.createFromResource(this,
+                R.array.time_array, android.R.layout.simple_spinner_item);
+        end_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        end_time_spinner.setAdapter(end_adapter);
+
+
+
+        EditText startHour = (EditText) findViewById(R.id.start_hour);
+        ts.startHour = "12";
+        startHour.setText(ts.startHour);
+
+        EditText startMinute = (EditText) findViewById(R.id.start_minute);
+        ts.startMinute ="00";
+        startMinute.setText(ts.startMinute);
+
+
+        EditText endHour = (EditText) findViewById(R.id.end_hour);
+        ts.endHour = "01";
+        endHour.setText(ts.endHour);
+
+        EditText endMinute = (EditText) findViewById(R.id.end_minute);
+        ts.endMinute ="00";
+        endMinute.setText(ts.endMinute);
+
+    }
+
+    public void onClearTimeClicked(View view){
+        group.clearTimeSlot();
+        LinearLayout ll = (LinearLayout)  findViewById(R.id.time_slots);
+        ll.removeAllViews();
+
+    }
+
+    public void onAddTimeSlotClicked(View view){
+
+
+        group.addTimeslot(ts);
+
+        //Add ts textview to time slot layout
+
+        View linearLayout =  findViewById(R.id.time_slots);
+
+        TextView timeTextView = new TextView(this);
+        String time="";
+        time += ts.date+" "+ts.startHour+":"+ts.startMinute+ts.startAmpm;
+        time += " - "+ts.endHour+":"+ts.endMinute+ts.endAmpm;
+        timeTextView.setText(time);
+        timeTextView.setTextSize(20);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(0, 5, 0, 0);
+        timeTextView.setLayoutParams(lp);
+
+        ((LinearLayout) linearLayout).addView(timeTextView);
+
+
+
+        ts = new TimeSlot();
+        resetTimeSlot();
+
+
     }
 
 

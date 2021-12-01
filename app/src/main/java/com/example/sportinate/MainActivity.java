@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             //TODO change to go to profile activity
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, com.example.sportinate.profile_creation.profile_creation.class);
+                Intent intent = new Intent(MainActivity.this, com.example.sportinate.profile_creation.LandingProfileActivity.class);
                 startActivity(intent);
             }
         });
