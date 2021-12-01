@@ -1,10 +1,12 @@
 package com.example.sportinate.bottom_nav_ui.home;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
@@ -75,6 +77,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+//        LinearLayout background = (LinearLayout) root.findViewById(R.id.background_layout);
+////        close
+//        grp1_layout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                hideKeyboard(getActivity());
+//            }
+//        });
+
         SearchView searchView = root.findViewById(R.id.simple_search);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             View group1_search = root.findViewById(R.id.group1);
@@ -82,9 +93,11 @@ public class HomeFragment extends Fragment {
             View group3_search = root.findViewById(R.id.group3);
             View group4_search = root.findViewById(R.id.group4);
             View group5_search = root.findViewById(R.id.group5);
+            View no_results_text = root.findViewById(R.id.no_results);
 
             @Override
             public boolean onQueryTextSubmit(String query) {
+                hideKeyboard(getActivity());
                 query.toLowerCase(Locale.ROOT);
                 if (query.equals("basketball")) {
                     group1_search.setVisibility(View.VISIBLE);
@@ -92,19 +105,35 @@ public class HomeFragment extends Fragment {
                     group3_search.setVisibility(View.GONE);
                     group4_search.setVisibility(View.GONE);
                     group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.GONE);
+                }
+                else if (query.equals("flingers")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.VISIBLE);
+                    no_results_text.setVisibility(View.GONE);
+                }
+                else {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.VISIBLE);
                 }
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                // Do whatever you need when text changes.
-                // This will be fired every time you input any character.
-                if (!newText.toLowerCase(Locale.ROOT).equals("basketball")) {
+                if (!newText.toLowerCase(Locale.ROOT).equals("basketball") && !newText.toLowerCase(Locale.ROOT).equals("flingers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
                     group3_search.setVisibility(View.VISIBLE);
                     group5_search.setVisibility(View.VISIBLE);
+                    no_results_text.setVisibility(View.GONE);
 
                     if (GroupInfo.group_1_create) {
                         group4_search.setVisibility(View.VISIBLE);
@@ -118,6 +147,17 @@ public class HomeFragment extends Fragment {
         });
 
         return root;
+    }
+
+    public static void hideKeyboard(Activity activity) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        //Find the currently focused view, so we can grab the correct window token from it.
+        View view = activity.getCurrentFocus();
+        //If no view currently has focus, create a new one, just so we can grab a window token from it
+        if (view == null) {
+            view = new View(activity);
+        }
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
     @Override
