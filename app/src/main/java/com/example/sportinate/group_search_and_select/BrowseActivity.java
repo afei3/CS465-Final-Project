@@ -1,5 +1,6 @@
 package com.example.sportinate.group_search_and_select;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.TextView;
 import com.example.sportinate.profile_creation.UserInfo;
@@ -21,6 +22,7 @@ import java.io.Serializable;
 public class BrowseActivity extends AppCompatActivity {
     public static String user_name;
     public static String user_descrip;
+    public static Bitmap user_photo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
