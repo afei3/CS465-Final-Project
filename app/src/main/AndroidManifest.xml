@@ -57,6 +57,15 @@
             android:name=".profile_creation.LandingProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".group_coordination.GroupCoordinateChanged"
+            android:exported="false" />
+        <activity
+            android:name=".group_coordination.GroupCoordinateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".group_coordination.GroupCoordinateConfirmationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

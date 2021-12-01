@@ -9,10 +9,21 @@
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_coordinate_group.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_coordinate_kick.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_edit_sports.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group1_feedback.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group1_leave.xml" value="0.5" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group_creation.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group_creation_confirmation.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group_creation_review.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_group_info1.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_landing_profile.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_main.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_profile_creation.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_profile_feedback.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_signup.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_user_description.xml" value="0.178125" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_groups.xml" value="0.1539855072463768" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_home.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.178125" />
         <entry key="app/src/main/res/drawable/box.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.2635416666666667" />

@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.databinding.FragmentGroupsBinding;
+import com.example.sportinate.group_coordination.GroupCoordinateActivity;
 import com.example.sportinate.group_search_and_select.Group1LeaveActivity;
 import com.example.sportinate.group_search_and_select.Group2LeaveActivity;
 
@@ -59,6 +60,15 @@ public class GroupsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Group2LeaveActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout grp4_layout = (LinearLayout) root.findViewById(R.id.group4);
+        grp4_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), GroupCoordinateActivity.class);
                 startActivity(intent);
             }
         });
