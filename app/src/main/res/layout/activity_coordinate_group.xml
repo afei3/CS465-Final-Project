@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_grey"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".group_search_and_select.Group1InfoActivity">
@@ -71,7 +72,18 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Level: Competitive"
+                    android:text="Skill Level: Advanced"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="Commitment Level: Competitive"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -83,7 +95,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="18sp"
-                    android:text="Players: 2/4"
+                    android:text="Players: 2/8"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -92,7 +104,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/tennis">
             </ImageView>
         </LinearLayout>
@@ -155,7 +167,7 @@
             android:textSize="18sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:text="Tennis player looking to introduce people to the sport!"
+            android:text="Let's play some competitive tennis! Join this group if you are interested in preparing for and attending tournaments. Please bring racquets; balls will be provided."
             android:layout_gravity="left" />
 
 

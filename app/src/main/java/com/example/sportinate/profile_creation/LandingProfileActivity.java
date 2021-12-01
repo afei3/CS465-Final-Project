@@ -39,6 +39,7 @@ public class LandingProfileActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_profile);
+        getSupportActionBar().setTitle("Profile");
 
 
         Button next_button = findViewById(R.id.next_button);

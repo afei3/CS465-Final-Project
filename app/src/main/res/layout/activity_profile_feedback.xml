@@ -23,13 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="15dp"
-        android:fontFamily="@font/opensans_1"
-        android:text="You have successfully added preferences to your profile.\nGroups that match your criteria will appear higher on the list for you now."
+        android:text="You have successfully added preferences to your profile. Groups that match your criteria will appear higher on the list for you now."
         android:textSize="18sp"
         android:textColor="@color/black"
         android:gravity="left"
         android:layout_gravity="center"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="190dp" />
 
     <Button
         android:id="@+id/add_new_sport"
