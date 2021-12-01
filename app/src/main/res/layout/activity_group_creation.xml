@@ -16,7 +16,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
         <LinearLayout
@@ -42,7 +43,8 @@
             android:layout_marginTop="10dp"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_edge"
             >
             <EditText
                 android:id="@+id/group_name"
@@ -55,14 +57,15 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical"
      >
-
 
         <TextView
             android:layout_width="match_parent"
@@ -75,24 +78,32 @@
             android:textColor="@color/black"
             android:fontFamily="@font/opensans_1"
             android:textSize="24sp" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_edge"
+            >
         <Spinner
             android:id="@+id/sports_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_margin="5dp"
-            android:background="@color/white"
-            android:padding="15dp"
             android:textSize="24sp" />
+        </LinearLayout>
     </LinearLayout>
+
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
 
@@ -129,7 +140,8 @@
         android:layout_marginTop="10dp"
         android:layout_margin="5dp"
         android:padding="15dp"
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_edge"
         >
         <RadioGroup
             android:layout_width="wrap_content"
@@ -245,7 +257,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
 
@@ -277,7 +290,8 @@
             android:layout_marginTop="10dp"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:background="@color/blue_grey"
+            android:backgroundTint="@color/blue_grey"
+            android:background="@drawable/rounded_edge"
             >
             <View
                 android:layout_width="match_parent"
@@ -310,9 +324,10 @@
                 android:id="@+id/clear_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity ="right"
-                android:src="@android:drawable/ic_menu_close_clear_cancel"
-                android:onClick="onClearTimeClicked"></ImageButton>
+                android:backgroundTint="@color/blue_grey"
+                android:gravity="right"
+                android:onClick="onClearTimeClicked"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"></ImageButton>
 
 
         </LinearLayout>
@@ -335,7 +350,8 @@
         android:layout_marginTop="10dp"
         android:layout_margin="5dp"
         android:padding="15dp"
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_edge"
         >
     <TextView
         android:layout_width="match_parent"
@@ -359,7 +375,8 @@
         android:layout_marginTop="10dp"
         android:layout_margin="5dp"
         android:padding="15dp"
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_edge"
         >
 
     <TextView
@@ -486,7 +503,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
         <LinearLayout
@@ -521,7 +539,8 @@
             android:layout_marginTop="10dp"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_edge"
             >
             <EditText
                 android:id="@+id/location"
@@ -550,7 +569,6 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/light_blue"
                     android:shadowColor="#887878"
-
                     android:text="@string/loc1"
                     android:textColor="@color/black"
                     android:onClick="onLoc1Clicked"
@@ -561,8 +579,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:shadowColor="#887878"
-
                     android:backgroundTint="@color/light_blue"
                     android:textColor="@color/black"
                     android:text="@string/loc2"
@@ -573,7 +589,6 @@
                     android:layout_height="wrap_content"
                     android:shadowColor="#887878"
                     android:layout_marginLeft="5dp"
-
                     android:backgroundTint="@color/light_blue"
                     android:textColor="@color/black"
                     android:text="@string/loc3"
@@ -591,7 +606,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
     <LinearLayout
@@ -627,7 +643,8 @@
     android:layout_marginTop="10dp"
     android:layout_margin="5dp"
     android:padding="15dp"
-    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/rounded_edge"
     >
     <RadioGroup
         android:layout_width="wrap_content"
@@ -720,7 +737,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey"
+        android:background="@drawable/rounded_edge"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
 
@@ -747,7 +765,8 @@
             android:layout_marginTop="10dp"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_edge"
             >
     <EditText
         android:id="@+id/message"
