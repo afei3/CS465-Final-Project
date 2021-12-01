@@ -62,7 +62,6 @@
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
                     android:text="ARC Basketball Courts"
-                    margin
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
