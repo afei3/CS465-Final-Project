@@ -45,7 +45,8 @@ public class GroupCoordinateActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GroupCoordinateActivity.this, GroupsFragment.class);
+                Intent intent = new Intent(GroupCoordinateActivity.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber", 3);
                 startActivity(intent);
             }
         });

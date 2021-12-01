@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="30sp"
-                android:text="TennisBalling"
+                android:text="SmashingSlicers"
                 android:textStyle="bold"
                 android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
@@ -50,7 +50,7 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Tues and Fri 5-7pm"
+                    android:text="Mon 1-3pm"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -72,7 +72,18 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Level: Casual"
+                    android:text="Skill Level: Advanced"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="Commitment Level: Competitive"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -84,7 +95,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="18sp"
-                    android:text="Players: 2/4"
+                    android:text="Players: 1/8"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -93,7 +104,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/tennis">
             </ImageView>
         </LinearLayout>
@@ -156,7 +167,7 @@
             android:textSize="18sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:text="Tennis player looking to introduce people to the sport!"
+            android:text="Let's play some competitive tennis! Join this group if you are interested in preparing for and attending tournaments. Please bring racquets; balls will be provided."
             android:layout_gravity="left" />
 
 
@@ -288,7 +299,6 @@
         <Button
             android:id="@+id/manage_button"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -304,7 +314,7 @@
             android:id="@+id/manage_back_button"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"

@@ -78,10 +78,11 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
+                android:layout_marginBottom="20dp"
                 android:minWidth="150dp"
                 android:minHeight="150dp" />
 
@@ -120,8 +121,6 @@
                     android:singleLine="false"
                     android:textSize="20sp" />
             </LinearLayout>
-
-
             <LinearLayout
                 android:id="@+id/user_description"
                 android:layout_width="match_parent"

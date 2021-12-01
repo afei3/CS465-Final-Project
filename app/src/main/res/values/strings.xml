@@ -20,12 +20,12 @@
     <string name="either_tooltip">Your goals include a mix between casual and competitive.</string>
 
     <!--    Group Creation Fields-->
-    <string name="group_name">Group Name<font color='#FF0000'>*</font></string>
-    <string name="sport">Sport<font color='#FF0000'>*</font></string>
-    <string name="skill_level">Skill Level<font color='#FF0000'>*</font></string>
-    <string name="availability">Availability<font color='#FF0000'>*</font></string>
-    <string name="location">Location<font color='#FF0000'>*</font></string>
-    <string name="commitment_level">Commitment Level<font color='#FF0000'>*</font></string>
+    <string name="group_name">Group Name<font color='#FF6961'>*</font></string>
+    <string name="sport">Sport<font color='#FF6961'>*</font></string>
+    <string name="skill_level">Skill Level<font color='#FF6961'>*</font></string>
+    <string name="availability">Availability<font color='#FF6961'>*</font></string>
+    <string name="location">Location<font color='#FF6961'>*</font></string>
+    <string name="commitment_level">Commitment Level<font color='#FF6961'>*</font></string>
     <string name="group_desc">Group Description</string>
 
 
