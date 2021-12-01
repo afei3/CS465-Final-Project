@@ -795,7 +795,6 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:backgroundTint="@color/blue_button"
-
             android:text="Cancel" />
 
         <Button

@@ -66,6 +66,35 @@
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="18sp"
+                        android:text="Players: "
+                        android:textStyle="bold"
+                        android:textColor="@color/grey"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="18sp"
+                        android:text="2/8"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:layout_gravity="left" />
+
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +102,6 @@
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
                     android:text="Skill Level: Advanced"
-                    android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
@@ -83,22 +111,11 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Commitment Level: Competitive"
-                    android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="18sp"
-                    android:text="Players: 2/8"
-                    android:textStyle="bold"
-                    android:textColor="@color/grey"
-                    android:layout_gravity="left" />
             </LinearLayout>
 
             <ImageView
@@ -312,8 +329,6 @@
         <Button
             android:id="@+id/manage_back_button"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"

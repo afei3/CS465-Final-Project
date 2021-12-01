@@ -66,28 +66,6 @@
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:textSize="18sp"
-                    android:layout_marginStart="10dp"
-                    android:text="Skill Level: New"
-                    android:textStyle="bold"
-                    android:textColor="@color/grey"
-                    android:layout_gravity="left" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:textSize="18sp"
-                    android:layout_marginStart="10dp"
-                    android:text="Commitment Level: Casual"
-                    android:textStyle="bold"
-                    android:textColor="@color/grey"
-                    android:layout_gravity="left" />
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,12 +94,34 @@
                         android:layout_gravity="left" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="Skill Level: New"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="Commitment Level: Casual"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="left" />
+
             </LinearLayout>
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="75dp"
                 android:src="@drawable/bball">
             </ImageView>
         </LinearLayout>

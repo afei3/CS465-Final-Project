@@ -242,7 +242,7 @@ android:orientation="horizontal">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:backgroundTint="@color/blue_button"
-    android:textColor="@color/black"
+    android:textColor="@color/white"
     android:textAllCaps="false"
     android:text="Back" />
 
@@ -251,7 +251,7 @@ android:orientation="horizontal">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="30dp"
-    android:textColor="@color/black"
+    android:textColor="@color/white"
     android:backgroundTint="@color/blue_button"
     android:textAllCaps="false"
     android:text="Submit" />
