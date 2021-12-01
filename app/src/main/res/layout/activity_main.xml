@@ -27,7 +27,8 @@
             android:textSize="24sp"
             android:textColor="@color/black"
             android:gravity="center"
-            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
             />
 
         <TextView
@@ -36,8 +37,9 @@
             android:text="@string/landing_description"
             android:textSize="18sp"
             android:gravity="center"
+            android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="140dp"
             />
 
         <Button
