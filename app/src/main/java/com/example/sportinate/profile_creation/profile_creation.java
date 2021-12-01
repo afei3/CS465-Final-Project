@@ -24,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.sportinate.R;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 
+import java.util.Arrays;
+
 public class profile_creation extends AppCompatActivity{
     String sport_name ="";
     String date="";
@@ -80,6 +82,7 @@ public class profile_creation extends AppCompatActivity{
             }
         });
 
+        resetTimeSlot();
 
         //******Date spinner********
         Spinner date_spinner = (Spinner) findViewById(R.id.date_spinner);
@@ -96,7 +99,7 @@ public class profile_creation extends AppCompatActivity{
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
                 Log.v("item", (String) parent.getItemAtPosition(position));
-                date = (String) parent.getItemAtPosition(position);
+                ts.date = Arrays.asList((getResources().getStringArray(R.array.dates_short_array))).get(position);
 
             }
 
@@ -109,7 +112,6 @@ public class profile_creation extends AppCompatActivity{
 
         //****** start hour, start minute, start am/pm *****
         EditText startHour = (EditText) findViewById(R.id.start_hour);
-        startHour.setText("12");
 
         startHour.addTextChangedListener(new TextWatcher() {
 
@@ -122,14 +124,13 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-
+                ts.startHour = s.toString();
 
             }
         });
 
         EditText startMinute = (EditText) findViewById(R.id.start_minute);
 
-        startMinute.setText("00");
         startMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -142,7 +143,7 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-
+                ts.startMinute = s.toString();
 
             }
         });
@@ -162,7 +163,7 @@ public class profile_creation extends AppCompatActivity{
                                        int position, long id) {
 
                 start_ampm = (String) parent.getItemAtPosition(position);
-
+                ts.startAmpm = (String) parent.getItemAtPosition(position);
             }
 
             @Override
@@ -175,7 +176,6 @@ public class profile_creation extends AppCompatActivity{
 
         EditText endHour = (EditText) findViewById(R.id.end_hour);
 
-        endHour.setText("01");
 
         endHour.addTextChangedListener(new TextWatcher() {
 
@@ -188,14 +188,14 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-
+                ts.endHour = s.toString();
 
             }
         });
 
         EditText endMinute = (EditText) findViewById(R.id.end_minute);
 
-        endMinute.setText("00");
+
         endMinute.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
@@ -207,7 +207,7 @@ public class profile_creation extends AppCompatActivity{
 
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
-
+                ts.endMinute = s.toString();
 
             }
         });
@@ -226,7 +226,7 @@ public class profile_creation extends AppCompatActivity{
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
 
-                end_ampm = (String) parent.getItemAtPosition(position);
+                ts.endAmpm = (String) parent.getItemAtPosition(position);
 
             }
 
@@ -273,17 +273,17 @@ public class profile_creation extends AppCompatActivity{
                 //FileOutputStream fos=null;
 
                 if(EditSportActivity.sportId==1) {
-                    ProfileFragment.sport_name1 = sport_name;
-                    ProfileFragment.sport_level1 = skill_level;
-                    sport1 = text1;
-                    level1 = text3;
-                    commitment1 = text6;
-                    location1 = text7;
-                }
+                        ProfileFragment.sport_name1 = sport_name;
+                        ProfileFragment.sport_level1 = skill_level;
+                        sport1 = text1;
+                        level1 = text3;
+                        commitment1 = text6;
+                        location1 = text7;
+                    }
                 else if(EditSportActivity.sportId==2) {
-                    ProfileFragment.sport_name2 = sport_name;
-                    ProfileFragment.sport_level2 = skill_level;
-                    sport2 = text1;
+                        ProfileFragment.sport_name2 = sport_name;
+                        ProfileFragment.sport_level2 = skill_level;
+                        sport2 = text1;
                     level2 = text3;
                     commitment2 = text6;
                     location2 = text7;

@@ -2,95 +2,174 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-
-        android:layout_marginBottom="60dp"
-        android:gravity="center">
+        android:paddingBottom="20dp">
 
         <LinearLayout
-            android:id="@+id/user_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="60dp"
-            android:layout_marginTop="60dp"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:textSize="22sp"
-                android:text="Name: "
-                android:fontFamily="@font/opensans_1"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center" />
-
-            <EditText
-                android:id="@+id/name_text"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="20sp"
-                android:ems="9"
-                android:hint="name"
-                android:freezesText="true"
-                android:gravity="center"
-                android:inputType="textMultiLine"
-                android:singleLine="false" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/user_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:clickable="true"
-            android:focusable="true">
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/light_grey"
+            android:layout_marginBottom="60dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/user_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="Photo: "
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/select_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/sportinate_gold"
+                    android:text="Select Photo"
+                    android:textColor="@color/black" />
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/photo_src"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:textSize="16sp"-->
+                <!--                android:ems="9"-->
+                <!--                android:text="src"-->
+                <!--                android:freezesText="true"-->
+                <!--                android:gravity="center"-->
+                <!--                android:inputType="textMultiLine"-->
+                <!--                android:singleLine="false" />-->
+            </LinearLayout>
+
             <TextView
+                android:id="@+id/img_path"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgShow"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:hint="photo src" />
+
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="22sp"
-                android:text="Description: "
-                android:fontFamily="@font/opensans_1"
-                android:textColor="@color/black"
-                android:layout_gravity="left" />
-            <EditText
-                android:id="@+id/description_text"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:minWidth="150dp"
+                android:minHeight="150dp" />
+
+            <LinearLayout
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:ems="10"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:hint="Include any additional info you want your group to know."
-                android:gravity="top|left"
-                android:textSize="20sp"
-                android:inputType="textMultiLine"
-                android:scrollbarStyle="insideInset"
-                android:scrollbars="vertical"
-                android:freezesText="true"
-                android:singleLine="false" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/rounded_edge"
+                android:backgroundTint="@color/light_grey"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="Name: "
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="9"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:hint="name"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/user_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_edge"
+                android:backgroundTint="@color/light_grey"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/opensans_1"
+                    android:text="Description: "
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:gravity="top|left"
+                    android:hint="Include any additional info you want your group to know."
+                    android:inputType="textMultiLine"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/sportinate_gold"
+                android:text="Next" />
         </LinearLayout>
-        <Button
-            android:layout_marginTop="20dp"
-            android:layout_gravity="bottom|center"
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/sportinate_gold"
-            android:text="Next" />
-    </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

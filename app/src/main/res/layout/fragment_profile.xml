@@ -42,7 +42,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/box"
+                android:background="@drawable/rounded_edge"
+                android:backgroundTint="@color/light_grey"
                 android:clickable="true"
                 android:focusable="true">
 
@@ -50,6 +51,7 @@
                     android:id="@+id/user_avatar1"
                     android:layout_height="match_parent"
                     android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_gravity="center"
                     android:src="@drawable/user" />
 
@@ -57,6 +59,8 @@
                     android:id="@+id/user_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edge"
+                    android:backgroundTint="@color/light_grey"
                     android:clickable="true"
                     android:focusable="true"
                     android:orientation="horizontal">
@@ -77,6 +81,7 @@
                         android:id="@+id/name_text"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textColor="@color/black"
                         android:gravity="center"
 
                         android:textSize="20sp" />
@@ -94,6 +99,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@drawable/rounded_edge"
+                    android:backgroundTint="@color/light_grey"
                     android:clickable="true"
                     android:focusable="true">
                     <TextView
@@ -107,12 +114,13 @@
                     <TextView
                         android:id="@+id/description_text"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:ems="10"
                         android:textSize="20sp"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
                         android:gravity="top|left"
+                        android:textColor="@color/black"
                         android:scrollbarStyle="insideInset"
                         android:scrollbars="vertical"
                         android:singleLine="false" />
@@ -142,7 +150,8 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/box"
+                    android:background="@drawable/rounded_edge"
+                    android:backgroundTint="@color/light_grey"
                     android:clickable="true"
                     android:focusable="true">
 
@@ -165,10 +174,12 @@
                         />
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
+                        android:background="@drawable/rounded_edge"
+                        android:backgroundTint="@color/light_grey"
                         android:clickable="true"
                         android:focusable="true">
 
