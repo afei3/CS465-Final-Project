@@ -147,15 +147,34 @@
                     android:freezesText="true"
                     android:singleLine="false" />
             </LinearLayout>
-            <Button
-                android:layout_marginTop="20dp"
-                android:layout_gravity="bottom|center"
-                android:id="@+id/next_button"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/sportinate_gold"
-                android:text="Next" />
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="60dp">
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/sportinate_gold"
+                    android:text="My Profile" />
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/sportinate_gold"
+                    android:text="Add a Sport" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

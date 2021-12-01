@@ -42,7 +42,37 @@ public class LandingProfileActivity extends AppCompatActivity{
 
 
         Button next_button = findViewById(R.id.next_button);
+        Button back_button = findViewById(R.id.back_button);
         next_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(com.example.sportinate.profile_creation.LandingProfileActivity.this, profile_creation.class);
+                EditText user_name = (EditText) findViewById(R.id.name_text);
+                String message1 = user_name.getText().toString();
+                EditText user_descrip = (EditText) findViewById(R.id.description_text);
+                String message2 = user_descrip.getText().toString();
+
+
+                UserInfo user = new UserInfo();
+
+                user.setName(message1);
+
+                user.setDescrip(message2);
+
+                intent.putExtra("key", user);
+
+                BrowseActivity.user_name = message1;
+                BrowseActivity.user_descrip = message2;
+                BrowseActivity.user_photo = bm_photo;
+
+
+                intent.putExtra("fragmentNumber", 1);
+                startActivity(intent);
+            }
+
+        });
+
+        back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(com.example.sportinate.profile_creation.LandingProfileActivity.this, BrowseActivity.class);

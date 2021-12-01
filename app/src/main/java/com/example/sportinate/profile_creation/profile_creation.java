@@ -22,6 +22,7 @@ import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.R;
+import com.example.sportinate.group_search_and_select.BrowseActivity;
 
 public class profile_creation extends AppCompatActivity{
     String sport_name ="";
@@ -296,28 +297,6 @@ public class profile_creation extends AppCompatActivity{
                     location3 = text7;
                 }
 
-//                try {
-//                    if(EditSportActivity.sportId==1)
-//                        fos=openFileOutput("t1",MODE_PRIVATE);
-//                    if(EditSportActivity.sportId==2)
-//                        fos=openFileOutput("t2",MODE_PRIVATE);
-//                    if(EditSportActivity.sportId==3)
-//                        fos=openFileOutput("t3",MODE_PRIVATE);
-//                    fos.write((text1+" "+text2+" "+text3+" "+text4+" "+text5+" "+text6+" "+text7).getBytes());
-//                    fos.flush();
-//                }catch (FileNotFoundException e){
-//                    e.printStackTrace();
-//                }catch (IOException e){
-//                    e.printStackTrace();
-//                }finally {
-//                    if (fos != null) {
-//                        try {
-//                            fos.close();
-//                        } catch (IOException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                }
                 EditSportActivity.sportId +=1;
 
                 Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
@@ -326,6 +305,17 @@ public class profile_creation extends AppCompatActivity{
             }
         });
 
+        Button back_button = findViewById(R.id.back_button1);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+                Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, BrowseActivity.class);
+                intent.putExtra("fragmentNumber", 1);
+                startActivity(intent);
+            }
+        });
 
 
 
