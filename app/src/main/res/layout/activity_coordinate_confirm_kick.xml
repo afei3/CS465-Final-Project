@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="30sp"
-                android:text="TennisBalling"
+                android:text="SmashingSlicers"
                 android:textStyle="bold"
                 android:fontFamily="@font/opensans_1"
                 android:layout_weight="0.5"
@@ -49,7 +49,7 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Tues and Fri 5-7pm"
+                    android:text="Mon 1-3pm"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -71,7 +71,7 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Level: Casual"
+                    android:text="Level: Competitive"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -211,11 +211,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -246,13 +241,11 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:textSize="16sp"
-                android:text="Back"
+                android:text="Remove User"
                 android:backgroundTint="@color/sportinate_gold"
                 android:textColor="@color/black"
                 android:layout_gravity="right"
                 />
-
-    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
