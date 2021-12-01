@@ -247,7 +247,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"
-                    android:text="Add meeting time(s) for your group using the ADD button"
+                    android:text="Add your available time slots using the ADD button"
                     android:textSize="16sp" />
                 <LinearLayout
                     android:layout_width="match_parent"

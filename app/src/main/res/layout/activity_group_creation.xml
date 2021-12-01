@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="FightingIllini"
+                android:hint="Ex: FightingIllini"
                 android:textSize="16sp"
                 />
         </LinearLayout>
@@ -776,7 +776,6 @@
         android:hint="Include any additional info you want your group to know"
         android:inputType="textMultiLine"
         android:scrollbarStyle="insideInset"
-        android:fontFamily="@font/opensans_1"
         android:scrollbars="vertical"
         android:singleLine="false" />
         </LinearLayout>
