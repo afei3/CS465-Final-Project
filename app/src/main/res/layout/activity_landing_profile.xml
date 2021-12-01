@@ -47,13 +47,7 @@
                     android:textColor="@color/black"
                     android:backgroundTint="@color/sportinate_gold"
                     android:text="Select Photo" />
-                <TextView
-                    android:id="@+id/img_path"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imgShow"
-                    android:layout_margin="15dip"
-                    android:hint="photo src" />
+
         <!--            <TextView-->
         <!--                android:id="@+id/photo_src"-->
         <!--                android:layout_width="wrap_content"-->
@@ -66,14 +60,22 @@
         <!--                android:inputType="textMultiLine"-->
         <!--                android:singleLine="false" />-->
             </LinearLayout>
+            <TextView
+                android:id="@+id/img_path"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgShow"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:hint="photo src" />
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:minHeight="150dip"
-                android:minWidth="150dip"
+                android:minHeight="150dp"
+                android:minWidth="150dp"
                 />
 
             <LinearLayout
