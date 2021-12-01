@@ -9,11 +9,12 @@
 
     <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".bottom_nav_ui.home.HomeFragment">
 
         <SearchView
-            android:id="@+id/searchview"
+            android:id="@+id/simple_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:iconifiedByDefault="false"
