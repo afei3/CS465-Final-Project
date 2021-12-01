@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,13 +29,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="15dp"
-        android:fontFamily="@font/opensans_1"
-        android:text="You have successfully added preferences to your profile.\nGroups that match your criteria will appear higher on the list for you now."
+        android:text="You have successfully added preferences to your profile. Groups that match your criteria will appear higher on the list for you now."
         android:textSize="18sp"
         android:textColor="@color/black"
         android:gravity="left"
         android:layout_gravity="center"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="190dp" />
 
     <Button
         android:id="@+id/add_new_sport"
@@ -63,3 +68,4 @@
         />
 
 </LinearLayout>
+</ScrollView>

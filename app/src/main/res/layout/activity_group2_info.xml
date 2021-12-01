@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_grey"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".group_search_and_select.Group1InfoActivity">
@@ -70,7 +71,18 @@
                     android:layout_marginEnd="8dp"
                     android:textSize="18sp"
                     android:layout_marginStart="10dp"
-                    android:text="Level: Competitive"
+                    android:text="Skill Level: Intermediate"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="Commitment Level: Competitive"
                     android:textStyle="bold"
                     android:textColor="@color/grey"
                     android:layout_gravity="left" />
@@ -91,7 +103,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/bball">
             </ImageView>
         </LinearLayout>
@@ -109,7 +121,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:layout_marginStart="10dp"
-            android:text="Group Coordinator: Jackie Oh"
+            android:text="Group Coordinator: James Oh"
             android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
@@ -121,7 +133,7 @@
             android:layout_marginEnd="20dp"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:text="jackieoh@illinois.edu"
+            android:text="jamesoh@illinois.edu"
             android:layout_gravity="left" />
         <TextView
             android:layout_width="match_parent"
@@ -154,7 +166,7 @@
             android:textSize="18sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
-            android:text="Looking for intermediate and advanced level players. No equipment necessary."
+            android:text="Looking for players with prior team experience to have a weekly scrimmage. No equipment necessary."
             android:layout_gravity="left" />
 
 
@@ -189,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
-                android:text="Jackie Oh"
+                android:text="James Oh"
                 android:layout_weight="0.5"
                 android:layout_gravity="left" />
 
@@ -198,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
-                android:text="jackieoh@illinois.edu"
+                android:text="jamesoh@illinois.edu"
                 android:layout_weight="0.5"
                 android:layout_gravity="center_horizontal" />
 

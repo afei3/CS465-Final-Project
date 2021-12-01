@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -27,7 +32,8 @@
             android:textSize="24sp"
             android:textColor="@color/black"
             android:gravity="center"
-            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
             />
 
         <TextView
@@ -36,8 +42,9 @@
             android:text="@string/landing_description"
             android:textSize="18sp"
             android:gravity="center"
+            android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="140dp"
             />
 
         <Button
@@ -72,3 +79,4 @@
             />
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

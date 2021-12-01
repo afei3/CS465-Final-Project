@@ -99,7 +99,7 @@ public class HomeFragment extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 hideKeyboard(getActivity());
-                query.toLowerCase(Locale.ROOT);
+                query = query.toLowerCase();
                 if (query.equals("basketball")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
@@ -133,7 +133,8 @@ public class HomeFragment extends Fragment {
             @Override
             public boolean onQueryTextChange(String newText) {
                 create_new_group_btn.setVisibility(View.VISIBLE);
-                if (!newText.toLowerCase(Locale.ROOT).equals("basketball") && !newText.toLowerCase(Locale.ROOT).equals("flingers")) {
+                newText = newText.toLowerCase();
+                if (!newText.equals("basketball") && !newText.equals("flingers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
                     group3_search.setVisibility(View.VISIBLE);

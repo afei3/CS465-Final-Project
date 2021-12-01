@@ -154,7 +154,7 @@
                     android:ems="10"
                     android:freezesText="true"
                     android:gravity="top|left"
-                    android:hint="Include any additional info you want your group to know."
+                    android:hint="Include any additional info about yourself"
                     android:inputType="textMultiLine"
                     android:scrollbarStyle="insideInset"
                     android:scrollbars="vertical"
