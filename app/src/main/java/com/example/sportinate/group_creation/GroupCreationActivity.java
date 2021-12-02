@@ -27,6 +27,7 @@ import android.text.TextWatcher;
 import android.text.Editable;
 import android.widget.TextView;
 import android.widget.LinearLayout.LayoutParams;
+import android.widget.Toast;
 
 import java.util.Arrays;
 
@@ -295,9 +296,17 @@ public class GroupCreationActivity extends AppCompatActivity {
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GroupCreationActivity.this, GroupCreationReviewActivity.class);
-                intent.putExtra("group", group);
-                startActivity(intent);
+                //check all required fields
+                if(group.groupName==null|| group.groupName.equals("")|| group.sportName==null||
+                group.skillLevel==null || group.timeSlots.isEmpty()||group.location==null ||
+                group.location.equals("")|| group.commitment==null){
+                    Toast.makeText(GroupCreationActivity.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
+
+                }else {
+                    Intent intent = new Intent(GroupCreationActivity.this, GroupCreationReviewActivity.class);
+                    intent.putExtra("group", group);
+                    startActivity(intent);
+                }
             }
         });
 
