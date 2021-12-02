@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.ProfileInfo;
@@ -261,51 +262,56 @@ public class profile_creation extends AppCompatActivity{
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String text1=sport_name;
-                String text2=date;
-                String text3=skill_level;
-                String text4=start_ampm;
-                String text5=end_ampm;
-                String text6=commitment;
-                if (text3 == "")
-                    text3 = "Unknown";
-                if (text6 == "")
-                    text6 = "Either";
-                String text7="Arc";
-                //if (text7 == "")
-                //    text7 = "ARC";
-                //FileOutputStream fos=null;
+                //check all required fields
+                if (sport_name == null || skill_level == null || commitment == null ||
+                        sport_name == "" || skill_level == "" || commitment == "") {
+                    Toast.makeText(profile_creation.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
 
-                if(EditSportActivity.sportId==1) {
+                } else {
+                    String text1 = sport_name;
+                    String text2 = date;
+                    String text3 = skill_level;
+                    String text4 = start_ampm;
+                    String text5 = end_ampm;
+                    String text6 = commitment;
+                    if (text3 == "")
+                        text3 = "Unknown";
+                    if (text6 == "")
+                        text6 = "Either";
+                    String text7 = "Arc";
+                    //if (text7 == "")
+                    //    text7 = "ARC";
+                    //FileOutputStream fos=null;
+
+                    if (EditSportActivity.sportId == 1) {
                         ProfileFragment.sport_name1 = sport_name;
                         ProfileFragment.sport_level1 = skill_level;
                         sport1 = text1;
                         level1 = text3;
                         commitment1 = text6;
                         location1 = text7;
-                    }
-                else if(EditSportActivity.sportId==2) {
+                    } else if (EditSportActivity.sportId == 2) {
                         ProfileFragment.sport_name2 = sport_name;
                         ProfileFragment.sport_level2 = skill_level;
                         sport2 = text1;
-                    level2 = text3;
-                    commitment2 = text6;
-                    location2 = text7;
+                        level2 = text3;
+                        commitment2 = text6;
+                        location2 = text7;
+                    } else if (EditSportActivity.sportId == 3) {
+                        ProfileFragment.sport_name3 = sport_name;
+                        ProfileFragment.sport_level3 = skill_level;
+                        sport3 = text1;
+                        level3 = text3;
+                        commitment3 = text6;
+                        location3 = text7;
+                    }
+
+                    EditSportActivity.sportId += 1;
+
+                    Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
+
+                    startActivity(intent);
                 }
-                else if(EditSportActivity.sportId==3) {
-                    ProfileFragment.sport_name3 = sport_name;
-                    ProfileFragment.sport_level3 = skill_level;
-                    sport3 = text1;
-                    level3 = text3;
-                    commitment3 = text6;
-                    location3 = text7;
-                }
-
-                EditSportActivity.sportId +=1;
-
-                Intent intent = new Intent(com.example.sportinate.profile_creation.profile_creation.this, profile_creation_comfirm.class);
-
-                startActivity(intent);
             }
         });
 
