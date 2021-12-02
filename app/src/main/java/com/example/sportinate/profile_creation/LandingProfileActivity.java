@@ -311,7 +311,7 @@ public class LandingProfileActivity extends AppCompatActivity{
                 finish();
 
                 Intent intent = new Intent(com.example.sportinate.profile_creation.LandingProfileActivity.this, BrowseActivity.class);
-                intent.putExtra("fragmentNumber", 1);
+                intent.putExtra("fragmentNumber", 2);
                 startActivity(intent);
             }
         });
