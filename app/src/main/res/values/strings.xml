@@ -35,6 +35,11 @@
     <string name="loc2">Stadium</string>
     <string name="loc3">CRCE</string>
 
+    <string name="group_creation_message">*Note: By creating this group, you are agreeing to put your name and contact information down as the group coordinator</string>
+
+
+
+
     <string-array name="sports_array">
         <item>Basketball</item>
         <item>Soccer</item>
