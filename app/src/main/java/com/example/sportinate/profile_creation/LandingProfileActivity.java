@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,8 @@ import com.example.sportinate.ProfileInfo;
 import com.example.sportinate.R;
 import com.example.sportinate.TimeSlot;
 import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
+import com.example.sportinate.group_creation.GroupCreationActivity;
+import com.example.sportinate.group_creation.GroupCreationReviewActivity;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.profile_creation.UserInfo;
 import java.io.FileNotFoundException;
@@ -254,53 +257,54 @@ public class LandingProfileActivity extends AppCompatActivity{
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String text1=sport_name;
-                String text2=date;
-                String text3=skill_level;
-                String text4=start_ampm;
-                String text5=end_ampm;
-                String text6=commitment;
-                if (text3 == "")
-                    text3 = "Unknown";
-                if (text6 == "")
-                    text6 = "Either";
-                String text7="Arc";
-                //if (text7 == "")
-                //    text7 = "ARC";
-                //FileOutputStream fos=null;
+                //check all required fields
+                if(sport_name==null|| skill_level==null ||  commitment==null ||
+                sport_name==""|| skill_level=="" ||  commitment==""){
+                    Toast.makeText(LandingProfileActivity.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
 
-                ProfileFragment.sport_name1 = sport_name;
-                ProfileFragment.sport_level1 = skill_level;
-                profile_creation.sport1 = text1;
-                profile_creation.level1 = text3;
-                profile_creation.commitment1 = text6;
-                profile_creation.location1 = text7;
+                }else {
+                    String text1=sport_name;
+                    String text2=date;
+                    String text3=skill_level;
+                    String text4=start_ampm;
+                    String text5=end_ampm;
+                    String text6=commitment;
+                    String text7="Arc";
 
-                EditSportActivity.sportId +=1;
+                    ProfileFragment.sport_name1 = sport_name;
+                    ProfileFragment.sport_level1 = skill_level;
+                    profile_creation.sport1 = text1;
+                    profile_creation.level1 = text3;
+                    profile_creation.commitment1 = text6;
+                    profile_creation.location1 = text7;
 
-                Intent intent = new Intent(com.example.sportinate.profile_creation.LandingProfileActivity.this, profile_creation_comfirm.class);
+                    EditSportActivity.sportId +=1;
 
-                EditText user_name = (EditText) findViewById(R.id.user_name);
-                String message1 = user_name.getText().toString();
-                EditText user_descrip = (EditText) findViewById(R.id.message);
-                String message2 = user_descrip.getText().toString();
+                    Intent intent = new Intent(com.example.sportinate.profile_creation.LandingProfileActivity.this, profile_creation_comfirm.class);
 
-
-                UserInfo user = new UserInfo();
-
-                user.setName(message1);
-
-                user.setDescrip(message2);
-
-                intent.putExtra("key", user);
-
-                BrowseActivity.user_name = message1;
-                BrowseActivity.user_descrip = message2;
-                BrowseActivity.user_photo = bm_photo;
+                    EditText user_name = (EditText) findViewById(R.id.user_name);
+                    String message1 = user_name.getText().toString();
+                    EditText user_descrip = (EditText) findViewById(R.id.message);
+                    String message2 = user_descrip.getText().toString();
 
 
+                    UserInfo user = new UserInfo();
 
-                startActivity(intent);
+                    user.setName(message1);
+
+                    user.setDescrip(message2);
+
+                    intent.putExtra("key", user);
+
+                    BrowseActivity.user_name = message1;
+                    BrowseActivity.user_descrip = message2;
+                    BrowseActivity.user_photo = bm_photo;
+
+
+
+                    startActivity(intent);
+                }
+
             }
         });
 
