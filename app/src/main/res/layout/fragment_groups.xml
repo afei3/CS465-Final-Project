@@ -19,7 +19,8 @@
             android:textColor="@color/black"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="15dp"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
             android:text="Groups You're Coordinating">
         </TextView>
@@ -32,7 +33,7 @@
             android:textColor="#808080"
             android:layout_marginLeft="25dp"
             android:visibility="visible"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:textSize="17sp"
             android:text="None">
         </TextView>
@@ -133,7 +134,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="20dp"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
             android:text="Groups You're In">
         </TextView>
