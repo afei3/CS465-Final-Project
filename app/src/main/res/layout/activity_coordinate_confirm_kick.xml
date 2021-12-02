@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:background="@color/light_grey"
+        android:orientation="vertical"
         tools:context=".group_search_and_select.Group1InfoActivity">
 
         <LinearLayout
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:layout_marginStart="10dp"
-            android:text="Group Coordinator: User"
+            android:text="Group Coordinator: Willy Wonka"
             android:textStyle="bold"
             android:fontFamily="@font/opensans_1"
             android:textColor="@color/black"
@@ -151,7 +151,7 @@
             android:layout_marginEnd="20dp"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:text="user@illinois.edu"
+            android:text="willywonka@illinois.edu"
             android:layout_gravity="left" />
         <TextView
             android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textSize="18sp"
-                android:text="User"
+                android:text="Willy Wonka"
                 android:layout_weight="0.5"
                 android:layout_gravity="left" />
 
@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="18sp"
-                android:text="user@illinois.edu"
+                android:text="willywonka@illinois.edu"
                 android:layout_weight="0.5"
                 android:layout_gravity="center_horizontal" />
 
