@@ -18,10 +18,9 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:orientation="vertical"
             >
-
 
             <TextView
                 android:layout_width="match_parent"
@@ -34,17 +33,22 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/opensans_1"
                 android:textSize="24sp" />
-
-            <Spinner
-                android:id="@+id/sports_spinner"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 android:layout_margin="5dp"
+                android:padding="15dp"
                 android:backgroundTint="@color/white"
                 android:background="@drawable/rounded_edge"
-                android:padding="15dp"
-                android:textSize="24sp" />
+                >
+                <Spinner
+                    android:id="@+id/sports_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+            </LinearLayout>
         </LinearLayout>
 
 
@@ -78,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"
-                    android:text="Select skill level for your group"
+                    android:text="Select skill level of yourself"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -449,111 +453,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue_grey"
-            android:background="@drawable/rounded_edge"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="20dp"
-                android:paddingTop="5dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="5dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/location"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/opensans_1"
-                    android:textSize="24sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:text="Enter the sport location or select from the common locations"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/rounded_edge"
-                >
-                <EditText
-                    android:id="@+id/location"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="16sp"
-                    android:hint="ARC"
-                    />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-
-                    android:layout_marginTop="5dp"
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text =""
-                        ></TextView>
-
-                    <Button
-                        android:id="@+id/common_loc1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/light_blue"
-                        android:shadowColor="#887878"
-
-                        android:text="@string/loc1"
-                        android:textColor="@color/black"
-                        android:onClick="onLoc1Clicked"
-                        ></Button>
-
-                    <Button
-                        android:id="@+id/common_loc2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:shadowColor="#887878"
-
-                        android:backgroundTint="@color/light_blue"
-                        android:textColor="@color/black"
-                        android:text="@string/loc2"
-                        android:onClick="onLoc2Clicked"></Button>
-                    <Button
-                        android:id="@+id/common_loc3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:shadowColor="#887878"
-                        android:layout_marginLeft="5dp"
-
-                        android:backgroundTint="@color/light_blue"
-                        android:textColor="@color/black"
-                        android:text="@string/loc3"
-                        android:onClick="onLoc3Clicked"
-                        ></Button>
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
 
 
         <LinearLayout
@@ -685,6 +585,9 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"

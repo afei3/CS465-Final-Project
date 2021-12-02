@@ -57,6 +57,10 @@ public class profile_creation extends AppCompatActivity{
         setContentView(R.layout.activity_profile_creation);
         getSupportActionBar().setTitle("Make Profile");
 
+
+
+
+
         //******Sport spinner ********
         Spinner sports_spinner = (Spinner) findViewById(R.id.sports_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -235,22 +239,22 @@ public class profile_creation extends AppCompatActivity{
             }
         });
 
-        EditText locationText = (EditText) findViewById(R.id.location);
-        locationText.addTextChangedListener(new TextWatcher() {
-
-            public void afterTextChanged(Editable s) {
-            }
-
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-            }
-
-            public void onTextChanged(CharSequence s, int start,
-                                      int before, int count) {
-                location = s.toString();
-
-            }
-        });
+//        EditText locationText = (EditText) findViewById(R.id.location);
+//        locationText.addTextChangedListener(new TextWatcher() {
+//
+//            public void afterTextChanged(Editable s) {
+//            }
+//
+//            public void beforeTextChanged(CharSequence s, int start,
+//                                          int count, int after) {
+//            }
+//
+//            public void onTextChanged(CharSequence s, int start,
+//                                      int before, int count) {
+//                location = s.toString();
+//
+//            }
+//        });
 
 
         Button next_button = findViewById(R.id.next_button1);
@@ -267,9 +271,9 @@ public class profile_creation extends AppCompatActivity{
                     text3 = "Unknown";
                 if (text6 == "")
                     text6 = "Either";
-                String text7=location;
-                if (text7 == "")
-                    text7 = "ARC";
+                String text7="Arc";
+                //if (text7 == "")
+                //    text7 = "ARC";
                 //FileOutputStream fos=null;
 
                 if(EditSportActivity.sportId==1) {
@@ -369,24 +373,24 @@ public class profile_creation extends AppCompatActivity{
         }
     }
 
-    public void onLoc1Clicked(View view){
-        EditText text = (EditText) findViewById(R.id.location);
-        text.setText(R.string.loc1);
-
-
-    }
-
-    public void onLoc2Clicked(View view){
-        EditText text = (EditText) findViewById(R.id.location);
-        text.setText(R.string.loc2);
-
-
-    }
-    public void onLoc3Clicked(View view){
-        EditText text = (EditText) findViewById(R.id.location);
-        text.setText(R.string.loc3);
-
-    }
+//    public void onLoc1Clicked(View view){
+//        EditText text = (EditText) findViewById(R.id.location);
+//        text.setText(R.string.loc1);
+//
+//
+//    }
+//
+//    public void onLoc2Clicked(View view){
+//        EditText text = (EditText) findViewById(R.id.location);
+//        text.setText(R.string.loc2);
+//
+//
+//    }
+//    public void onLoc3Clicked(View view){
+//        EditText text = (EditText) findViewById(R.id.location);
+//        text.setText(R.string.loc3);
+//
+//    }
 
     public void resetTimeSlot(){
 
