@@ -55,13 +55,7 @@ public class LandingProfileActivity extends AppCompatActivity{
     String commitment="";
     String location="";
     ProfileInfo profile = new ProfileInfo();
-    public static String sport1;
 
-    public static String level1;
-
-    public static String commitment1;
-
-    public static String location1;
 
 
     TimeSlot ts = new TimeSlot();
@@ -277,10 +271,10 @@ public class LandingProfileActivity extends AppCompatActivity{
 
                 ProfileFragment.sport_name1 = sport_name;
                 ProfileFragment.sport_level1 = skill_level;
-                sport1 = text1;
-                level1 = text3;
-                commitment1 = text6;
-                location1 = text7;
+                profile_creation.sport1 = text1;
+                profile_creation.level1 = text3;
+                profile_creation.commitment1 = text6;
+                profile_creation.location1 = text7;
 
                 EditSportActivity.sportId +=1;
 

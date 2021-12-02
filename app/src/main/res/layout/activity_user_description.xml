@@ -18,69 +18,25 @@
             android:backgroundTint="@color/light_grey"
             android:layout_marginBottom="60dp"
             android:gravity="center">
-
-            <LinearLayout
-                android:id="@+id/user_avatar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="left|center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/opensans_1"
-                    android:text="Photo: "
-                    android:textColor="@color/black"
-                    android:textSize="22sp" />
-
-                <Button
-                    android:id="@+id/select_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginTop="20dp"
-                    android:backgroundTint="@color/sportinate_gold"
-                    android:text="Select Photo"
-                    android:textColor="@color/black" />
-
-                <!--            <TextView-->
-                <!--                android:id="@+id/photo_src"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="match_parent"-->
-                <!--                android:textSize="16sp"-->
-                <!--                android:ems="9"-->
-                <!--                android:text="src"-->
-                <!--                android:freezesText="true"-->
-                <!--                android:gravity="center"-->
-                <!--                android:inputType="textMultiLine"-->
-                <!--                android:singleLine="false" />-->
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/img_path"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imgShow"
-                android:layout_margin="15dp"
-                android:gravity="center"
-                android:hint="photo src" />
-
+            <Button
+                android:id="@+id/choose_photo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/blue_grey"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                android:text="Choose Photo" />
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:visibility="gone"
                 android:minWidth="150dp"
                 android:minHeight="150dp" />
 

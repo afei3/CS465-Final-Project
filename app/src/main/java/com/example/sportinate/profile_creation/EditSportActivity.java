@@ -76,7 +76,7 @@ public class EditSportActivity extends AppCompatActivity {
             text1TV.setText(profile_creation.sport1 + ":");
             text3TV.setText("Level: " + profile_creation.level1);
             text6TV.setText("Commitment: " + profile_creation.commitment1);
-            text7TV.setText("Location: " + profile_creation.location1);
+            //text7TV.setText("Location: " + profile_creation.location1);
 
             View sport1 = findViewById(R.id.sport1);
             sport1.setVisibility(View.VISIBLE);
@@ -90,7 +90,7 @@ public class EditSportActivity extends AppCompatActivity {
             text1TV.setText(profile_creation.sport2 + ":");
             text3TV.setText("Level: " + profile_creation.level2);
             text6TV.setText("Commitment: " + profile_creation.commitment2);
-            text7TV.setText("Location: " + profile_creation.location2);
+            //text7TV.setText("Location: " + profile_creation.location2);
 
             View sport2 = findViewById(R.id.sport2);
             sport2.setVisibility(View.VISIBLE);
@@ -104,7 +104,7 @@ public class EditSportActivity extends AppCompatActivity {
             text1TV.setText(profile_creation.sport3 + ":");
             text3TV.setText("Level: " + profile_creation.level3);
             text6TV.setText("Commitment: " + profile_creation.commitment3);
-            text7TV.setText("Location: " + profile_creation.location3);
+            //text7TV.setText("Location: " + profile_creation.location3);
 
             View sport3 = findViewById(R.id.sport3);
             sport3.setVisibility(View.VISIBLE);

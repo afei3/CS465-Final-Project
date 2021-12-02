@@ -76,9 +76,9 @@ public class UserDescriptionActivity extends AppCompatActivity {
 
         });
 
-        btnPhone = (Button) findViewById(R.id.select_button);
+        btnPhone = (Button) findViewById(R.id.choose_photo);
         imageView = (ImageView) findViewById(R.id.imageView);
-        tv = (TextView) findViewById(R.id.img_path);
+        //tv = (TextView) findViewById(R.id.img_path);
         btnPhone.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -130,8 +130,11 @@ public class UserDescriptionActivity extends AppCompatActivity {
 
                 cursor.moveToFirst();
 
-                String path = cursor.getString(column_index);
-                tv.setText(path);
+                //String path = cursor.getString(column_index);
+                //tv.setText(path);
+
+                btnPhone.setVisibility(View.GONE);
+                imageView.setVisibility(View.VISIBLE);
             } catch (IOException e) {
                 Log.e("TAG-->Error", e.toString());
 
