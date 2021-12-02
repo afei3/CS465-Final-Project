@@ -32,7 +32,7 @@
         android:text="You have successfully added preferences to your profile. Groups that match your criteria will appear higher on the list for you now."
         android:textSize="18sp"
         android:textColor="@color/black"
-        android:gravity="left"
+        android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginBottom="190dp" />
 
