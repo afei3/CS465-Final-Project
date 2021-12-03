@@ -109,12 +109,62 @@ public class HomeFragment extends Fragment {
                     no_results_text.setVisibility(View.GONE);
                     create_new_group_btn.setVisibility(View.GONE);
                 }
+
+                else if (query.equals("tennis")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.VISIBLE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
+                }
+
+                else if (query.equals("soccer")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.VISIBLE);
+                    no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
+                }
+
                 else if (query.equals("chambanaballers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.GONE);
                     group3_search.setVisibility(View.GONE);
                     group4_search.setVisibility(View.GONE);
                     group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
+                }
+                else if (query.equals("gothoops")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.VISIBLE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
+                }
+
+                else if (query.equals("raquetrockers")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.VISIBLE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.GONE);
+                    no_results_text.setVisibility(View.GONE);
+                    create_new_group_btn.setVisibility(View.GONE);
+                }
+
+                else if (query.equals("flingers")) {
+                    group1_search.setVisibility(View.GONE);
+                    group2_search.setVisibility(View.GONE);
+                    group3_search.setVisibility(View.GONE);
+                    group4_search.setVisibility(View.GONE);
+                    group5_search.setVisibility(View.VISIBLE);
                     no_results_text.setVisibility(View.GONE);
                     create_new_group_btn.setVisibility(View.GONE);
                 }
@@ -134,7 +184,8 @@ public class HomeFragment extends Fragment {
             public boolean onQueryTextChange(String newText) {
                 create_new_group_btn.setVisibility(View.VISIBLE);
                 newText = newText.toLowerCase();
-                if (!newText.equals("basketball") && !newText.equals("chambanaballers")) {
+                if (!newText.equals("basketball") && !newText.equals("tennis") && !newText.equals("soccer") && !newText.equals("chambanaballers") && !newText.equals("gothoops")
+                        && !newText.equals("raquetrockers") && !newText.equals("flingers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
                     group3_search.setVisibility(View.VISIBLE);
