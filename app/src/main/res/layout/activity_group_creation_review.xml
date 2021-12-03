@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Group Meeting Times: "
+            android:text="Meeting Times: "
             android:textStyle="bold"
             android:layout_marginLeft="10dp"
             android:textColor="@color/black"
