@@ -109,12 +109,12 @@ public class HomeFragment extends Fragment {
                     no_results_text.setVisibility(View.GONE);
                     create_new_group_btn.setVisibility(View.GONE);
                 }
-                else if (query.equals("flingers")) {
-                    group1_search.setVisibility(View.GONE);
+                else if (query.equals("chambanaballers")) {
+                    group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.GONE);
                     group3_search.setVisibility(View.GONE);
                     group4_search.setVisibility(View.GONE);
-                    group5_search.setVisibility(View.VISIBLE);
+                    group5_search.setVisibility(View.GONE);
                     no_results_text.setVisibility(View.GONE);
                     create_new_group_btn.setVisibility(View.GONE);
                 }
@@ -134,7 +134,7 @@ public class HomeFragment extends Fragment {
             public boolean onQueryTextChange(String newText) {
                 create_new_group_btn.setVisibility(View.VISIBLE);
                 newText = newText.toLowerCase();
-                if (!newText.equals("basketball") && !newText.equals("flingers")) {
+                if (!newText.equals("basketball") && !newText.equals("chambanaballers")) {
                     group1_search.setVisibility(View.VISIBLE);
                     group2_search.setVisibility(View.VISIBLE);
                     group3_search.setVisibility(View.VISIBLE);
