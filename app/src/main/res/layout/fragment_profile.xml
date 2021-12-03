@@ -82,7 +82,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
-
+                        android:fontFamily="@font/opensans_1"
                         android:layout_marginEnd="20dp"
                         android:text="Name: "
                         android:textColor="@color/black"
@@ -131,7 +131,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
-
+                        android:fontFamily="@font/opensans_1"
                         android:layout_marginEnd="20dp"
                         android:text="Email: "
                         android:textColor="@color/black"
@@ -185,6 +185,7 @@
                             android:layout_marginStart="8dp"
                             android:textSize="22sp"
                             android:text="Description: "
+                            android:fontFamily="@font/opensans_1"
                             android:textColor="@color/black"
                             android:layout_gravity="left" />
                     </LinearLayout>
@@ -264,8 +265,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:textSize="22sp"
-                            android:text="Sport:"
+                            android:text="Added Sports:"
                             android:layout_weight="0.5"
+                            android:fontFamily="@font/opensans_1"
                             android:textColor="@color/black"
                             android:layout_gravity="left" />
                     </LinearLayout>
@@ -306,15 +308,15 @@
                 </LinearLayout>
             <Button
                 android:id="@+id/sprot_edit"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginEnd="10dp"
                 android:backgroundTint="@color/sportinate_gold"
                 android:gravity="center"
-                android:text="Edit"
+                android:text="View Preferences"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp" />

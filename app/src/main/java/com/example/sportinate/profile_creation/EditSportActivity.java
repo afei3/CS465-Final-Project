@@ -73,9 +73,9 @@ public class EditSportActivity extends AppCompatActivity {
             TextView text6TV = (TextView) findViewById(R.id.sport_commitment1);
             TextView text7TV = (TextView) findViewById(R.id.sport_location1);
 
-            text1TV.setText(profile_creation.sport1 + ":");
-            text3TV.setText("Level: " + profile_creation.level1);
-            text6TV.setText("Commitment: " + profile_creation.commitment1);
+            text1TV.setText(profile_creation.sport1);
+            text3TV.setText("Skill Level: " + profile_creation.level1);
+            text6TV.setText("Commitment Level: " + profile_creation.commitment1);
             //text7TV.setText("Location: " + profile_creation.location1);
 
             View sport1 = findViewById(R.id.sport1);

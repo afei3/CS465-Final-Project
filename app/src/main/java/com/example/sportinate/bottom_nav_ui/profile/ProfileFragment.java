@@ -103,7 +103,7 @@ public class ProfileFragment extends Fragment {
 
         TextView sport_1 = root.findViewById(R.id.sport_list);
         if(EditSportActivity.sportId ==2) {
-            String input = sport_name1 + ": " + sport_level1;
+            String input = sport_name1;
             sport_1.setText(input);
             sport_1.setVisibility(View.VISIBLE);
         }
