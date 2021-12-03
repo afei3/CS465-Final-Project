@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:iconifiedByDefault="false"
             android:searchSuggestAuthority="com.customSearchApp.Provider"
-            android:queryHint="Search Group" />
+            android:queryHint="Search by group name or sport" />
 
         <Button
             android:id="@+id/create_new_group_btn"

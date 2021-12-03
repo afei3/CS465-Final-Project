@@ -30,6 +30,7 @@
     <string name="sport">Sport<font color='#FF6961'>*</font></string>
     <string name="skill_level">Skill Level<font color='#FF6961'>*</font></string>
     <string name="availability">Availability<font color='#FF6961'>*</font></string>
+    <string name="meeting_times">Group Meeting Times<font color='#FF6961'>*</font></string>
     <string name="location">Location<font color='#FF6961'>*</font></string>
     <string name="commitment_level">Commitment Level<font color='#FF6961'>*</font></string>
     <string name="user_desc">Description</string>
