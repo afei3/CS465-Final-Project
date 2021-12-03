@@ -297,10 +297,33 @@ public class GroupCreationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //check all required fields
-                if(group.groupName==null|| group.groupName.equals("")|| group.sportName==null||
-                group.skillLevel==null || group.timeSlots.isEmpty()||group.location==null ||
-                group.location.equals("")|| group.commitment==null){
-                    Toast.makeText(GroupCreationActivity.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
+                if(group.groupName==null|| group.groupName.equals("")){
+                    Toast.makeText(GroupCreationActivity.this, "Please fill out group name", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.group_name_layout);
+                    ll.requestFocus();
+
+                }else if(group.skillLevel==null){
+                    Toast.makeText(GroupCreationActivity.this, "Please select a skill level", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.skill_layout);
+                    ll.requestFocus();
+
+                }else if(group.timeSlots.isEmpty()){
+                    Toast.makeText(GroupCreationActivity.this, "Please fill out group meeting time(s)", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.time_layout);
+                    ll.requestFocus();
+
+                }else if(group.location==null ||
+                        group.location.equals("")){
+                    Toast.makeText(GroupCreationActivity.this, "Please fill out location", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.location_layout);
+                    ll.requestFocus();
+
+
+                }else if(group.commitment==null){
+                    Toast.makeText(GroupCreationActivity.this, "Please select a commitment level", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.commitment_layout);
+                    ll.requestFocus();
+
 
                 }else {
                     Intent intent = new Intent(GroupCreationActivity.this, GroupCreationReviewActivity.class);
