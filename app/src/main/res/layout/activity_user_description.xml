@@ -179,16 +179,25 @@
                     android:singleLine="false" />
             </LinearLayout>
         </LinearLayout>
-            <Button
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="60dp"
-                android:layout_gravity="bottom|center"
-                android:id="@+id/next_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/sportinate_gold"
-                android:text="Next" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/dark_grey"
+            android:text="@string/profile_info_message"
+            android:textSize="16sp">
+
+        </TextView>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|center"
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/sportinate_gold"
+            android:text="Next" />
     </LinearLayout>
 </ScrollView>
 

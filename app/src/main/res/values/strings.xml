@@ -22,6 +22,9 @@
     <string name="user_name">Name<font color='#FF6961'>*</font></string>
     <string name="user_Email">Email<font color='#FF6961'>*</font></string>
     <string name="group_desc">Group Description</string>
+    <string name="profile_info_message">*Note: The contact info you enter will be seen by all team members.</string>
+
+
     <!--    Group Creation Fields-->
     <string name="group_name">Group Name<font color='#FF6961'>*</font></string>
     <string name="sport">Sport<font color='#FF6961'>*</font></string>
