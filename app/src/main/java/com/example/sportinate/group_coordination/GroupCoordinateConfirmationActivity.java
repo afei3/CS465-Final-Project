@@ -19,6 +19,7 @@ public class GroupCoordinateConfirmationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coordinate_confirm_kick);
+        getSupportActionBar().setTitle("Manage Users");
 
         Button back = findViewById(R.id.manage_back_button);
         View kick = findViewById(R.id.delete);
