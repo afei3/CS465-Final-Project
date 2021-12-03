@@ -91,450 +91,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue_grey"
-            android:background="@drawable/rounded_edge"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:paddingTop="5dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="5dp"
-                android:text="@string/sport"
-                android:textColor="@color/black"
-                android:fontFamily="@font/opensans_1"
-                android:textSize="24sp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/rounded_edge"
-                >
-                <Spinner
-                    android:id="@+id/sports_spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue_grey"
-            android:background="@drawable/rounded_edge"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="20dp"
-                android:paddingTop="5dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="5dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/skill_level"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/opensans_1"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:text="Select skill level of yourself"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/rounded_edge"
-                >
-                <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/radio_new"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onSkillRadioButtonClicked"
-                        android:shadowColor="#6E4848"
-                        android:text="New"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-
-                    <RadioButton
-                        android:id="@+id/radio_intermediate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onSkillRadioButtonClicked"
-                        android:text="Intermediate"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-
-                    <RadioButton
-                        android:id="@+id/radio_advanced"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onSkillRadioButtonClicked"
-                        android:text="Advanced"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <RadioButton
-                        android:id="@+id/radio_expert"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onSkillRadioButtonClicked"
-                        android:text="Expert"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                </RadioGroup>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/new_tooltip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true"
-                            android:tooltipText="@string/new_tooltip"
-                            app:backgroundTint="@android:color/transparent"
-                            app:fabSize="mini"
-                            app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="*Hold to view level description"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/intermediate_tooltip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:clickable="true"
-                        android:tooltipText="@string/intermediate_tooltip"
-                        app:backgroundTint="@android:color/transparent"
-                        app:fabSize="mini"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/advanced_tooltip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:clickable="true"
-                        android:tooltipText="@string/advanced_tooltip"
-                        app:backgroundTint="@android:color/transparent"
-                        app:fabSize="mini"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/expert_tooltip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:clickable="true"
-                        android:tooltipText="@string/expert_tooltip"
-                        app:backgroundTint="@android:color/transparent"
-                        app:fabSize="mini"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue_grey"
-            android:background="@drawable/rounded_edge"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="20dp"
-                android:paddingTop="5dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/availability"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/opensans_1"
-                    android:textSize="24sp" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:background="@color/blue_grey"
-                >
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:text="Add your available time slots using the ADD button"
-                    android:textSize="16sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:gravity="left"
-                        android:text="Time slots:"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <ImageButton
-                        android:id="@+id/clear_time"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity ="right"
-                        android:src="@android:drawable/ic_menu_close_clear_cancel"
-                        android:onClick="onClearTimeClicked"
-                        android:backgroundTint="@color/blue_grey"></ImageButton>
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/time_slots"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/blue_grey"
-                    >
-
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/rounded_edge"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Choose a day"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <Spinner
-                    android:id="@+id/date_spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="24sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="15dp"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/rounded_edge"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Time slot"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    >
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="From"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/start_hour"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:ems="2"
-                        android:text="12"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:inputType="number|time" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=":"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/start_minute"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_horizontal"
-                        android:ems="2"
-                        android:text="00"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:inputType="number|time" />
-
-                    <Spinner
-                        android:id="@+id/start_time_spinner"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:textSize="24sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    >
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="To    "
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/end_hour"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:ems="2"
-                        android:text="01"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:inputType="number|time" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=":"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/end_minute"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_horizontal"
-                        android:ems="2"
-                        android:text="00"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:inputType="number|time" />
-
-                    <Spinner
-                        android:id="@+id/end_time_spinner"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:textSize="24sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/add_time_slot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:backgroundTint="@color/blue_button"
-                android:onClick="onAddTimeSlotClicked"
-                android:text="Add" />
-
-        </LinearLayout>
-
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
@@ -550,118 +107,31 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/commitment_level"
-                    android:textColor="@color/black"
+                    android:text="@string/user_Email"
                     android:fontFamily="@font/opensans_1"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:textColor="@color/black"
-                    android:text="What type of experience are you looking for?"
-                    android:textSize="16sp" />
-
+                    android:textSize="24sp" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_marginTop="10dp"
                 android:layout_margin="5dp"
                 android:padding="15dp"
                 android:backgroundTint="@color/white"
                 android:background="@drawable/rounded_edge"
                 >
-                <RadioGroup
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/radio_casual"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="Casual"
-                        android:textSize="18sp" />
-
-                    <RadioButton
-                        android:id="@+id/radio_competitive"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="Competitive"
-                        android:textSize="18sp" />
-
-                    <RadioButton
-                        android:id="@+id/radio_either"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="Either"
-                        android:textSize="18sp" />
-
-                </RadioGroup>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/casual_tooltip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true"
-                            android:tooltipText="@string/casual_tooltip"
-                            app:backgroundTint="@android:color/transparent"
-                            app:fabSize="mini"
-                            app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="*Hold to view level description"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/competitive_tooltip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:clickable="true"
-                        android:tooltipText="@string/competitive_tooltip"
-                        app:backgroundTint="@android:color/transparent"
-                        app:fabSize="mini"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/either_tooltip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:clickable="true"
-                        android:tooltipText="@string/either_tooltip"
-                        app:backgroundTint="@android:color/transparent"
-                        app:fabSize="mini"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-
-                </LinearLayout>
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    />
             </LinearLayout>
-        </LinearLayout>
 
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -714,27 +184,26 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:gravity="bottom|center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/back_button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/blue_button"
-
-                android:text="Cancel" />
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/next_button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue_button"
+                android:layout_margin="10dp"
+                android:text="Add a Sport" />
+
+            <Button
+                android:id="@+id/back_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:backgroundTint="@color/blue_button"
                 android:textAllCaps="false"
-                android:text="Next" />
+                android:text="My Profile" />
         </LinearLayout>
 
     </LinearLayout>

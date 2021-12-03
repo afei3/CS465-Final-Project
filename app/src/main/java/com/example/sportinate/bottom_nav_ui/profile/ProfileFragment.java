@@ -46,6 +46,7 @@ public class ProfileFragment extends Fragment {
 
     public static String user_name1;
     public static String user_descrip1;
+    public static String user_email1;
 
 
     public static String sport_name1;
@@ -97,6 +98,8 @@ public class ProfileFragment extends Fragment {
         user_name.setText(user_name1);
         TextView descrip_name = root.findViewById(R.id.description_text);
         descrip_name.setText(user_descrip1);
+        TextView email_name = root.findViewById(R.id.email_text);
+        email_name.setText(user_email1);
 
         TextView sport_1 = root.findViewById(R.id.sport_list);
         if(EditSportActivity.sportId ==2) {

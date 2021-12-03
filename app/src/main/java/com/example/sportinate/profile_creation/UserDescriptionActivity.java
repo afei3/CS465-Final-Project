@@ -14,11 +14,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.GroupInfo;
 import com.example.sportinate.R;
+import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 import com.example.sportinate.profile_creation.UserInfo;
 import java.io.FileNotFoundException;
@@ -50,28 +52,37 @@ public class UserDescriptionActivity extends AppCompatActivity {
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(com.example.sportinate.profile_creation.UserDescriptionActivity.this, BrowseActivity.class);
-                EditText user_name = (EditText) findViewById(R.id.name_text);
+                EditText user_name = (EditText) findViewById(R.id.user_name);
                 String message1 = user_name.getText().toString();
-                EditText user_descrip = (EditText) findViewById(R.id.description_text);
+                EditText user_descrip = (EditText) findViewById(R.id.message);
                 String message2 = user_descrip.getText().toString();
+                EditText user_email = (EditText) findViewById(R.id.user_email);
+                String message3 = user_email.getText().toString();
+
+                //check all required fields
+                if(message1.equals("") || message3.equals("") ){
+                    Toast.makeText(UserDescriptionActivity.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
+
+                }else {
+                    Intent intent = new Intent(com.example.sportinate.profile_creation.UserDescriptionActivity.this, BrowseActivity.class);
+
+                    UserInfo user = new UserInfo();
+
+                    user.setName(message1);
+
+                    user.setDescrip(message2);
+
+                    intent.putExtra("key", user);
+
+                    BrowseActivity.user_name = message1;
+                    BrowseActivity.user_descrip = message2;
+                    BrowseActivity.user_photo = bm_photo;
+                    BrowseActivity.user_email = message3;
 
 
-               UserInfo user = new UserInfo();
-
-                user.setName(message1);
-
-                user.setDescrip(message2);
-
-                intent.putExtra("key", user);
-
-                BrowseActivity.user_name = message1;
-                BrowseActivity.user_descrip = message2;
-                BrowseActivity.user_photo = bm_photo;
-
-
-                intent.putExtra("fragmentNumber", 1);
-                startActivity(intent);
+                    intent.putExtra("fragmentNumber", 1);
+                    startActivity(intent);
+                }
             }
 
         });

@@ -5,9 +5,14 @@
       <map>
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_browse.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_edit_sports.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group1_feedback.xml" value="0.1234375" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group1_leave.xml" value="0.1234375" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group1_leave_feedback.xml" value="0.1234375" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group2_info.xml" value="0.1234375" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_creation.xml" value="0.2" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_group_info1.xml" value="0.23731884057971014" />
-        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_landing_profile.xml" value="0.264" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_landing_profile.xml" value="0.176" />
+        <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_profile_creation.xml" value="0.264" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_profile_feedback.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/17516/AndroidStudioProjects/CS465-Final-Project/app/src/main/res/layout/activity_user_description.xml" value="0.16" />

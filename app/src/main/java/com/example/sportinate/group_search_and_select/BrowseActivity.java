@@ -23,6 +23,7 @@ public class BrowseActivity extends AppCompatActivity {
     public static String user_name;
     public static String user_descrip;
     public static Bitmap user_photo;
+    public static String user_email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class BrowseActivity extends AppCompatActivity {
 
             ProfileFragment.user_name1 = user_name;
             ProfileFragment.user_descrip1 = user_descrip;
+            ProfileFragment.user_email1 = user_email;
 
             navView.setSelectedItemId(R.id.navigation_profile);
         } else if (bundle != null && bundle.getInt("fragmentNumber") == 2) {

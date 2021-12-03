@@ -20,6 +20,7 @@
     <string name="either_tooltip">Your goals include a mix between casual and competitive.</string>
 
     <string name="user_name">Name<font color='#FF6961'>*</font></string>
+    <string name="user_Email">Email<font color='#FF6961'>*</font></string>
     <string name="group_desc">Group Description</string>
     <!--    Group Creation Fields-->
     <string name="group_name">Group Name<font color='#FF6961'>*</font></string>
