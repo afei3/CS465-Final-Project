@@ -59,9 +59,6 @@ public class profile_creation extends AppCompatActivity{
         getSupportActionBar().setTitle("Make Profile");
 
 
-
-
-
         //******Sport spinner ********
         Spinner sports_spinner = (Spinner) findViewById(R.id.sports_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
