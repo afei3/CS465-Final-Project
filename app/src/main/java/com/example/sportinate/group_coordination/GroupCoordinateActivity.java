@@ -34,6 +34,7 @@ public class GroupCoordinateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Group Coordination");
         if (GroupInfo.deleted_user) {
             setContentView(R.layout.activity_coordinate_kicked);
         } else {
