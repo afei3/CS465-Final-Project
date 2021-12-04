@@ -268,7 +268,7 @@ public class profile_creation extends AppCompatActivity{
 
                 }else if(skill_level.equals("")){
                     Toast.makeText(profile_creation.this, "Please select a skill level", Toast.LENGTH_SHORT).show();
-                    LinearLayout ll = (LinearLayout) findViewById(R.id.skill_layout);
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.level_layout);
                     ll.requestFocus();
 
                 }else if(commitment.equals("")){
