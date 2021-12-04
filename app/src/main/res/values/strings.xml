@@ -7,7 +7,7 @@
     <string name="make_profile">Make Profile</string>
     <string name="skip">Skip</string>
     <string name="landing_question">Would you like to make a profile?</string>
-    <string name="landing_description">Profiles help us find groups that match your preferences better</string>
+    <string name="landing_description">Making a profile helps us list groups that match your preferences better</string>
     <string name="create_new_group">Create New Group</string>
     <string name="success_text">You have successfully created a \"SPORT\" group!</string>
 
