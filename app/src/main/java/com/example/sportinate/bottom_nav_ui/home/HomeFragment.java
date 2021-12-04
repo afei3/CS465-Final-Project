@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
 
@@ -24,6 +26,7 @@ import com.example.sportinate.group_search_and_select.Group1InfoActivity;
 import com.example.sportinate.group_creation.GroupCreationActivity;
 import com.example.sportinate.group_search_and_select.Group2InfoActivity;
 
+import java.net.CookieManager;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -31,6 +34,34 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
+    private boolean basketbool = false;
+    private boolean tennisbool = false;
+    private boolean soccerbool = false;
+    private boolean otherbool = false;
+
+    public void updateFilter(View[] views) {
+        for (int i = 0; i < views.length; i++) {
+            views[i].setVisibility(View.GONE);
+        }
+        if (basketbool) {
+            views[0].setVisibility(View.VISIBLE);
+            views[1].setVisibility(View.VISIBLE);
+        }
+
+        if (tennisbool) {
+            views[2].setVisibility(View.VISIBLE);
+        }
+
+        if (soccerbool) {
+            views[4].setVisibility(View.VISIBLE);
+        }
+
+        if (!basketbool && !tennisbool && !soccerbool) {
+            for (int i = 0; i < 5; i++) {
+                views[i].setVisibility(View.VISIBLE);
+            }
+        }
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,8 +69,25 @@ public class HomeFragment extends Fragment {
                 new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
+
+        View[] viewarr = new View[6];
+
         View root = binding.getRoot();
         View group1 = root.findViewById(R.id.group4);
+        View group1_search = root.findViewById(R.id.group1);
+        View group2_search = root.findViewById(R.id.group2);
+        View group3_search = root.findViewById(R.id.group3);
+        View group4_search = root.findViewById(R.id.group4);
+        View group5_search = root.findViewById(R.id.group5);
+        View no_results_text = root.findViewById(R.id.no_results);
+        View create_new_group_btn = root.findViewById(R.id.create_new_group_btn);
+
+        viewarr[0] = group1_search;
+        viewarr[1] = group2_search;
+        viewarr[2] = group3_search;
+        viewarr[3] = group4_search;
+        viewarr[4] = group5_search;
+        viewarr[5] = no_results_text;
 
         if (GroupInfo.group_1_create) {
             group1.setVisibility(View.VISIBLE);
@@ -86,15 +134,52 @@ public class HomeFragment extends Fragment {
 //            }
 //        });
 
+        CheckBox basketball = root.findViewById(R.id.bball);
+        basketball.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    basketbool = true;
+                } else {
+                    basketbool = false;
+                }
+
+                updateFilter(viewarr);
+            }
+        });
+
+        CheckBox tennis = root.findViewById(R.id.tennis);
+        tennis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    tennisbool = true;
+                } else {
+                    tennisbool = false;
+                }
+
+                updateFilter(viewarr);
+            }
+        });
+
+        CheckBox soccer = root.findViewById(R.id.soccer);
+        soccer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    soccerbool = true;
+                } else {
+                    soccerbool = false;
+                }
+                updateFilter(viewarr);
+            }
+        });
+        CheckBox other = root.findViewById(R.id.other);
+
         SearchView searchView = root.findViewById(R.id.simple_search);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            View group1_search = root.findViewById(R.id.group1);
-            View group2_search = root.findViewById(R.id.group2);
-            View group3_search = root.findViewById(R.id.group3);
-            View group4_search = root.findViewById(R.id.group4);
-            View group5_search = root.findViewById(R.id.group5);
-            View no_results_text = root.findViewById(R.id.no_results);
-            View create_new_group_btn = root.findViewById(R.id.create_new_group_btn);
+
+
 
             @Override
             public boolean onQueryTextSubmit(String query) {

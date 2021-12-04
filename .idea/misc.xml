@@ -39,6 +39,7 @@
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/activity_user_description.xml" value="0.178125" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_groups.xml" value="0.1539855072463768" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_home.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/layout/fragment_profile.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/ayfei/CS465-Final-Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.178125" />
         <entry key="app/src/main/res/drawable/box.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.21354166666666666" />
@@ -49,7 +50,6 @@
         <entry key="app/src/main/res/font/typo_graphica.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/acitvity_profile_creation.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/activity_browse.xml" value="0.13318284424379231" />
-        <entry key="app/src/main/res/layout/activity_edit_sports.xml" value="0.1703125" />
         <entry key="app/src/main/res/layout/activity_group1_feedback.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_group1_leave.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/activity_group1_leave_feedback.xml" value="0.159375" />
@@ -61,16 +61,14 @@
         <entry key="app/src/main/res/layout/activity_group_joined.xml" value="0.10416666666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.16302083333333334" />
-        <entry key="app/src/main/res/layout/activity_profile_creation.xml" value="0.16621376811594202" />
         <entry key="app/src/main/res/layout/activity_profile_feedback.xml" value="0.16875" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/activity_user_description.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/layout/fragment2_groups.xml" value="0.165625" />
         <entry key="app/src/main/res/layout/fragment_groups.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_groups2.xml" value="0.165625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1921875" />
       </map>
     </option>
