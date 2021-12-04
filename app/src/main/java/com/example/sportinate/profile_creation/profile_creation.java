@@ -23,6 +23,7 @@ import com.example.sportinate.bottom_nav_ui.profile.ProfileFragment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sportinate.R;
+import com.example.sportinate.group_creation.GroupCreationActivity;
 import com.example.sportinate.group_search_and_select.BrowseActivity;
 
 import java.util.Arrays;
@@ -260,10 +261,20 @@ public class profile_creation extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 //check all required fields
-                if (sport_name == null || skill_level == null || commitment == null ||
-                        sport_name == "" || skill_level == "" || commitment == "") {
-                    Toast.makeText(profile_creation.this, "Please fill out all required fields", Toast.LENGTH_SHORT).show();
+                if(sport_name.equals("")){
+                    Toast.makeText(profile_creation.this, "Please select a sport", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.sport_name_layout);
+                    ll.requestFocus();
 
+                }else if(skill_level.equals("")){
+                    Toast.makeText(profile_creation.this, "Please select a skill level", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.skill_layout);
+                    ll.requestFocus();
+
+                }else if(commitment.equals("")){
+                    Toast.makeText(profile_creation.this, "Please select a commitment level", Toast.LENGTH_SHORT).show();
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.commitment_layout);
+                    ll.requestFocus();
                 } else {
                     String text1 = sport_name;
                     String text2 = date;

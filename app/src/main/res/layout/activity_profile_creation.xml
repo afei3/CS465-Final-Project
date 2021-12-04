@@ -20,6 +20,7 @@
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
             android:orientation="vertical"
+            android:id="@+id/sport_name_layout"
             >
 
             <TextView
@@ -59,6 +60,7 @@
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
+            android:id="@+id/level_layout"
             android:orientation="vertical">
 
             <LinearLayout
@@ -208,12 +210,14 @@
             </LinearLayout>
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
+            android:visibility="gone"
             android:orientation="vertical">
 
             <LinearLayout
@@ -455,13 +459,13 @@
 
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
+            android:id="@+id/commitment_layout"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"

@@ -19,6 +19,7 @@
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
+            android:id="@+id/name_layout"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,6 +96,7 @@
             android:backgroundTint="@color/blue_grey"
             android:background="@drawable/rounded_edge"
             android:layout_marginTop="40dp"
+            android:id="@+id/email_layout"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -132,6 +134,255 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/blue_grey"
+            android:background="@drawable/rounded_edge"
+            android:layout_marginTop="40dp"
+            android:id="@+id/time_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/availability"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_1"
+                    android:textSize="24sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@color/blue_grey"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Add your available time slots using the ADD button"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="Time slots:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/clear_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity ="right"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:onClick="onClearTimeClicked"
+                        android:backgroundTint="@color/blue_grey"></ImageButton>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/time_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/blue_grey"
+                    >
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded_edge"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Choose a day"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/date_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded_edge"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Time slot"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/start_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:ems="2"
+                        android:text="12"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="number|time" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/start_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:ems="2"
+                        android:text="00"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="number|time" />
+
+                    <Spinner
+                        android:id="@+id/start_time_spinner"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="To    "
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/end_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:ems="2"
+                        android:text="01"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="number|time" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/end_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:ems="2"
+                        android:text="00"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="number|time" />
+
+                    <Spinner
+                        android:id="@+id/end_time_spinner"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_time_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue_button"
+                android:onClick="onAddTimeSlotClicked"
+                android:text="Add" />
+
+        </LinearLayout>
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
